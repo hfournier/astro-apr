@@ -50,31 +50,3 @@ const menuMax = 11
 		)
 	}
 </nav>
-
-<!-- polyfill for anchor positioning -->
-<script>
-	if (!("anchorName" in document.documentElement.style)) {
-		const loadPolyfill = async () => {
-			// remove previous --anchor- entries from style attribute
-			const styleAttribute = document.documentElement.getAttribute("style")
-			if (styleAttribute) {
-				const styles = styleAttribute
-					?.split(";")
-					.map((item) => item.trim())
-					.filter((item) => !item.startsWith("--anchor-"))
-				if (styles && styles.length > 0) {
-					document.documentElement.setAttribute("style", styles.join("; "))
-				}
-			}
-			// @ts-ignore
-			const { default: polyfill } = await import(
-				"https://unpkg.com/@oddbird/css-anchor-positioning/dist/css-anchor-positioning-fn.js"
-			)
-			await polyfill(true)
-			console.log("Polyfill loaded!")
-		}
-
-		document.addEventListener("astro:page-load", loadPolyfill)
-		// document.addEventListener("astro:after-swap", loadPolyfill)
-	}
-</script>
