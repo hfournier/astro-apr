@@ -1,0 +1,18 @@
+---
+wpId: 286
+createdAt: 2008-08-05T08:41:14
+parentId: 0
+postId: 169
+status: approved
+type: comment
+author:
+  avatar_urls:
+    - "24": "https://secure.gravatar.com/avatar/8b4fc026c4abd45d3d62e15a090d77b5?s=24&d=mm&r=g"
+    - "48": "https://secure.gravatar.com/avatar/8b4fc026c4abd45d3d62e15a090d77b5?s=48&d=mm&r=g"
+    - "96": "https://secure.gravatar.com/avatar/8b4fc026c4abd45d3d62e15a090d77b5?s=96&d=mm&r=g"
+  name: xcd esz
+---
+
+Some of your points could be reversed. You say “If more code is added later it might accidentally get run even though its author intended the method to be finished.” The reverse is more likely to be true. If a developer goes back to the method and wants to do something with the result set before returning, now he has to find all of the return points.
+
+Having multiple return statements may be easier for you to write, and less “lines of code”. But as someone who has to maintain others code, I often find myself having to wind my way out of a spaghetti of loose practices such as this. Yes, if your code only has a few lines, having mutiple returns wont be a problem. But where do you draw the line? It is better, IMHO, to stick with the old rule.

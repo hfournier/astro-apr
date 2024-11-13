@@ -1,0 +1,145 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_courses_edmonton_iStock_000055272636_Small_Edmonton_1024x428_jpg from "@assets/images/courses-edmonton/iStock_000055272636_Small-Edmonton-1024x428.jpg"
+import assets_images_courses_edmonton_sa_csm_600_150x150_png from "@assets/images/courses-edmonton/sa-csm-600-150x150.png"
+import assets_images_courses_edmonton_sa_adv_csm_600_150x150_png from "@assets/images/courses-edmonton/sa-adv_csm-600-150x150.png"
+import assets_images_courses_edmonton_sa_cspo_600_150x150_png from "@assets/images/courses-edmonton/sa-cspo-600-150x150.png"
+
+const wpId = 10126
+const title = "Certified Scrum & Agile Training in Edmonton"
+const description =
+	'Learn Agile and Scrum techniques to guide teams, projects, and organizations to enable the rapid delivery of valuable results. "We help people make their work suck less." In our Scrum Alliance certification workshops, students learn through practical exercises and examples to develop the knowledge, skills, and insights needed to make the shift from traditional management ...'
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-01-17T05:31:30")
+const modifiedAt = new Date("2023-05-24T17:10:42")
+const author = "mark-levison"
+const featuredMedia = {
+	id: 9595,
+	src: "@assets/images/courses-edmonton/iStock_000055272636_Small-Edmonton.jpg",
+	alt: "Edmonton, Alberta"
+}
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Learn Agile and Scrum techniques to guide teams, projects, and organizations to enable the rapid
+		delivery of valuable results.
+	</p>
+	<h3>&#8220;We help people make their work suck less.&#8221;</h3>
+	<p>
+		<Image
+			decoding="async"
+			alt="Edmonton, Alberta"
+			width="1024"
+			height="428"
+			sizes="(max-width: 1024px) 100vw, 1024px"
+			src={assets_images_courses_edmonton_iStock_000055272636_Small_Edmonton_1024x428_jpg}
+			widths={[1024, 300, 768]}
+		/>
+	</p>
+	<p>
+		In our Scrum Alliance <a href="/certified-scrum-agile-training">certification workshops</a>,
+		students learn through practical exercises and examples to develop the knowledge, skills, and
+		insights needed to make the shift from traditional management practices to Agile practices.
+		Facilitated by <a href="/about-us">Certified Scrum Trainer™ Mark Levison</a>, an Agile expert
+		since 2001, these workshops have a deep understanding of how people learn, and aren&#8217;t a
+		class with a bunch of words on PowerPoint slides. Local training means you also have the
+		advantage of meeting and networking with other professionals near you to hear the challenges
+		&#8211; and solutions &#8211; experienced by other organizations, which can be invaluable.
+	</p>
+	<h3>Upcoming Edmonton Certified Scrum training:</h3>
+	<section id="custom-ee-upcoming-events-widget-8">
+		<div>
+			<h3>Edmonton</h3>
+			<div>
+				<div><div><div>Contact us to be notified of the next workshop</div></div></div><div>
+					<a href="/contact-us"><div>Contact Us</div></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<p>
+		If you&#8217;re not sure what training is right for you, the following pages offer more details:
+	</p>
+	<h4>
+		<a href="/certified-scrummaster-csm-training"
+			><Image
+				decoding="async"
+				alt="Certified ScrumMaster Scrum Alliance seal"
+				width="40"
+				height="40"
+				sizes="(max-width: 40px) 100vw, 40px"
+				src={assets_images_courses_edmonton_sa_csm_600_150x150_png}
+				widths={[150, 300, 75, 600]}
+			/></a
+		><a href="/certified-scrummaster-csm-training">Certified ScrumMaster (CSM) training</a>
+	</h4>
+
+	<h4>
+		<a href="/advanced-certified-scrummaster-acsm-training"
+			><Image
+				decoding="async"
+				alt="Advanced Certified ScrumMaster Scrum Alliance seal"
+				width="40"
+				height="40"
+				sizes="(max-width: 40px) 100vw, 40px"
+				src={assets_images_courses_edmonton_sa_adv_csm_600_150x150_png}
+				widths={[150, 300, 75, 600]}
+			/></a
+		><a href="/advanced-certified-scrummaster-acsm-training"
+			>Advanced Certified ScrumMaster (A-CSM) training</a>
+	</h4>
+
+	<h4>
+		<a href="/certified-scrum-product-owner-cspo-training"
+			><Image
+				decoding="async"
+				alt="Certified Scrum Product Owner Scrum Alliance seal"
+				width="40"
+				height="40"
+				sizes="(max-width: 40px) 100vw, 40px"
+				src={assets_images_courses_edmonton_sa_cspo_600_150x150_png}
+				widths={[150, 300, 75, 600]}
+			/></a
+		><a href="/certified-scrum-product-owner-cspo-training"
+			>Certified Scrum Product Owner (CSPO) training</a>
+	</h4>
+
+	<p>
+		We have thousands of quotes and testimonials from people across Canada who have taken our
+		training, but here are a few direct comments specifically from Western Canada workshop
+		attendees:
+	</p>
+	<div>
+		<p>
+			&#8220;I&#8217;ve taken many courses over the years and this was the most educational,
+			enjoyable experiences with valuable activities and worthwhile well-researched content.&#8221;
+			~ Ron Woodford
+		</p>
+		<p>
+			&#8220;Insanely terrific. I have been bored silly at some Agile training classes. This was
+			100% interesting… okay, 98%. Very clear, Exceptional memory! I get it now &#8211; the value of
+			a *real* pro scrum master.&#8221; ~ Simon Crum
+		</p>
+		<p>
+			&#8220;Wonderful course and instructor. Fantastic mix of theory and pragmatism. Concepts
+			applicable to non-software development. Very valuable. Well done!&#8221; ~ Margaret Uminska
+		</p>
+		<p>
+			&#8220;Mark Levison&#8217;s teaching style is interactive and informative and really captures
+			the essence off Scrum. I would recommend it to any company who struggles with the same issue
+			we do &#8211; chaos!&#8221; ~ Philip Qumsieh
+		</p>
+	</div>
+	<p>
+		Learn more about our Edmonton Scrum and Agile training through the course links above, register
+		for an upcoming course below, or <a href="/contact-us">contact us</a> with further questions.
+	</p>
+</MainLayout>

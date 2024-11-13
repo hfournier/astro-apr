@@ -1,0 +1,172 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_csm_scrum_master_certification_lp_ratings_jpg_webp from "@assets/images/csm-scrum-master-certification-lp/ratings.jpg.webp"
+import assets_images_csm_scrum_master_certification_lp_sa_csm_600_png from "@assets/images/csm-scrum-master-certification-lp/sa-csm-600.png"
+import assets_images_csm_scrum_master_certification_lp_Scrum_Alliance_seal_cst_600x600_1_png from "@assets/images/csm-scrum-master-certification-lp/Scrum-Alliance-seal-cst-600x600-1.png"
+
+const wpId = 11549
+const title = "CSM Landing Page"
+const description =
+	"Certified Scrum Master&reg; (CSM) Certification Training Improve your work performance and career opportunities with the highly demanded Certified Scrum Master&reg; (CSM) certification. This two day training workshop prepares you to become a Certified Scrum Master&reg; Get Certified Improve your work performance and career opportunities with the highly demanded Certified Scrum Master&reg; (CSM) certification. This two ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-01-29T22:10:49")
+const modifiedAt = new Date("2023-05-24T17:11:09")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<div id="landingHero">
+		<div id="landingHeroLeft">
+			<h2>Certified Scrum Master&reg; (CSM) Certification Training</h2>
+			<div id="landingRating">
+				<Image
+					decoding="async"
+					alt="TODO: update alt text"
+					src={assets_images_csm_scrum_master_certification_lp_ratings_jpg_webp}
+				/>
+			</div>
+			<p>
+				Improve your work performance and career opportunities with the highly demanded Certified
+				Scrum Master&reg; (CSM) certification. This two day training workshop prepares you to become
+				a Certified Scrum Master&reg;
+			</p>
+			<div>
+				<a href="#upcomingCoursesFrame2"></a>
+				<div>Get Certified</div>
+				<p></p>
+			</div>
+		</div>
+	</div>
+	<div id="landingHeroRight">
+		<Image
+			decoding="async"
+			alt="Certified ScrumMaster Scrum Alliance seal"
+			src={assets_images_csm_scrum_master_certification_lp_sa_csm_600_png}
+		/>
+	</div>
+</MainLayout>
+<div id="landingIntroMobile">
+	Improve your work performance and career opportunities with the highly demanded Certified Scrum
+	Master&reg; (CSM) certification. This two day training workshop prepares you to become a Certified
+	Scrum Master&reg;
+</div>
+<div id="landingSALogoMobile">
+	<Image
+		decoding="async"
+		alt="Certified ScrumMaster Scrum Alliance seal"
+		src={assets_images_csm_scrum_master_certification_lp_sa_csm_600_png}
+	/>
+</div>
+<div id="upcomingCoursesFrame1">
+	<h3>Get Certified Today!</h3>
+	<section id="custom-ee-upcoming-events-widget-14">
+		<div>
+			<h3>CSM Buttons</h3>
+			<div>
+				<div>
+					<a href="/courses/virtual-20241118csm"
+						><div>
+							<div>Nov 18 - Nov 19</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div><div>
+					<a href="/courses/virtual-20241128csm"
+						><div>
+							<div>Nov 28 - Nov 29</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div><div>
+					<a href="/courses/virtual-20241212csm"
+						><div>
+							<div>Dec 12 - Dec 13</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<div id="landingFeatures">
+	<h3>CSM Training Workshop Features</h3>
+	<ul>
+		<li>
+			Gain the highly demanded CSM certification recognized worldwide across multiple industries
+		</li>
+		<li>2 days of practical interactive exercises, case studies and simulations</li>
+		<li>Extensive post-training support to help you remember and grow</li>
+		<li>Includes exam prep, exam fee, 2 years Scrum Alliance membership</li>
+		<li>Eligible for 14 PDUs</li>
+		<li>Virtual attendees can attend the same in-class training post-COVID for free</li>
+	</ul>
+	<div id="landingTrainer">
+		<div id="landingTrainerLeft">
+			<Image
+				decoding="async"
+				alt="Certified ScrumMaster Scrum Alliance seal"
+				src={assets_images_csm_scrum_master_certification_lp_Scrum_Alliance_seal_cst_600x600_1_png}
+			/>
+		</div>
+		<div id="landingTrainerRight">
+			Taught by <a
+				href="https://www.scrumalliance.org/community/profile/mlevison"
+				target="_out"
+				rel="noopener">Mark Levison</a
+			>, a Certified Scrum Trainer with extensive Agile experience.
+		</div>
+	</div>
+</div>
+
+<div id="upcomingCoursesFrame2">
+	<h3>Upcoming Workshops</h3>
+	<section id="custom-ee-upcoming-events-widget-14">
+		<div>
+			<h3>CSM Buttons</h3>
+			<div>
+				<div>
+					<a href="/courses/virtual-20241118csm"
+						><div>
+							<div>Nov 18 - Nov 19</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div><div>
+					<a href="/courses/virtual-20241128csm"
+						><div>
+							<div>Nov 28 - Nov 29</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div><div>
+					<a href="/courses/virtual-20241212csm"
+						><div>
+							<div>Dec 12 - Dec 13</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<div>
+	<h3>Eligibility</h3>
+	<h4>The Scrum Master&reg; certification training course is suitable for</h4>
+	<ul>
+		<li>Individual Contributors (Developer, Tester, BA)</li>
+		<li>Scrum Masters</li>
+		<li>Product Owners</li>
+		<li>Traditional Project Managers</li>
+		<li>Mid-level Executives</li>
+		<li>And those interested in pursuing a career as a professional Scrum Master.</li>
+	</ul>
+</div>
+<div>
+	<h3>Prerequisites</h3>
+	<p>There are no prerequisites for starting this Agile Scrum Master certification course.</p>
+</div>
+<div>
+	<h3>CSM Exam &#038; Certification</h3>
+	<ul>
+		<li>Preparation material provided, so you can be comfortable and confident</li>
+		<li>Understand Scrum framework, role of team and ScrumMaster</li>
+		<li>No PowerPoint, learn by actually practicing Scrum</li>
+		<li>Small class size, guaranteed course dates</li>
+	</ul>
+</div>

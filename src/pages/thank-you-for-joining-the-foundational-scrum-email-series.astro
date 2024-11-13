@@ -1,0 +1,33 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 13116
+const title = "Thank you for joining the Foundational Scrum email series"
+const description =
+	"Thank you for joining the Foundational Scrum email series list, where we will use commonly asked questions, along with Mark's extensive experience working with Agile teams, to help you understand the basics of Scrum and the Scrum Roles, and also share some of the most common mistakes that teams make and how you can avoid ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-08-24T17:57:55")
+const modifiedAt = new Date("2023-05-24T17:12:21")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for joining the Foundational Scrum email series list, where we will use commonly asked
+		questions, along with Mark&#8217;s extensive experience working with Agile teams, to help you
+		understand the basics of Scrum and the Scrum Roles, and also share some of the most common
+		mistakes that teams make and how you can avoid them.
+	</p>
+	<p>
+		You should see a confirmation email in your Inbox shortly, and the first email in this
+		Foundational Scrum series in a day or so. If you don&#8217;t, <a href="/contact-us"
+			>please let us know</a
+		>.
+	</p>
+	<p>Please consider whitelisting us so these emails don&#8217;t end up in your Junk filter.</p>
+	<p>Cheers!</p>
+</MainLayout>

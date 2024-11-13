@@ -1,0 +1,43 @@
+---
+wpId: 12052
+title: 'Trunk Based Development'
+description: 'Git, Mercurial and other source control tools provide robust and easy to use branching capabilities. For work with OpenSource software —where anyone could be a contributor and the environment is low trust— the use of branches is useful. For modern Agile teams attempting to continually improve (refactor) the code and use tools like Continuous Integration, ...'
+type: glossary
+createdAt: 2021-04-23T14:44:24
+modifiedAt: 2023-05-24T17:15:26
+author: mark-levison
+---
+
+
+Git, Mercurial and other **source control** tools provide robust and easy to use **branching capabilities**. For work with OpenSource software —where anyone could be a contributor and the environment is low trust— the use of branches is useful. For modern Agile teams attempting to continually improve (refactor) the code and use tools like [Continuous Integration](/glossary/continuous-integration), [Continuous Delivery](/glossary/continuous-delivery) etc, long-lived (> 1 day) branches just add overhead. If you’ve ever experienced merge hell, you know the problem. If you’ve delayed a [refactoring](/glossary/refactoring) because it would make the branch harder to merge, your code has suffered. The long-lived feature branching strategy became popular under the name “GitFlow”, which even [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) (not known for being leading edge) says, “_Gitflow has fallen in popularity in favor of trunk-based workflows, which are now considered best practices for modern continuous software development and DevOps practices._”
+
+Some organizations “solve” this problem by banning refactoring. (Not kidding, I’ve seen this and its effects).
+
+Others move to a model called Trunk-Based Development, where all code is merged directly back to the Trunk every time a change is “committed”. In a world with Trunk-Based development, all work is done on the main branch or trunk. Team members (or, even better, [Pairs](/glossary/pair-programming)) commit their work multiple times a day. This avoids merge hell and makes refactoring less painful.
+
+_Some teams in the Trunk Based model, use micro-branches, that live only for one day. Even day long branches increase risk._
+
+#### Resource Links:
+
+*   [Branch by Abstraction for dealing with the few complexities that crop up with working off of Trunk](https://martinfowler.com/bliki/BranchByAbstraction.html)
+*   [Branching by an abstraction in the trunk instead of branching via Source Control](https://paulhammant.com/blog/branch_by_abstraction.html)
+*   [Continuous Integration and Feature Branching](https://www.davefarley.net/?p=247)
+*   [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html) By Martin Fowler. This is the deepest single article on the subject
+*   [Long running branches — Why are we still doing this?](https://medium.com/design-and-tech-co/long-running-branches-why-are-we-still-doing-this-605e37611d03)
+*   [Perceived Barriers to Trunk Based Development](https://www.davefarley.net/?p=269)
+*   [Scaling Trunk Based Development](https://paulhammant.com/2013/04/09/scaling-trunk-based-development/)
+*   [Trunk Based Development a summary](https://paulhammant.com/2013/04/05/what-is-trunk-based-development/)
+*   [Trunk Based Development as a Cornerstone for Continuous Delivery](https://www.infoq.com/news/2018/04/trunk-based-development/)
+*   [Version Control and Branch Management](https://abseil.io/resources/swe-book/html/ch16.html) (from the book _Software Engineering at Google_)
+*   [Why Google stores billions of lines of code in a single repository](https://dl.acm.org/doi/10.1145/2854146)
+*   [Why your team doesn’t need to use pull requests](https://infrastructure-as-code.com/book/2021/01/02/pull-requests.html)
+*   [TrunkBasedDevelopment.com](https://trunkbaseddevelopment.com/) – a whole website devoted to the ins and outs
+
+##### EXAMPLE FROM REAL WORLD:
+
+*   [Google’s vs Facebook’s Trunk Based Development](https://paulhammant.com/2014/01/08/googles-vs-facebooks-trunk-based-development/)
+*   [Trunk Based Development for Microsoft Office](https://paulhammant.com/2014/04/03/microsofts-trunk-based-development/)
+
+#### Books:
+
+*   [_Trunk-Based Development And Branch By Abstraction_](https://leanpub.com/trunk-based-development) – Paul Hammant

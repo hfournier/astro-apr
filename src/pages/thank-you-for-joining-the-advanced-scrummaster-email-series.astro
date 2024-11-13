@@ -1,0 +1,35 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 13319
+const title = "Thank you for joining the Advanced ScrumMaster email series"
+const description =
+	"Thank you for joining the Advanced ScrumMaster email series list, where we will share tools and resources to help you guide your team through improvements and challenges to become truly high-performing. If you're not already a subscriber, you will see a confirmation email in your Inbox shortly. Please click the confirm link as this is ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-11-03T16:37:08")
+const modifiedAt = new Date("2023-05-24T17:12:20")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for joining the Advanced ScrumMaster email series list, where we will share tools and
+		resources to help you guide your team through improvements and challenges to become truly
+		high-performing.
+	</p>
+	<p>
+		If you&#8217;re not already a subscriber, you will see a confirmation email in your Inbox
+		shortly. Please click the confirm link as this is our way of combatting spam. (We hate it as
+		much or more than anyone!)
+	</p>
+	<p>
+		You should see the first email in this Advanced ScrumMaster series in a day or so. If you
+		don&#8217;t, <a href="/contact-us">let us know</a>.
+	</p>
+	<p>Please consider whitelisting us so these emails don&#8217;t end up in your Junk filter.</p>
+	<p>Cheers!</p>
+</MainLayout>

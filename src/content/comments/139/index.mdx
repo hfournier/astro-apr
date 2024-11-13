@@ -1,0 +1,21 @@
+---
+wpId: 139
+createdAt: 2007-07-19T16:27:06
+parentId: 0
+postId: 213
+status: approved
+type: comment
+author:
+  avatar_urls:
+    - "24": "https://secure.gravatar.com/avatar/8aa492aad65a8cf3202c55f64576fa23?s=24&d=mm&r=g"
+    - "48": "https://secure.gravatar.com/avatar/8aa492aad65a8cf3202c55f64576fa23?s=48&d=mm&r=g"
+    - "96": "https://secure.gravatar.com/avatar/8aa492aad65a8cf3202c55f64576fa23?s=96&d=mm&r=g"
+  name: Gwyn Evans
+  url: https://www.javaguy.co.uk
+---
+
+I’ve tried both JMock and EasyMock but ended up going back to EasyMock (1.2, as I’m also restricted to JDK 1.4 at the moment).
+
+I found that in most tests there was a setup phase, then a point to set the mocks to replay, an invocation of the class under test and then a verification of the mocks. Even where I needed one mock for use in another, the replay needing to be done ‘early’ wasn’t an issue, and on the upsite, I had the advantage of the full IDE support when coding the calls to the mocks.
+
+Note they both let you mock classes, if you need to, and both let you set varying criteria for matching calls, arguments, etc.

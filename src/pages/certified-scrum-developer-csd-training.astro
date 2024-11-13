@@ -1,0 +1,487 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_certified_scrum_developer_csd_training_noun_checkmark_870282_71D358_png from "@assets/images/certified-scrum-developer-csd-training/noun-checkmark-870282-71D358.png"
+import assets_images_certified_scrum_developer_csd_training_5000_Testimonials_png from "@assets/images/certified-scrum-developer-csd-training/5000-Testimonials.png"
+import assets_images_certified_scrum_developer_csd_training_Mark_Levison_headshot_600x800_transparent_badges_225x300_png from "@assets/images/certified-scrum-developer-csd-training/Mark-Levison-headshot-600x800-transparent-badges-225x300.png"
+import assets_images_certified_scrum_developer_csd_training_noun_arrow_1144336_F1584B_png from "@assets/images/certified-scrum-developer-csd-training/noun-arrow-1144336-F1584B.png"
+import assets_images_certified_scrum_developer_csd_training_Agile_Engineering_Practices_map_small_jpg from "@assets/images/certified-scrum-developer-csd-training/Agile-Engineering-Practices-map-small.jpg"
+
+const wpId = 16252
+const title = "Certified Scrum Developer (CSD) Training"
+const description =
+	"CSD Certification Designed to Help You Succeed We get it. You want to build quality products that delight customers and management alike, all without losing your soul or burning out with stress and overtime. That's not unrealistic, and it doesn't have to be a fantasy. Keyboard Monkey working at a Feature Factory ... those clichés ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2024-07-17T20:06:53")
+const modifiedAt = new Date("2024-08-21T19:15:31")
+const author = "heather-uhlagilepainrelief-com"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<style>
+		ul.dashedList > li {
+			list-style-type: none;
+			text-indent: -10px;
+		}
+		ul.dashedList > li::before {
+			content: "– ";
+			font-weight: bold;
+		}
+		.bonusBlock {
+			width: 50%;
+			float: left;
+			margin-bottom: 30px;
+		}
+		.bonusIcon {
+			float: left;
+		}
+		.bonusItem {
+			clear: both;
+			border: 1px solid #1f64a4;
+			border-radius: 6px;
+			overflow: auto;
+			padding: 10px;
+			margin: 15px;
+			min-height: 175px;
+		}
+		.bonusText {
+			font-size: 16px;
+			padding-left: 15px;
+			display: flex;
+		}
+		.markBioImage {
+			float: left;
+			width: 15%;
+			padding: 0 0 25px 25px;
+		}
+		.markBioText {
+			float: left;
+			width: 85%;
+		}
+		.introPoints {
+			float: left;
+			width: 70%;
+		}
+		.markWithBadges {
+			float: left;
+			width: 30%;
+		}
+		.lookHere {
+			background: #1f64a4;
+			color: #ffffff;
+			font-size: 24px;
+			padding: 15px 50px;
+			border: 1px solid black;
+			margin: 15px 50px;
+			text-align: center;
+		}
+		.logoContainer {
+			float: left;
+			width: 25%;
+			text-align: center;
+		}
+		.arrowBox {
+			overflow: hidden;
+		}
+		.arrowBox div {
+			float: left;
+		}
+		.arrowText h2,
+		.arrowText h3 {
+			color: #1f64a4;
+			font-size: 1.8rem;
+			padding-top: 36px;
+		}
+		.arrowIcon {
+			width: 110px;
+		}
+		.arrow-3 {
+			padding-top: 26px !important;
+		}
+		.industryBlurb {
+			color: #1f64a4;
+			font-size: 2.8rem;
+			text-align: center;
+			line-height: 1.2em;
+			padding: 15px 55px;
+			clear: both;
+		}
+		@media screen and (min-width: 1023px) {
+			.testimonialGraphic {
+				width: 30%;
+				float: left;
+			}
+			.firstQuote {
+				width: 70%;
+				float: left;
+				padding-top: 15px;
+			}
+			.firstQuote span {
+				display: block;
+			}
+		}
+		@media screen and (max-width: 1200px) {
+			.markBioImage {
+				width: 22%;
+			}
+			.markBioText {
+				width: 75%;
+			}
+		}
+		@media screen and (max-width: 1023px) {
+			.arrow-3 {
+				font-size: 1.5rem !important;
+			}
+			.bonusIcon {
+				width: 75px;
+			}
+			.bonusBlock {
+				width: 100%;
+				margin-bottom: 0;
+			}
+			.bonusItem {
+				min-height: unset;
+			}
+			.markBioImage {
+				width: 35%;
+			}
+			.markBioText {
+				width: 65%;
+			}
+			.testimonialGraphic {
+				text-align: center;
+			}
+			.firstQuote {
+				margin-bottom: 20px;
+			}
+			.logoDisclaimer {
+				padding: 20px 24px !important;
+			}
+		}
+		@media screen and (max-width: 800px) {
+			.arrow-1,
+			.arrow-2,
+			.arrow-4 {
+				font-size: 1.5rem !important;
+			}
+			.arrow-3 {
+				font-size: 1.2rem !important;
+				width: 440px;
+			}
+			.logoDisclaimer {
+				padding: 10px 2px !important;
+			}
+		}
+		@media screen and (max-width: 500px) {
+			.introPoints {
+				width: 100%;
+			}
+			.markWithBadges {
+				width: 100%;
+			}
+			.logoContainer {
+				width: 50%;
+			}
+			.industryBlurb {
+				padding: 15px 10px;
+			}
+			.lookHere {
+				padding: 5px;
+				margin: 15px 5px;
+			}
+			.arrowText {
+				width: 200px;
+			}
+			.arrowText h2,
+			.arrowText h3 {
+				padding-top: 20px;
+			}
+			.arrow-3 {
+				padding-top: 12px !important;
+				width: auto !important;
+			}
+			.arrow-5 {
+				padding-top: 26px !important;
+			}
+			.lookHere2 {
+				font-size: 20px;
+			}
+			.bonusIcon {
+				padding-right: 25px;
+			}
+			.bonusText {
+				display: block;
+			}
+		}
+		.greenCheckFrame {
+			overflow: hidden;
+		}
+		.greenCheckFrame img,
+		.greenCheckFrame div {
+			float: left;
+		}
+		.greenCheckFrame img {
+			width: 40px;
+			height: 40px;
+		}
+		.greenCheckBlock {
+			margin-bottom: 30px;
+			font-size: 1.8rem;
+		}
+	</style>
+	<h1>CSD Certification Designed to Help You Succeed</h1>
+	<p>
+		We get it. You want to build quality products that delight customers and management alike, all
+		without losing your soul or burning out with stress and overtime.
+	</p>
+	<p>
+		That’s not unrealistic, and it doesn’t have to be a fantasy.<br />
+		Keyboard Monkey working at a Feature Factory &#8230; those clichés don&#8217;t need to be your reality.
+	</p>
+	<p>
+		With our <strong>100% satisfaction, risk-free guarantee</strong>, you can expand your Scrum
+		knowledge to standout at work, get paid more, and impress your customers, all without burning
+		out.
+	</p>
+	<div>
+		<div>
+			<Image
+				decoding="async"
+				width="128"
+				height="128"
+				alt="checkmark"
+				src={assets_images_certified_scrum_developer_csd_training_noun_checkmark_870282_71D358_png}
+			/>
+		</div>
+		<div>
+			If you’re a Developer struggling to build quality and you want to know which Engineering
+			practices will help…
+		</div>
+	</div></MainLayout
+>
+<div>
+	<Image
+		decoding="async"
+		width="128"
+		height="128"
+		alt="checkmark"
+		src={assets_images_certified_scrum_developer_csd_training_noun_checkmark_870282_71D358_png}
+	/>
+</div>
+<div>
+	If you’re a QA/BA/UX person confused about your role in a team where everyone is a “Developer” …
+</div>
+
+<div>
+	<Image
+		decoding="async"
+		width="128"
+		height="128"
+		alt="checkmark"
+		src={assets_images_certified_scrum_developer_csd_training_noun_checkmark_870282_71D358_png}
+	/>
+</div>
+<div>
+	If you don’t know how you can collaborate in Scrum when you don’t even speak the other people’s
+	language…
+</div>
+
+<div>
+	<Image
+		decoding="async"
+		width="128"
+		height="128"
+		alt="checkmark"
+		src={assets_images_certified_scrum_developer_csd_training_noun_checkmark_870282_71D358_png}
+	/>
+</div>
+<div>If your team struggles with cooperation, let alone collaboration…</div>
+
+<h3><strong>… Our Certified Scrum Developer training will get you on track.</strong></h3>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="5000 testimonials"
+			src={assets_images_certified_scrum_developer_csd_training_5000_Testimonials_png}
+		/>
+	</div>
+	<div>
+		<em
+			>&#8220;Mark is an awesome instructor&#8230; definitely the Yoda of the Scrum universe.&#8221;<span>
+				&#8211; Ting-Yu Lin</span
+			></em>
+	</div>
+</div>
+<p>How many of these sound like something you’ve heard (or even said) in your workplace?</p>
+<p>
+	“We commit at the beginning of every Sprint and rarely meet that commitment by the end.&#8221;
+</p>
+<p>
+	“Our programmers say the word refactor, just before they disappear off on their own for a few
+	days. Is this what they’re supposed to do?”
+</p>
+<p>
+	“We get lost in the details and are struggling to go from User Stories to Acceptance Criteria.”
+</p>
+<p>
+	<Image
+		decoding="async"
+		alt="Certified Scrum Trainer Mark Levison"
+		width="225"
+		height="300"
+		sizes="(max-width: 225px) 100vw, 225px"
+		src={assets_images_certified_scrum_developer_csd_training_Mark_Levison_headshot_600x800_transparent_badges_225x300_png}
+		widths={[225, 600]}
+	/>Hello, I’m Mark, and I’m a recovering software developer [tongue-in-cheek]. I know your pain,
+	because I’ve either lived it myself, or I’ve helped others through it.
+</p>
+<p>
+	As a Developer, in 2001 I discovered that the general practices I was instinctively drawn to and
+	doing had a name: Agile. Since then, I’ve read hundreds of books, thousands of articles, and
+	mittfuls of academic papers, all with the purpose of figuring out what helps teams succeed. I
+	don’t teach theoretical principles. I use my decades of experience to relate directly with
+	Developers about their codebase, and can walk you through exactly how you can apply Agile to “Yes,
+	but in the real world…” situations.
+</p>
+<p>
+	Having introduced Scrum, Lean, and Agile methodology to thousands of professionals –from
+	individuals to small start-ups to major institutions and national government– I can assure you
+	that you’re not alone in your frustration, and that your concerns are valid.
+</p>
+<div>
+	<em
+		>&#8220;Mark is the real s**t. He&#8217;s lived through the pain points and knows where the
+		bodies are buried.&#8221; — Christian Farley</em>
+</div>
+
+<p>
+	You can choose between two very different types of Certified Scrum Developer training so you can
+	choose which is best suited for you. Both qualify for Scrum Alliance certification.
+</p>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="arrow icon"
+			src={assets_images_certified_scrum_developer_csd_training_noun_arrow_1144336_F1584B_png}
+		/>
+	</div>
+	<div>
+		<h2>If you’ve not written code in Java, C# or other modern programming language</h2>then our <a
+			href="#nontech"><u>Non-Technical CSD workshop</u></a
+		> is designed for your needs.
+	</div>
+</div>
+
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="arrow icon"
+			src={assets_images_certified_scrum_developer_csd_training_noun_arrow_1144336_F1584B_png}
+		/>
+	</div>
+	<div>
+		<h2>If you read the following pain points and think, yes, that’s my world,</h2> then you would benefit
+		from attending our <a href="#nontech"><u>Technical CSD training</u></a>.
+	</div>
+</div>
+
+<ul>
+	<li>What makes a good Unit Test? How do I write them?</li>
+	<li>
+		Our Unit test suites run slow. They take 20mins to run – what do we do? (We’ve helped clients
+		with hours-long test suites)
+	</li>
+	<li>I’ve heard of TDD, is it possible to practice it without a massive slow down?</li>
+	<li>
+		Our code base is a mess. How do we recover without disappearing for 6 months for a complete
+		rewrite?
+	</li>
+	<li>
+		We have lots of Unit Tests but not much to test the behaviour of our system. What do we do?
+	</li>
+</ul>
+<p>
+	<strong>Both Non-Technical and Technical Certified Scrum Developer workshops</strong> meet or exceed
+	all requirements for Scrum Alliance certification. But we won’t just be running through a list of boring
+	learning objectives. You don’t retain what you learn for long if it’s dry and theoretical so, instead,
+	you will learn and practice Scrum and Agile development techniques while building a product.
+</p>
+<p><strong>We make learning fun, and practical for your everyday work.</strong></p>
+<p>
+	The differences between the technical and non-technical workshops are outlined below, but by the
+	end of either course, you will understand all of these Agile engineering practices:
+</p>
+<p>
+	<Image
+		decoding="async"
+		alt="Agile Engineering Practices"
+		width="1207"
+		height="804"
+		sizes="(max-width: 1207px) 100vw, 1207px"
+		src={assets_images_certified_scrum_developer_csd_training_Agile_Engineering_Practices_map_small_jpg}
+		widths={[1207, 300, 1024, 768]}
+	/>
+</p>
+<p>
+	That might look intimidating now, but through the magic of high-quality Scrum training, <strong
+		>this will make sense to you. We guarantee it!</strong
+	><br />
+	<a name="nontech"> </a><br />
+	And since your learning should be immediately valuable and relevant for your daily work, we will also
+	play with AI’s (aka Large Language Models) and understand where they help and where they can harm.
+</p>
+<h2>Non-Technical Certified Scrum Developer workshop</h2>
+<p>
+	There will be no coding in this version of the course. We will spend our time together building a
+	fictional product where we’ve got just enough funding to bring our product to market. Based on
+	common, real-life scenarios, we will have a Product Owner who has created a clear product vision,
+	and we will have a product backlog. We just need to get cracking. As we practice building product,
+	we will learn what is hard. As with all our workshops, when we encounter something hard, then we
+	take the time to hands-on learn new tools to handle the situation in an effective way, so you
+	leave with practical experience and skills to help you navigate problems, and not just theoretical
+	memorization of things to earn certification.
+</p>
+<p>
+	This workshop is ideal for Business Analysts, QA, User eXperience, etc who work as a part of a
+	bigger team and will benefit from enhanced skills and practice in collaboration.
+</p>
+<p>
+	<a href="/contact-us" rel="noopener" target="_blank"
+		>Let us know if you&#8217;d like to be notified of our next Non-Technical CSD Course
+		Registration</a>
+</p>
+<h2>Technical Certified Scrum Developer workshop</h2>
+<p>
+	Code will be in both Java and .NET. In this interactive online class, we will use Github to share
+	code and exchange learnings. All code in the workshop will be either pair programmed or done
+	ensemble (aka mob) programming style. So if you’re a bit rusty, don’t worry, your teammates will
+	help.
+</p>
+<p>
+	Starting with something classically messy, we will practice taking code that is a antiquated mess
+	and bring it into a modern age. Then we will transition into building a product based on a vision
+	and starting code base that we provide. We will work together to bring our product to “market”.
+	Along the way, we will wrestle with the real challenges of dealing with legacy code, poor
+	acceptance criteria, and questions of good design.
+</p>
+<p>
+	<a href="/courses/virtual-20241015csd" rel="noopener" target="_blank"
+		>Register Now for our next Technical CSD Course Registration</a>
+</p>
+<div>
+	<a href="/courses/virtual-20241015csd"></a>
+	<div>
+		<div>October 15-18</div>
+		<div>Technical</div>
+		<div>Discounts Available</div>
+	</div>
+</div>
+<p></p>

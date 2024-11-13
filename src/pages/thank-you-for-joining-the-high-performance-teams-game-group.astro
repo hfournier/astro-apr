@@ -1,0 +1,41 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 13127
+const title = "Thank you for joining the High-Performance Teams Game group"
+const description =
+	"Thank you for playing the High-Performance Teams Game and subscribing to learn more about Scrum and building High-Performance Teams. You should see a confirmation email in your Inbox shortly. If you don't, please let us know. Periodically, you will receive emails with general Scrum information and tips, and we may occcasionally ask if you'd be ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-08-27T17:28:52")
+const modifiedAt = new Date("2023-05-24T17:12:21")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for playing the High-Performance Teams Game and subscribing to learn more about Scrum
+		and building High-Performance Teams.
+	</p>
+	<p>
+		You should see a confirmation email in your Inbox shortly. If you don&#8217;t, <a
+			href="/contact-us">please let us know</a
+		>.
+	</p>
+	<p>
+		Periodically, you will receive emails with general Scrum information and tips, and we may
+		occcasionally ask if you&#8217;d be willing to give feedback on the Game so we can continue to
+		improve it as a resource for everyone interested in learning how to practive Scrum well. Please
+		consider whitelisting us so these emails don&#8217;t end up in your Junk filter. We HATE spam,
+		and will not share your information with anyone.
+	</p>
+	<p>
+		If you ever feel that you&#8217;re not getting value from these emails, you can unsubscribe at
+		any time, but we would be grateful if you&#8217;d first let us know what kind of information
+		you&#8217;d like to get, so we can continue to improve.
+	</p>
+	<p>Cheers!</p>
+</MainLayout>

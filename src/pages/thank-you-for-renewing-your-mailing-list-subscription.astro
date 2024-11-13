@@ -1,0 +1,36 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 12807
+const title = "Thank you for renewing your mailing list subscription"
+const description =
+	"Thank you for indicating that you want to remain on the Agile Pain Relief mailing list and continue to read our newsletters. We welcome your questions and suggestions for upcoming newsletter topics that would help you. Should you ever decide that you want to cancel or change your subsciption to our mailings, please use the ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-06-25T15:47:46")
+const modifiedAt = new Date("2023-05-24T17:12:22")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for indicating that you want to remain on the Agile Pain Relief mailing list and
+		continue to read our newsletters.
+	</p>
+	<p>
+		We welcome your questions and suggestions for upcoming newsletter topics that would help you.
+	</p>
+	<p>
+		Should you ever decide that you want to cancel or change your subsciption to our mailings, <strong
+			><em>please</em></strong
+		> use the unsubscribe button at the bottom of any email, or reply to the email and let us know your
+		needs have changed. We will happily honour and respect your decision, and update our records. <em
+			>Please</em
+		> don&#8217;t just hit the &#8220;mark as spam&#8221; button in your email program, as that will
+		make it harder for us to continue to send to people who want the newsletters, without it ending up
+		incorrectly blocked by junk filters.
+	</p>
+</MainLayout>

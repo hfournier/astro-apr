@@ -1,0 +1,40 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 14671
+const title =
+	"Thank you for joining the Agile Pain Relief mailing list and getting your copy of A Jargon-Free Introduction to Scrum"
+const description =
+	"Thank you for subscribing to the Agile Pain Relief newsletter and taking advantage of our offer for a free copy of A Jargon-Free Introduction to Scrum.  You will receive an email with the download link, but we'll put it here too, for your convenience: CLICK TO DOWNLOAD YOUR COPY As an extra bonus, you will ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2023-01-19T18:29:18")
+const modifiedAt = new Date("2023-05-24T17:12:21")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for subscribing to the Agile Pain Relief newsletter and taking advantage of our offer
+		for a free copy of <em>A Jargon-Free Introduction to Scrum</em>. You will receive an email with
+		the download link, but we&#8217;ll put it here too, for your convenience:
+	</p>
+	<p>
+		<a
+			href="https://drive.google.com/file/d/1H_kNJZw-auw3BKPHSAB5kZmwbmhmB-v6/view?usp=sharing"
+			target="_blank"
+			rel="noopener">CLICK TO DOWNLOAD YOUR COPY</a>
+	</p>
+	<p>
+		As an extra bonus, you will also receive a short series of follow-up support emails to help you
+		implement what you learn. The first email will arrive in roughly four days, and then subsequent
+		emails in the series will arrive once a week. Please consider whitelisting us in your email
+		client to ensure they don&#8217;t end up in your Spam folder. Please consider whitelisting us in
+		your email client to ensure it doesn&#8217;t end up in your Spam folder.
+	</p>
+	<p>Stay well,</p>
+	<p>Mark and the APR Team</p>
+</MainLayout>

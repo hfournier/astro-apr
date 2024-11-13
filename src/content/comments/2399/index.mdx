@@ -1,0 +1,16 @@
+---
+wpId: 2399
+createdAt: 2020-11-19T20:42:21
+parentId: 2243
+postId: 8399
+status: approved
+type: comment
+author: mark-levison
+---
+
+Thao – interesting. I think all the options can make sense in different circumstances:
+
+*   Roll back to a previous known good version – advantage immediately mitigates the problem; you can sleep tonight and not stress
+*   Keep the current version in production – advantage people don’t lose access to new features
+
+My leaning, keep deployments small – once a day (or more frequent), at most once a Sprint. Then rollbacks are lower cost, because less is being taken out of production. This also has the advantage that each deployment is less risky. In that case I would only leave minor defects live in production.

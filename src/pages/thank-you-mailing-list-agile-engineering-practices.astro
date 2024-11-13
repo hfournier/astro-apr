@@ -1,0 +1,37 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 14402
+const title =
+	"Thank you for joining the Agile Pain Relief mailing list – Agile Engineering Practices and Their Effects offer"
+const description =
+	"Thank you for subscribing to the Agile Pain Relief newsletter and taking advantage of our offer for a free copy of the Agile Engineering Practices and Their Effects Cheat Sheet.  You will receive an email with the download link, but we'll put it here too, for your convenience: CLICK TO DOWNLOAD YOUR COPY Please consider ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2022-10-06T17:50:15")
+const modifiedAt = new Date("2023-05-24T17:12:20")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for subscribing to the Agile Pain Relief newsletter and taking advantage of our offer
+		for a free copy of the Agile Engineering Practices and Their Effects Cheat Sheet. You will
+		receive an email with the download link, but we&#8217;ll put it here too, for your convenience:
+	</p>
+	<p>
+		<a
+			href="https://drip.la/c/eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZXRvdXIiLCJpc3MiOiJtb25vbGl0aCIsInN1YiI6ImRldG91cl9saW5rIiwiaWF0IjoxNjY1MDc4NTMyLCJuYmYiOjE2NjUwNzg1MzIsImFjY291bnRfaWQiOiI3MTQ1ODEyIiwidHJpZ2dlcl9pZCI6IjcwMTA1MDg0OCIsImR5bmFtaWNfdXJsIjpudWxsLCJ1cmwiOiJodHRwczovL2RyaXZlLmdvb2dsZS5jb20vZmlsZS9kLzFvZzliZlhadThsUU8wdFI1SDk3dHZmcE9ITkJjMlh3cS92aWV3P3VzcD1zaGFyaW5nIn0.VR9ok_b6eKZRBgvRPvAi6w2WSjkknggQnLSc7QGjk0k"
+			target="_blank"
+			rel="noopener">CLICK TO DOWNLOAD YOUR COPY</a>
+	</p>
+	<p>
+		Please consider whitelisting us in your email client to ensure it doesn&#8217;t end up in your
+		Spam folder.
+	</p>
+	<p>Stay well,</p>
+	<p>Mark and the APR Team</p>
+</MainLayout>

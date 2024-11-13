@@ -1,0 +1,283 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_building_high_performance_organizations_game_High_Performing_Organizations_Game_Board_small_jpg from "@assets/images/building-high-performance-organizations-game/High-Performing-Organizations-Game-Board-small.jpg"
+import assets_images_building_high_performance_organizations_game_meeting_13_300x300_1_jpg from "@assets/images/building-high-performance-organizations-game/meeting_13-300x300-1.jpg"
+
+const wpId = 10635
+const title = "Building High-Performance Organizations Game"
+const description =
+	'"Beyond Scrum: Building High-Performance Organizations – a game for Managers, ScrumMasters and Product Owners" v1.2 is a board game that builds on the success of the previous "Building High-Performance Teams Game." Where the previous game focused on building high-performance Teams and the tradeoffs between delivering value and improving productivity, this new game focuses on building ...'
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-02-19T06:53:34")
+const modifiedAt = new Date("2023-05-24T17:10:42")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		&#8220;Beyond Scrum: Building High-Performance Organizations – a game for Managers, ScrumMasters
+		and Product Owners&#8221; v1.2 is a board game that builds on the success of the previous
+		&#8220;<a href="/blog/welcome-to-the-high-performance-teams-game.html"
+			>Building High-Performance Teams Game.</a
+		>&#8221;
+	</p>
+	<div>
+		<div>
+			<p>
+				<iframe
+					title="Building high performance organizations"
+					src="https://www.slideshare.net/slideshow/embed_code/key/biU4qXBaSpb48S"
+					width="427"
+					height="356"
+					frameborder="0"
+					marginwidth="0"
+					marginheight="0"
+					scrolling="no"
+					allowfullscreen>
+				</iframe>
+			</p>
+			<div>
+				<strong>
+					<a
+						href="https://www.slideshare.net/mlevison/building-high-performance-organizations-92180159"
+						title="Building high performance organizations"
+						target="_blank">Building high performance organizations</a
+					>
+				</strong> from <strong
+					><a href="https://www.slideshare.net/mlevison" target="_blank">Mark Levison, CST</a
+					></strong
+				>
+			</div>
+		</div>
+	</div>
+	<p>
+		Where the previous game focused on building high-performance Teams and the tradeoffs between
+		delivering value and improving productivity, this new game focuses on building high-performance
+		Organizations, and explores options for an Organization to understand itself and the current
+		state of the work, and then bring about real, ongoing change.
+	</p>
+	<h3>Game Style:</h3>
+	<p>
+		Board Game with a simple Portfolio Kanban board as our playing surface. The playing cards are
+		Kanban cards that represent our Product Backlog, as well as other cards that represent
+		personalities and challenges that Organizations must navigate.
+	</p>
+	<p>
+		<Image
+			decoding="async"
+			alt="Building High-Performing Organizations Game - by Agile Pain Relief Consulting"
+			width="600"
+			height="273"
+			sizes="(max-width: 600px) 100vw, 600px"
+			src={assets_images_building_high_performance_organizations_game_High_Performing_Organizations_Game_Board_small_jpg}
+			widths={[600, 300]}
+		/>
+	</p>
+	<h3>Game Tables:</h3>
+	<p>Each table represents one Organization that is trying to improve.</p>
+	<p>
+		The players on each team take on the roles of Senior Management, the ScrumMaster, and Product
+		Owner. Each table starts off with one Scrum team represented and several Managers, and may
+		expect through game play to add additional teams. Anywhere from 4-9 players. Effectively they
+		compose an Organizational Improvement Team.
+	</p>
+	<p>
+		Each player receives a role description that explains the character that they should play. Real
+		companies have politics, and people often have competing agendas – the player Personas will help
+		simulate that.
+	</p>
+	<p>
+		Play focuses on the challenges faced in any modern mid to large-sized company attempting to be
+		Agile, such as:
+	</p>
+	<ul>
+		<li>Short-term client demands and weathervaning executives</li>
+		<li>Belief that if we just demand that the teams work harder, they can and will</li>
+		<li>Production support issues</li>
+		<li>Regression problems</li>
+		<li>Fundamental misunderstandings of Agile by the executives</li>
+		<li>Features delivered that don’t satisfy customers</li>
+	</ul>
+	<p>
+		The game is won, not by producing the most features, but by delighting customers. In this case
+		customer happiness is determined by whether or not they pay you for the features you produce.
+		Oh, and try not to go bankrupt.
+	</p>
+	<p>
+		Players learn much about <a href="/blog/kanban-portfolio-view.html">Portfolio Kanban</a> and <a
+			href="/blog/portfolio-management.html">Portfolio Management</a
+		>. They also get an introduction to Systems Thinking, and <a
+			href="/blog/taking-organizational-improvement-with-scrum-seriously.html"
+			>Organizational Improvement</a
+		>. As a result, they have an introduction as to what it will take to grow their Organization’s
+		performance. The game is backed by the series of blog posts Mark has been writing: <a
+			href="/blog/scrum-alone-is-not-enough.html">Scrum Alone is Not Enough</a
+		>.
+	</p>
+	<h3>Mechanics:</h3>
+	<p>
+		This is a budget-based game – in any round the players can invest in Stories, Improvements for
+		their team, or Improvements for all teams. In each round, the Organizational Improvement team
+		will gain access to a growing list of tools (some good, some bad) to help ‘fix’ the problems
+		that come up.
+	</p>
+	<h3>The Results:</h3>
+	<p>
+		This game has been played at ScrumGathering.ca 2018, GOAT15, ScrumGathering Orlando 2016, and
+		numerous private client events. Along with a lot of laughter from all participants, several
+		discoveries and feedback comments have been made:
+	</p>
+	<ul>
+		<li>
+			One team went bankrupt, and others saw the importance of building things to build resilience
+			early (e.g. cross-skilling, walking the Portfolio Kanban with the team).
+		</li>
+		<li>It was noted that personalities have a huge effect on the productivity of meetings!</li>
+		<li>
+			The initial rule of rolling dice for how much work your team achieved in a round added
+			complication without a lot of extra value. We&#8217;ve revised the game to have a simpler
+			version, and moved this feature to an advanced section.
+		</li>
+		<li>
+			It was suggested that we make it more clear in the rules sheet that you only start the game
+			with one team &#8211; which we&#8217;ve now done.
+		</li>
+		<li>
+			Some suggested that the game cards should show only the mechanical effects and not explain the
+			why, instead leaving that to the accompanying notes and game discussion. We&#8217;ll consider
+			this for future versions.
+		</li>
+		<li>
+			In the presentation, showing the areas of the Kanban board being used would have helped make
+			clear which part was being referred to.
+		</li>
+	</ul>
+	<p>
+		Thanks to everyone who has played the game and given feedback so far. Your input will influence
+		the game&#8217;s future.
+	</p>
+	<h3>
+		<Image
+			decoding="async"
+			alt="Meeting - image designed by Freepik"
+			width="300"
+			height="300"
+			sizes="(max-width: 300px) 100vw, 300px"
+			src={assets_images_building_high_performance_organizations_game_meeting_13_300x300_1_jpg}
+			widths={[300, 150]}
+		/>We&#8217;d Love Your Feedback
+	</h3>
+	<p>
+		We invite you to <span
+			><strong
+				><a
+					href="https://www.dropbox.com/sh/tix67rrzry8mqek/AACAZ_DdsiR4eTZVRmPHhDMpa?dl=0"
+					target="_blank"
+					rel="noopener noreferrer">download the game materials here</a
+				></strong
+			></span
+		> and try it with your own team.
+	</p>
+	<p>
+		Please let us know your comments and suggestions, so we can consider them for future
+		improvements. And send us a photo of your team playing the game!
+	</p>
+	<h3>Related Reference Links</h3>
+	<p>
+		<span
+			>Map your Kanban wall &#8211; Mark hinted during the game that it would take some time and
+			effort to map your wall. This video and accompanying text explain how:</span>
+	</p>
+	<ul>
+		<li>
+			<a
+				href="https://blog.planview.com/6-benefits-of-kanban-for-project-management/"
+				target="_blank"
+				rel="noopener noreferrer">Map Your Current process with Kanban</a>
+		</li>
+	</ul>
+	<p>
+		<span
+			>Prosocial bonuses &#8211; the alternative to team bonuses that we tried in the game:</span>
+	</p>
+	<ul>
+		<li>
+			A summary of Prosocial Bonuses &#8211; <a
+				href="https://www.bloomberg.com/news/articles/2013-05-15/the-best-bonus-is-one-you-cant-spend-on-yourself"
+				target="_blank"
+				rel="noopener noreferrer">The Best Bonus Is One You Can&#8217;t Spend on Yourself</a>
+		</li>
+		<li>
+			The original paper &#8211; <a
+				href="https://www.hbs.edu/faculty/Pages/item.aspx?num=44800"
+				target="_blank"
+				rel="noopener noreferrer"
+				>Prosocial Bonuses Increase Employee Satisfaction and Team Performance<br />
+			</a>
+		</li>
+	</ul>
+	<p>More reference material from discussions during game play:</p>
+	<ul>
+		<li>
+			<a
+				href="https://www.broadcom.com/products/software/value-stream-management/rally"
+				target="_blank"
+				rel="noopener noreferrer">How Rally Does Strategy Deployment</a>
+		</li>
+		<li>
+			<a
+				href="https://www.infoq.com/news/2014/11/agile-hoshin-kanri/"
+				target="_blank"
+				rel="noopener noreferrer">Agile at Scale with Hoshin Kanri</a>
+		</li>
+		<li>
+			<a
+				href="https://www.slideshare.net/kjscotland/strategy-deployment-the-secret-sauce-for-enterprise-agility-50316137?qid=6ac018d8-b135-45fa-b4b0-b7fd73819830&v=default&b=&from_search=1"
+				target="_blank"
+				rel="noopener noreferrer">Strategy Deployment: the Secret Sauce for Enterprise Agility</a>
+		</li>
+		<li>
+			<a
+				href="https://availagility.co.uk/2015/07/31/kanban-deployment-with-the-x-matrix/"
+				target="_blank"
+				rel="noopener noreferrer">Kanban Deployment with the X-Matrix</a>
+		</li>
+		<li>
+			<a
+				href="https://www.broadcom.com/products/software/value-stream-management/rally"
+				target="_blank"
+				rel="noopener noreferrer">How Rally Does Annual and Quarterly Planning</a>
+		</li>
+	</ul>
+	<p><span>Additional References:</span></p>
+	<ul>
+		<li>
+			Lean UX: <a href="/product-owner-resources-and-references#usability"
+				>https://agilepainrelief.com/product-owner-resources-and-references#usability</a>
+		</li>
+		<li>
+			Kanban: <a href="/scrummaster-resources-and-references#kanban"
+				>https://agilepainrelief.com/scrummaster-resources-and-references#kanban</a>
+		</li>
+		<li>
+			Prosocial Bonuses: <a href="/scrummaster-resources-and-references#pay-for-performance"
+				>https://agilepainrelief.com/scrummaster-resources-and-references#pay-for-performance</a>
+		</li>
+		<li>
+			Portfolio Management: <a href="/scrummaster-resources-and-references#portfolio-management"
+				>https://agilepainrelief.com/scrummaster-resources-and-references#portfolio-management</a>
+		</li>
+	</ul>
+	<div>
+		First two images by Agile Pain Relief Consulting. Third image <a
+			href="https://www.freepik.com/premium-vector/business-group-meeting_723250.htm"
+			>designed by Freepik</a
+		>.
+	</div>
+</MainLayout>

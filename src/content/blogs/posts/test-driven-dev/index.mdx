@@ -1,0 +1,61 @@
+---
+wpId: 182
+title: 'Test Driven Development vs "Plain Old Unit Testing"'
+description: 'Responding to ''Test Driven Development considered harmful.'' The primary benefits of TTD are simplified design, cleaner APIs, decoupling, and reduced bugs.'
+type: post
+createdAt: 2008-02-24T10:31:26
+modifiedAt: 2022-04-04T03:57:05
+author: mark-levison
+categories:
+  - tdd
+tags:
+  - test-driven-development
+  - unit-testing
+featuredMedia:
+  id: 10463
+  src: "lighthouse-and-a-boat-xs.jpg"
+  alt: "Lighthouse and a boat- image licensed from Photodune"
+  caption: ""
+---
+
+import { Image } from "astro:assets"
+
+import colo_lighthouse_and_a_boat_xs_jpg from "lighthouse-and-a-boat-xs.jpg";
+
+
+<Image decoding="async" alt="Lighthouse and a boat- image licensed from Photodune" width="548" height="365" sizes="(max-width: 548px) 100vw, 548px" src={colo_lighthouse_and_a_boat_xs_jpg} widths={[548, 300]} />  
+Scruffy Looking Cat Herder (aka Jacob Proffitt) recently wrote Test Driven Development considered harmful. Jacob is writing about why he believes that TDD zealots have caused people to skip unit testing altogether. I allege that Jacob is missing the boat here.
+
+The gist of Jacob’s hypothesis has five points which I summarize:
+
+1.  Unit testing provides benefits when used regularly.
+2.  _Ensuring that developers write unit tests is the prime benefit of test driven development._
+3.  Most unit test advocates are also TDD proponents.
+4.  Looking for information on Unit Testing? You’re most likely to find a piece encouraging you to test first.
+5.  _Many developers skip Unit Testing altogether because TDD seemed too hard or too much of a change._
+
+Jacob starts off by assuming one and two proven and so moves on a lengthy demonstration that the most important mentions of Unit Testing in Google have some discussion of Test Driven Development. I will grant Jacob points three and four. Although in part I would expect this to be true since Unit Testing and Test Driven Development come from the Smalltalk community which invented both concepts. We have Kent Beck to thank for writing the earliest frameworks and also the seminal book on [Test Driven Development](https://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FTest-Driven-Development-Addison-Wesley-Signature%2Fdp%2F0321146530%3Fie%3DUTF8%26s%3Dbooks%26qid%3D1196457674%26sr%3D8-6). So they get mentioned together because they were invented together.
+
+The most important fallacy of Jacob’s writing is to assume that TDD is merely about forcing test case to written. TDD is about:
+
+*   Simplifying design
+*   Writing cleaner API’s
+*   Decoupling
+*   Reducing the number of bugs written right at the start.
+*   Thinking about how the caller will see and use your code.
+
+In addition Jacob says that TDD is harder than “Plain Old Unit Testing”. Perhaps, at first as the developer learns TDD, it will be harder but not over the length of a reasonable sized project.
+
+I’ve been on projects where we tried to write all of our tests after the classes were written. Our test suite was valuable and prevented many regressions. But it allowed many issues to slip through. Weaker elements in API’s were often missed and were changed only at a later date at some expense. Tightly coupled code was allowed to evolve making some elements of the application very difficult to test without having to create dozens of other (often unnecessary) objects. As a result of all this it became more difficult to write test cases over time. Would TDD have solved all of these problems? Perhaps not but it would have forced us to confront many of them sooner.
+
+Unlike Jacob I’ve encountered very few people who avoid TDD because they think it’s too hard. Instead the objections I’ve heard are:
+
+*   “I don’t understand the benefits”
+*   “I don’t believe all the claims I’ve heard”
+*   “TDD won’t work for my project because we build XXX” (Where XXX is your favorite specialized application type: GUI, Web Apps, …)
+
+My suggestion to anyone who tells me it won’t work: Find a mentor; Commit to trying for at least two months. At the end of that time if it still doesn’t work for you then so be it.
+
+Have you been scared off from TDD by the amount of work you believe will be involved with trying to adopt it? Have you been scared off Unit Testing by TDD zealots (such as myself :-)) Have you encountered other reasons that people use for avoiding TDD?
+
+Image via: [https://photodune.net/](https://photodune.net/)

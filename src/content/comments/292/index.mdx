@@ -1,0 +1,25 @@
+---
+wpId: 292
+createdAt: 2008-07-28T13:12:23
+parentId: 0
+postId: 173
+status: approved
+type: comment
+author:
+  avatar_urls:
+    - "24": "https://secure.gravatar.com/avatar/115a08f182bb95239c8822b54b5c4235?s=24&d=mm&r=g"
+    - "48": "https://secure.gravatar.com/avatar/115a08f182bb95239c8822b54b5c4235?s=48&d=mm&r=g"
+    - "96": "https://secure.gravatar.com/avatar/115a08f182bb95239c8822b54b5c4235?s=96&d=mm&r=g"
+  name: Mark Levison
+  url: https://agilepainrelief.com/
+---
+
+Tim – I would be interested in knowing more about your experience with foreach.
+
+Have you disassembled the foreach loop to see how its byte code differs from regular for loops? What additional instructions are there? Have you written tests that time the two variety of loops? Would you share those timings. What JVM version are you working with?
+
+I’ve never encountered a situation where the foreach loop was slower in anyway that I can measure. Hence my interest in your findings.
+
+In addition I’m certain that modern compilers and JVM’s can make much better decisions about loop unrolling than I can.
+
+Finally I assume that you’re doing these optimisations in code that has already proven to be bottleneck.

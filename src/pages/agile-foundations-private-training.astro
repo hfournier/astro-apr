@@ -1,0 +1,116 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_agile_foundations_private_training_shutterstock_1080263000_300x200_jpg from "@assets/images/agile-foundations-private-training/shutterstock_1080263000-300x200.jpg"
+import assets_images_agile_foundations_private_training_shutterstock_1626893599_300x178_jpg from "@assets/images/agile-foundations-private-training/shutterstock_1626893599-300x178.jpg"
+
+const wpId = 12922
+const title = "Agile Foundations Private Training"
+const description =
+	"How do you make your organization more Agile? We understand that it can be difficult to know where to begin, but we're here to help. It's normal to be confused at the beginning, especially when you hear lots of buzzwords – Scrum; Agile; Kanban; SAFe; TDD; Sprints – and you don't know where they all ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-08-18T16:48:44")
+const modifiedAt = new Date("2023-05-24T17:10:41")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<h2>How do you make your organization more Agile?</h2>
+	<p>
+		We understand that it can be difficult to know where to begin, but we’re here to help. It’s
+		normal to be confused at the beginning, especially when you hear lots of buzzwords – Scrum;
+		Agile; Kanban; SAFe; TDD; Sprints – and you don’t know where they all fit in or what is best for
+		your group.
+	</p>
+	<p>
+		<Image
+			decoding="async"
+			alt="TODO: update alt text"
+			width="300"
+			height="200"
+			sizes="(max-width: 300px) 100vw, 300px"
+			src={assets_images_agile_foundations_private_training_shutterstock_1080263000_300x200_jpg}
+			widths={[300, 1024, 768, 1536, 1739]}
+		/>
+	</p>
+	<p>
+		Are some of your people resistant to change? Or maybe you have team members with differing
+		levels of experience.
+	</p>
+	<h4>
+		If your group has been trying to practice Agile for years, with disappointing and frustrating
+		results, you’re not alone.
+	</h4>
+	<p>
+		Adopting Agile is hard enough to start with. Trying to do it while dealing with regulations and
+		or the mess dealt to us by COVID is a whole new level of hard.
+	</p>
+	<p>
+		While the details of your situation are unique to you, the core challenges probably aren’t.
+		Getting everyone on board and working well together toward being more productive and better able
+		to adapt to change (pandemic, anyone?) requires a solid foundation and understanding. It’s the
+		best way to make change easy – not scary – and have everyone feel invested and engaged in the
+		process – not like it was forced on them. And, like all foundations, starting off right will
+		give you the greatest advantage for success.
+	</p>
+	<p>
+		Mark’s experience shines through when he “walks the walk” with practical, relatable information
+		born from more than twenty years of experience doing Agile. He doesn’t stand at the front of a
+		room (or, in the case of virtual, in front of a camera) and teach people. Mark uses discussion
+		and collaborative exercises to help attendees practice how to take a product from vision right
+		through to completion and delivery, and deal effectively with challenges along the way by using
+		Agile concepts. All our workshops are run using a Scrum-like approach, so you get to experience
+		what it feels like to be part of a Scrum team from the moment we start.
+	</p>
+	<p>
+		<a href="/wp-content/uploads/2020/06/shutterstock_1626893599.jpg"
+			><Image
+				decoding="async"
+				alt="Scrum Team using sticky notes on wall"
+				width="401"
+				height="238"
+				sizes="(max-width: 401px) 100vw, 401px"
+				src={assets_images_agile_foundations_private_training_shutterstock_1626893599_300x178_jpg}
+				widths={[300, 560]}
+			/></a
+		>Your team members will learn how Agile can be applied to their own work and make it easier and
+		more productive, and how to craft their own process unique to their situation instead of just
+		reluctantly going through the motions. And because a learner’s journey isn’t complete at the end
+		of a training workshop, we provide additional resources to ensure that they have the confidence
+		to put their new skills and understanding into action so they can immediately start to see
+		benefits.
+	</p>
+	<p>
+		If you’d like to discuss how we can help your organization become Agile, we’d be happy to
+		schedule a no-obligation, free phone consultation with Mark, then provide you with a detailed
+		proposal charting an action plan specific for your group’s needs. We’ll also include helpful
+		resources that you can access and start to implement, whether you decide to book training or
+		not.
+	</p>
+	<p>
+		We get it, change is scary and, if done wrong, can be very costly. We will help you implement
+		change effectively, from the foundation up, so you receive the greatest return on that
+		investment. Contact us today through <a href="mailto:contact@agilepainrelief.com">email</a> or the
+		form below to discuss private training options. Please provide as many details as possible about
+		your individual situation, so we can be best equipped to address your enquiry efficiently.
+	</p>
+	<noscript> Notice: JavaScript is required for this content.</noscript>
+	<div
+		id="nf-form-3-cont"
+		aria-live="polite"
+		aria-labelledby="nf-form-title-3"
+		aria-describedby="nf-form-errors-3"
+		role="form">
+	</div>
+	<!-- That data is being printed as a workaround to page builders reordering the order of the scripts loaded-->
+	<pre>
+<code>
+<script>var formDisplay=1;var nfForms=nfForms||[];var form=[];form.id='3';form.settings={"objectType":"Form Setting","editActive":true,"title":"Private Training Contact Form","show_title":0,"allow_public_link":0,"embed_form":"","clear_complete":1,"hide_complete":1,"default_label_pos":"above","wrapper_class":"","element_class":"","key":"","add_submit":1,"changeEmailErrorMsg":"Please enter a valid email address!","changeDateErrorMsg":"Please enter a valid date!","confirmFieldErrorMsg":"These fields must match!","fieldNumberNumMinError":"Number Min Error","fieldNumberNumMaxError":"Number Max Error","fieldNumberIncrementBy":"Please increment by ","formErrorsCorrectErrors":"Please correct errors before submitting this form.","validateRequiredField":"This is a required field.","honeypotHoneypotError":"Honeypot Error","fieldsMarkedRequired":"Fields marked with an <span class=\"ninja-forms-req-symbol\">*<\/span> are required","currency":"","unique_field_error":"A form with this value has already been submitted.","logged_in":false,"not_logged_in_msg":"","sub_limit_msg":"The form has reached its submission limit.","calculations":[],"formContentData":["email_1582908235131","firstname_1582908239337","organization_1583271160939","where_are_you_located_1583271206512","approximately_how_many_people_1583271234745","what_would_you_like_information_about_1583271257712","submit_1582909499817","spam_1582913135933"],"drawerDisabled":false,"ninjaForms":"Ninja Forms","fieldTextareaRTEInsertLink":"Insert Link","fieldTextareaRTEInsertMedia":"Insert Media","fieldTextareaRTESelectAFile":"Select a file","formHoneypot":"If you are a human seeing this field, please leave it empty.","fileUploadOldCodeFileUploadInProgress":"File Upload in Progress.","fileUploadOldCodeFileUpload":"FILE UPLOAD","currencySymbol":false,"thousands_sep":",","decimal_point":".","siteLocale":"en_US","dateFormat":"m\/d\/Y","startOfWeek":"0","of":"of","previousMonth":"Previous Month","nextMonth":"Next Month","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekdaysMin":["Su","Mo","Tu","We","Th","Fr","Sa"],"recaptchaConsentMissing":"reCaptcha validation couldn&#039;t load.","recaptchaMissingCookie":"reCaptcha v3 validation couldn&#039;t load the cookie needed to submit the form.","recaptchaConsentEvent":"Accept reCaptcha cookies before sending the form.","currency_symbol":"","beforeForm":"","beforeFields":"","afterFields":"","afterForm":""};form.fields=[{"objectType":"Field","objectDomain":"fields","editActive":false,"order":1,"label":"Email","type":"email","key":"email_1582908235131","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","custom_name_attribute":"email","personally_identifiable":1,"value":"","drawerDisabled":"","field_label":"Email","field_key":"email_1582908235131","id":15,"beforeField":"","afterField":"","parentType":"email","element_templates":["email","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":2,"label":"First Name","type":"firstname","key":"firstname_1582908239337","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","admin_label":"","help_text":"","custom_name_attribute":"fname","personally_identifiable":1,"value":"","drawerDisabled":"","field_label":"First Name","field_key":"firstname_1582908239337","id":16,"beforeField":"","afterField":"","parentType":"firstname","element_templates":["firstname","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":3,"type":"textbox","label":"Organization","key":"organization_1583271160939","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":false,"admin_label":"","help_text":"","mask":"","custom_mask":"","custom_name_attribute":"","personally_identifiable":"","value":"","id":21,"beforeField":"","afterField":"","parentType":"textbox","element_templates":["textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":4,"type":"city","label":"Where are you located?","key":"where_are_you_located_1583271206512","label_pos":"above","required":0,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":false,"admin_label":"","help_text":"","mask":"","custom_mask":"","custom_name_attribute":"city","personally_identifiable":"","value":"","id":22,"beforeField":"","afterField":"","parentType":"city","element_templates":["city","textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":5,"type":"textbox","label":"Approximately how many people?","key":"approximately_how_many_people_1583271234745","label_pos":"above","required":false,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":false,"admin_label":"","help_text":"","mask":"","custom_mask":"","custom_name_attribute":"","personally_identifiable":"","value":"","drawerDisabled":false,"id":23,"beforeField":"","afterField":"","parentType":"textbox","element_templates":["textbox","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":6,"type":"textarea","label":"What would you like information about?","key":"what_would_you_like_information_about_1583271257712","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":false,"admin_label":"","help_text":"","textarea_rte":"","disable_rte_mobile":"","textarea_media":"","value":"","drawerDisabled":false,"id":24,"beforeField":"","afterField":"","parentType":"textarea","element_templates":["textarea","input"],"old_classname":"","wrap_template":"wrap"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":7,"label":"Submit","type":"submit","processing_label":"Processing","container_class":"","element_class":"","key":"submit_1582909499817","field_label":"Submit","field_key":"submit_1582909499817","id":19,"beforeField":"","afterField":"","value":"","label_pos":"above","parentType":"textbox","element_templates":["submit","button","input"],"old_classname":"","wrap_template":"wrap-no-label"},{"objectType":"Field","objectDomain":"fields","editActive":false,"order":8,"type":"spam","label":"Anti-Spam: What is half of 6?","key":"spam_1582913135933","label_pos":"above","required":1,"default":"","placeholder":"","container_class":"","element_class":"","input_limit":"","input_limit_type":"characters","input_limit_msg":"Character(s) left","manual_key":1,"admin_label":"","help_text":"","spam_answer":3,"value":"","drawerDisabled":"","field_label":"Anti-Spam: What is half of 6?","field_key":"spam_1582913135933","id":20,"beforeField":"","afterField":"","parentType":"spam","element_templates":["textbox","input"],"old_classname":"","wrap_template":"wrap"}];nfForms.push(form);</script>
+</code>
+</pre>
+</MainLayout>

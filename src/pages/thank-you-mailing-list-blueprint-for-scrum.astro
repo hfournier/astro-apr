@@ -1,0 +1,27 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 15836
+const title = "Thank you for joining the Agile Pain Relief mailing list – Blueprint for Scrum offer"
+const description =
+	"Thank you for your interest in the Blueprint for Scrum. We will keep you notified of the offering. Please click on the confirmation email in your Inbox (or spam filter) to ensure that you receive the Blueprint for Scrum when it is available. You will also be subscribed to our Agile Pain Relief newsletter. You ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2023-12-14T17:25:06")
+const modifiedAt = new Date("2024-06-03T20:27:39")
+const author = "heather-uhlagilepainrelief-com"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for your interest in the <em>Blueprint for Scrum.</em> We will keep you notified of the
+		offering. Please click on the confirmation email in your Inbox (or spam filter) to ensure that you
+		receive the Blueprint for Scrum when it is available. You will also be subscribed to our Agile Pain
+		Relief newsletter. You can opt out anytime by simply unsubscribing.
+	</p>
+	<p>Stay well,</p>
+	<p>Mark and the APR Team</p>
+</MainLayout>

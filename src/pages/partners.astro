@@ -1,0 +1,166 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_partners_Partner_Page___Grow_Lean_1024x172_jpg from "@assets/images/partners/Partner_Page_-_Grow_Lean-1024x172.jpg"
+import assets_images_partners_Partner_Page___LeanKit_300x72_jpg from "@assets/images/partners/Partner_Page_-_LeanKit-300x72.jpg"
+import assets_images_partners_Partner_Page___ProCognita_300x67_png from "@assets/images/partners/Partner_Page_-_ProCognita-300x67.png"
+import assets_images_partners_Partner_Page___Project_Brilliant_300x103_jpg from "@assets/images/partners/Partner_Page_-_Project_Brilliant-300x103.jpg"
+import assets_images_partners_Partner_Page___Scrum_With_Style_300x105_jpg from "@assets/images/partners/Partner_Page_-_Scrum_With_Style-300x105.jpg"
+import assets_images_partners_Partner_Page___Source_Cell_300x88_jpg from "@assets/images/partners/Partner_Page_-_Source_Cell-300x88.jpg"
+
+const wpId = 50
+const title = "Partners"
+const description =
+	"We're pleased to partner with other consultants and companies. Grow-Lean LLC provides agile services to assist individuals, teams and organizations in their agile journey. As our company name implies, we grow your capabilities and help you stay lean. We offer training and coaching services throughout the United States. LeanKit is recognized by the Agile and Lean IT ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2019-09-13T05:46:38")
+const modifiedAt = new Date("2023-05-24T17:11:10")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>We’re pleased to partner with other consultants and companies.</p>
+	<p>
+		<a href="https://www.grow-lean.com/"
+			><Image
+				decoding="async"
+				alt="Grow Lean logo"
+				width="250"
+				height="42"
+				sizes="(max-width: 250px) 100vw, 250px"
+				src={assets_images_partners_Partner_Page___Grow_Lean_1024x172_jpg}
+				widths={[1024, 300, 768, 1274]}
+			/></a
+		><a href="https://www.grow-lean.com/" target="_blank" rel="noopener noreferrer">Grow-Lean LLC</a
+		> provides agile services to assist individuals, teams and organizations in their agile journey.
+		As our company name implies, we grow your capabilities and help you stay lean. We offer training
+		and coaching services throughout the United States.
+	</p>
+
+	<hr />
+	<p>
+		<a
+			href="https://www.planview.com/products-solutions/products/leankit/"
+			target="_blank"
+			rel="noopener noreferrer"
+			><Image
+				decoding="async"
+				alt="LeanKit logo"
+				width="250"
+				height="60"
+				sizes="(max-width: 250px) 100vw, 250px"
+				src={assets_images_partners_Partner_Page___LeanKit_300x72_jpg}
+				widths={[300, 768, 996]}
+			/></a
+		><a
+			title="LeanKit"
+			href="https://www.planview.com/products-solutions/products/leankit/"
+			target="_blank"
+			rel="noopener noreferrer">LeanKit</a
+		> is recognized by the Agile and Lean IT community as the most flexible and powerful tool available
+		for implementing visual project management based on Kanban systems. The company is also making a
+		name for itself beyond IT with customers who use their tool to manage and collaborate on projects
+		in fields as diverse as engineering, manufacturing, marketing, customer service, technical support,
+		etc.
+	</p>
+	<p>
+		Since its founding in 2009, LeanKit has grown rapidly to serve more than 170,000 users around
+		the world at companies such as Adobe, Alcatel-Lucent, Monster, NBC Universal, Siemens and
+		Spotify.
+	</p>
+
+	<hr />
+	<p>
+		<a href="https://procognita.com/" target="_blank" rel="noopener noreferrer"
+			><Image
+				decoding="async"
+				alt="ProCognita logo"
+				width="250"
+				height="56"
+				sizes="(max-width: 250px) 100vw, 250px"
+				src={assets_images_partners_Partner_Page___ProCognita_300x67_png}
+				widths={[300, 768, 1024]}
+			/></a
+		>Founded in 2010 <a href="https://procognita.com/" target="_blank" rel="noopener noreferrer"
+			>Procognita</a
+		> helps companies to achieve their goals in a dynamic market by promoting Agile and Lean approaches.
+		We are based in Poland and we share knowledge and support individuals and organizations in Central
+		and East Europe through training, mentoring, talks and workshops.
+	</p>
+
+	<hr />
+	<p>
+		<a href="https://projectbrilliant.com/" target="_blank" rel="noopener noreferrer"
+			><Image
+				decoding="async"
+				alt="Project Brilliant logo"
+				width="250"
+				height="86"
+				sizes="(max-width: 250px) 100vw, 250px"
+				src={assets_images_partners_Partner_Page___Project_Brilliant_300x103_jpg}
+				widths={[300, 768, 828]}
+			/></a
+		><a href="https://projectbrilliant.com/" target="_blank" rel="noopener noreferrer"
+			>Project Brilliant</a
+		> is an Agile training, coaching, and consulting firm based in Indianapolis, IN. We are the beacon
+		of agility that guides organizations in a rapidly changing marketplace.
+	</p>
+
+	<hr />
+	<p>
+		<a href="https://www.scrumwithstyle.com/" target="_blank" rel="noopener noreferrer"
+			>Scrum WithStyle</a
+		><a href="https://www.scrumwithstyle.com/" target="_blank" rel="noopener noreferrer"
+			><Image
+				decoding="async"
+				alt="Scrum with Style logo"
+				width="250"
+				height="88"
+				sizes="(max-width: 250px) 100vw, 250px"
+				src={assets_images_partners_Partner_Page___Scrum_With_Style_300x105_jpg}
+				widths={[300, 708]}
+			/></a
+		> was founded in 2008 as a boutique Agile capability uplift partner by Rowan Bunning CST.
+	</p>
+	<p>
+		We provide Agile related training and consultancy to IT and software development professionals
+		in Australia and New Zealand.
+	</p>
+
+	<hr />
+	<p>
+		<a href="https://www.sourcecell.com/" target="_blank" rel="noopener noreferrer"
+			><Image
+				decoding="async"
+				alt="SourceCell logo"
+				width="250"
+				height="74"
+				src={assets_images_partners_Partner_Page___Source_Cell_300x88_jpg}
+			/></a
+		>M. Kelley Harris, <a
+			href="https://www.sourcecell.com/"
+			target="_blank"
+			rel="noopener noreferrer">SourceCell</a
+		>, has 20+ years of software development experience, in roles including software engineer,
+		architect, manager, director, consultant, trainer, and coach. He has developed software in the
+		domains of scientific instrumentation, nanotechnology, semiconductors, solar energy, automotive
+		diagnostics, investment, real estate, music, eCommerce, etc. Since embracing Extreme Programming
+		(XP) in 2002, and Scrum in 2004, he has helped a wide variety of teams utilize Agile principles.
+		He has helped teams develop software in a more Agile manner via refactoring, test-driven
+		development (TDD), simple design, etc. He has led efforts to gradually rearchitect difficult
+		legacy code bases. He has been fortunate to have worked with Ward Cunningham, Robert Martin,
+		Joshua Kerievsky, and many other Agile thought leaders. He founded SourceCell in 2004, and
+		currently does software development, consulting, coaching, and training, around the world. He is
+		a certified SEI Software Architecture Professional, with a special interest in the Lean Startup
+		perspective to quickly find out what the world really wants and needs. He holds three software
+		patents in nanotechnology. He holds the following Scrum certifications from the Scrum Alliance:
+		Certified ScrumMaster (CSM), Certified Scrum Product Owner (CSPO), Certified Scrum Developer
+		(CSD), and Certified Scrum Professional (CSP). He is based in Palo Alto, California (Silicon
+		Valley) and Santa Barbara, California (Silicon Beach)
+	</p>
+</MainLayout>

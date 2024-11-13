@@ -1,0 +1,897 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_certified_scrum_product_owner_cspo_training_100M_Offer_jpg from "@assets/images/certified-scrum-product-owner-cspo-training/100M-Offer.jpg"
+import assets_images_certified_scrum_product_owner_cspo_training_Mark_Levison_headshot_600x800_transparent_badges_png from "@assets/images/certified-scrum-product-owner-cspo-training/Mark-Levison-headshot-600x800-transparent-badges.png"
+import assets_images_certified_scrum_product_owner_cspo_training_5000_Testimonials_png from "@assets/images/certified-scrum-product-owner-cspo-training/5000-Testimonials.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_arrow_1144336_F1584B_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-arrow-1144336-F1584B.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_bank_5781186_9B9B9B_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-bank-5781186-9B9B9B.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_finance_1834067_9B9B9B_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-finance-1834067-9B9B9B.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_finance_2351824_9B9B9B_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-finance-2351824-9B9B9B.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_university_1951821_9B9B9B_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-university-1951821-9B9B9B.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_software_3874633_9B9B9B_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-software-3874633-9B9B9B.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_insurance_5588499_9B9B9B_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-insurance-5588499-9B9B9B.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_government_1984944_9B9B9B_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-government-1984944-9B9B9B.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_plan_1169041_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-plan-1169041.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_coaching_4190192_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-coaching-4190192.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_library_3377733_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-library-3377733.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_questions_and_answers_4756959_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-questions-and-answers-4756959.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_coffee_1437791_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-coffee-1437791.png"
+import assets_images_certified_scrum_product_owner_cspo_training_noun_certificate_1016684_png from "@assets/images/certified-scrum-product-owner-cspo-training/noun-certificate-1016684.png"
+import assets_images_certified_scrum_product_owner_cspo_training_headshot_facing_right_small_jpg from "@assets/images/certified-scrum-product-owner-cspo-training/headshot-facing-right-small.jpg"
+import assets_images_certified_scrum_product_owner_cspo_training_Scrum_Alliance_seal_cspo_600x600_1_150x150_png from "@assets/images/certified-scrum-product-owner-cspo-training/Scrum-Alliance-seal-cspo-600x600-1-150x150.png"
+
+const wpId = 31
+const title = "Certified Scrum Product Owner (CSPO) Training"
+const description =
+	"Certified Scrum Product Owner TrainingCSPO Certification Designed to Help You Succeed Stop wasting your team's time. Build the product your customer needs, and get paid more, all without burning out. During CSPO training, Mark Levison will show you how to use the Scrum framework in your role to: translate your customer's ideas into a clear ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2019-09-13T05:17:56")
+const modifiedAt = new Date("2024-03-27T21:13:04")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<style>
+		ul.dashedList > li {
+			list-style-type: none;
+			text-indent: -10px;
+		}
+		ul.dashedList > li::before {
+			content: "– ";
+			font-weight: bold;
+		}
+		.bonusBlock {
+			width: 50%;
+			float: left;
+			margin-bottom: 30px;
+		}
+		.bonusIcon {
+			float: left;
+		}
+		.bonusItem {
+			clear: both;
+			border: 1px solid #1f64a4;
+			border-radius: 6px;
+			overflow: auto;
+			padding: 10px;
+			margin: 15px;
+			min-height: 175px;
+		}
+		.bonusText {
+			font-size: 16px;
+			padding-left: 15px;
+			display: flex;
+		}
+		.markBioImage {
+			float: left;
+			width: 15%;
+			padding: 0 0 25px 25px;
+		}
+		.markBioText {
+			float: left;
+			width: 85%;
+		}
+		.introPoints {
+			float: left;
+			width: 70%;
+		}
+		.markWithBadges {
+			float: left;
+			width: 30%;
+		}
+		.lookHere {
+			background: #1f64a4;
+			color: #ffffff;
+			font-size: 24px;
+			padding: 15px 50px;
+			border: 1px solid black;
+			margin: 15px 50px;
+			text-align: center;
+		}
+		.logoContainer {
+			float: left;
+			width: 25%;
+			text-align: center;
+		}
+		.arrowBox {
+			overflow: hidden;
+		}
+		.arrowBox div {
+			float: left;
+		}
+		.arrowText h2,
+		.arrowText h3 {
+			color: #1f64a4;
+			font-size: 1.8rem;
+			padding-top: 36px;
+		}
+		.arrowIcon {
+			width: 110px;
+		}
+		.arrow-3 {
+			padding-top: 26px !important;
+		}
+		.industryBlurb {
+			color: #1f64a4;
+			font-size: 2.8rem;
+			text-align: center;
+			line-height: 1.2em;
+			padding: 15px 55px;
+			clear: both;
+		}
+		@media screen and (min-width: 1023px) {
+			.testimonialGraphic {
+				width: 30%;
+				float: left;
+			}
+			.firstQuote {
+				width: 70%;
+				float: left;
+				padding-top: 15px;
+			}
+			.firstQuote span {
+				display: block;
+			}
+		}
+		@media screen and (max-width: 1200px) {
+			.markBioImage {
+				width: 22%;
+			}
+			.markBioText {
+				width: 75%;
+			}
+		}
+		@media screen and (max-width: 1023px) {
+			.arrow-3 {
+				font-size: 1.5rem !important;
+			}
+			.bonusIcon {
+				width: 75px;
+			}
+			.bonusBlock {
+				width: 100%;
+				margin-bottom: 0;
+			}
+			.bonusItem {
+				min-height: unset;
+			}
+			.markBioImage {
+				width: 35%;
+			}
+			.markBioText {
+				width: 65%;
+			}
+			.testimonialGraphic {
+				text-align: center;
+			}
+			.firstQuote {
+				margin-bottom: 20px;
+			}
+			.logoDisclaimer {
+				padding: 20px 24px !important;
+			}
+		}
+		@media screen and (max-width: 800px) {
+			.arrow-1,
+			.arrow-2,
+			.arrow-4 {
+				font-size: 1.5rem !important;
+			}
+			.arrow-3 {
+				font-size: 1.2rem !important;
+				width: 440px;
+			}
+			.logoDisclaimer {
+				padding: 10px 2px !important;
+			}
+		}
+		@media screen and (max-width: 500px) {
+			.introPoints {
+				width: 100%;
+			}
+			.markWithBadges {
+				width: 100%;
+			}
+			.logoContainer {
+				width: 50%;
+			}
+			.industryBlurb {
+				padding: 15px 10px;
+			}
+			.lookHere {
+				padding: 5px;
+				margin: 15px 5px;
+			}
+			.arrowText {
+				width: 200px;
+			}
+			.arrowText h2,
+			.arrowText h3 {
+				padding-top: 20px;
+			}
+			.arrow-3 {
+				padding-top: 12px !important;
+				width: auto !important;
+			}
+			.arrow-5 {
+				padding-top: 6px !important;
+			}
+			.lookHere2 {
+				font-size: 20px;
+			}
+			.bonusIcon {
+				padding-right: 25px;
+			}
+			.bonusText {
+				display: block;
+			}
+		}
+	</style>
+	<h1>
+		Certified Scrum Product Owner Training<br />CSPO Certification Designed to Help You Succeed
+	</h1>
+	<p>
+		<Image
+			decoding="async"
+			alt="Best Scrum training reviews and value"
+			width="1024"
+			height="540"
+			sizes="(max-width: 1024px) 100vw, 1024px"
+			src={assets_images_certified_scrum_product_owner_cspo_training_100M_Offer_jpg}
+			widths={[1400, 300, 1024, 768]}
+		/>
+	</p>
+	<div>
+		<div>
+			<h2>
+				Stop wasting your team’s time. Build the product your customer needs, and get paid more, all
+				without burning out.
+			</h2>
+			<p>
+				During CSPO training, Mark Levison will show you how to use the Scrum framework in your role
+				to:
+			</p>
+			<ul>
+				<li>translate your customer&#8217;s ideas</li>
+				<li>into a clear vision that inspires your product team</li>
+				<li>to build the right feature the first time</li>
+				<li>with better quality</li>
+				<li>and deliver products sooner</li>
+				<li>so there is less risk</li>
+				<li>and greater return</li>
+			</ul>
+		</div>
+		<div>
+			<Image
+				decoding="async"
+				alt="Certified Scrum Trainer Mark Levison"
+				title="Certified Scrum Trainer Mark Levison"
+				src={assets_images_certified_scrum_product_owner_cspo_training_Mark_Levison_headshot_600x800_transparent_badges_png}
+			/>
+		</div>
+	</div>
+	<p>
+		Bottom line: your customer will be impressed and so will your boss when you use the Scrum
+		framework with product ownership. What’s in CSPO certification for you? More satisfaction, the
+		joy of building a great product team, less stress, and better career options.
+	</p>
+	<div>
+		<div>
+			<Image
+				decoding="async"
+				alt="5000 testimonials"
+				src={assets_images_certified_scrum_product_owner_cspo_training_5000_Testimonials_png}
+			/>
+		</div>
+		<div>
+			<em
+				>&#8220;Mark is an awesome instructor&#8230; definitely the Yoda of the Scrum
+				universe.&#8221;<span> &#8211; Ting-Yu Lin</span></em>
+		</div>
+	</div>
+	<h2>At work have you ever…</h2>
+	<ul>
+		<li>&nbsp;&nbsp;Struggled to say &#8216;no&#8217; to a stakeholder?</li>
+		<li>&nbsp;&nbsp;Been pressured to get more products delivered, faster?</li>
+		<li>&nbsp;&nbsp;Felt challenged on your prioritization choices?</li>
+		<li>
+			&nbsp;&nbsp;Been told everything is number #1? (With each Stakeholder having a different #1.)
+		</li>
+		<li>
+			&nbsp;&nbsp;Struggled to have the team move in the same direction as each other, let alone
+			you?
+		</li>
+		<li>&nbsp;&nbsp;Cringed at inflicting a feature factory on your team?</li>
+		<li>&nbsp;&nbsp;Wondered why your team never builds the products you asked for?</li>
+		<li>&nbsp;&nbsp;Felt management didn&#8217;t care (or, worse, didn’t trust you)?</li>
+	</ul>
+	<p>
+		Did you read the Scrum Guide, the canon law of Scrum, and realize that it says nothing useful
+		about product ownership? It&#8217;s freeing, because you&#8217;re unconstrained, but also
+		stressful and you&#8217;re maybe thinking, &#8220;What should I be doing right now?&#8221;
+	</p>
+	<h2>The problem isn’t you or your team.</h2>
+	<p>
+		Sure, it might be your stakeholders ;-), but it&#8217;s more likely the system you&#8217;re
+		trying to work within. Studying Product Ownership can be like snake oil sales. Everyone claims,
+		&#8220;My approach will solve all your problems, all of the time,&#8221; but most Scrum Product
+		Owner courses don&#8217;t give you sources or anything with clear steps or evidence of results.
+		You read about Lean Startup, Lean UX, Discovery, Product Vision, and all kinds of Maps and User
+		Stories, but it&#8217;s confusing and you&#8217;re starting to question cost vs benefits.
+	</p>
+	<p>
+		That&#8217;s because you&#8217;re working in the real world, not a theoretical one. With real
+		people: real stakeholders, customers, the team and even managers. With that reality comes
+		pressure, unrealistic expectations, and a myriad of other problems. It&#8217;s not your fault,
+		nor your stakeholder&#8217;s (most days) or the customer. The system that you&#8217;re part of
+		creates these project outcomes. Fixing the product management problems isn&#8217;t easy, so you
+		need an evidence-based plan that helps you find your path through the mess and isn&#8217;t based
+		on wild promises and opinions.
+	</p>
+	<div>
+		<em
+			>&#8220;Came back to take my CSPO specifically with Mark for a reason. Amazing
+			instructor.&#8221; – Daniel LeGrand</em>
+	</div>
+	<div>
+		<em
+			>&#8220;As a self-employed business owner with a small team, this course was helpful in
+			understanding how to improve my company&#8217;s value to clients.&#8221; – Murtada Shah</em>
+	</div>
+	<div>
+		Discount Scrum product management training gets you discount results.<br />You can sit through
+		boring PowerPoint and get your Product Owner certification from a trainer who has never built a
+		real product, never spent time on useless features, and who abandons you once the course is
+		over, <b>OR&#8230;</b>
+	</div>
+	<p>
+		<span>&#8230; </span>you can discover for yourself why Mark Levison is considered an Agile and
+		Scrum pioneer, and “the one to learn from” in Canada. He invests in your success and provides
+		ongoing support and resources, above and beyond the Product Owner certification training.
+	</p>
+	<div>
+		<em
+			>&#8220;Whether you have 0 days or 10 years of product owner experience you&#8217;re
+			guaranteed to learn a lot from this course.&#8221; — Luke Natvig</em>
+	</div>
+	<div>
+		<em
+			>&#8220;Mark is the real s**t. He&#8217;s lived through the pain points and knows where the
+			bodies are buried.&#8221; — Christian Farley</em>
+	</div>
+	<div>
+		<div>
+			<Image
+				decoding="async"
+				alt="arrow icon"
+				src={assets_images_certified_scrum_product_owner_cspo_training_noun_arrow_1144336_F1584B_png}
+			/>
+		</div>
+		<div>
+			<h2>
+				How to make your products suck less with a Scrum Product Owner certification training
+				course.
+			</h2>
+		</div>
+	</div>
+</MainLayout>
+<p>
+	We’ve been told that we shouldn’t use the word “suck” on a professional page. Maybe, but let’s be
+	real, that’s why many people wonder about Scrum courses in the first place, in the hopes that it
+	will solve all the problems that… well… suck.
+</p>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="arrow icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_arrow_1144336_F1584B_png}
+		/>
+	</div>
+	<div>
+		<h3>Are you looking for a Certified Scrum Product Owner training course?</h3>
+	</div>
+</div>
+
+<p>
+	We do that, but if certified Scrum product owner training is all you want, you’re in the wrong
+	place. A Scrum trainer can hit all the learning objectives and get you certified at bargain
+	basement prices, but a digital badge isn’t going to help you deal with the lack of structure and
+	guidance that Scrum provides a new Product Owner.
+</p>
+<p>
+	Discount Scrum certification won’t take away that fear of not knowing how to handle an angry
+	customer banging at your door. For that, you want to learn from a professional Agile and Scrum
+	expert so you understand how to survive as a Product Owner, every working day.
+</p>
+<p>
+	Mark gives you everything you need to earn your Scrum Product Owner certification but then he
+	takes Scrum many steps further. Because what you really want is a clear plan on how to fulfill
+	your role as a Certified Scrum Product Owner, and then guidance and support in your Product
+	Ownership journey. Especially as you hit snags. (Is that a stakeholder asking for a new product
+	feature delivered tomorrow?)
+</p>
+<p>
+	That’s just one way that Mark is different as a professional Scrum and Agile instructor, and the
+	preferred choice of many major organizations and industries including government, software,
+	banking, finance and education, to name only a few.
+</p>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="bank icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_bank_5781186_9B9B9B_png}
+		/>
+	</div>
+	<div>
+		<Image
+			decoding="async"
+			alt="financial icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_finance_1834067_9B9B9B_png}
+		/>
+	</div>
+	<div>
+		<Image
+			decoding="async"
+			alt="finance icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_finance_2351824_9B9B9B_png}
+		/>
+	</div>
+	<div>
+		<Image
+			decoding="async"
+			alt="university icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_university_1951821_9B9B9B_png}
+		/>
+	</div>
+	<div>
+		Mark Levison has helped over 8000 people find success using Scrum, and is the trusted training
+		provider for major Canadian banks, insurance companies, federal and municipal government, and
+		more.
+	</div>
+	<div>
+		<Image
+			decoding="async"
+			alt="software icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_software_3874633_9B9B9B_png}
+		/>
+	</div>
+	<div>
+		<Image
+			decoding="async"
+			alt="insurance icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_insurance_5588499_9B9B9B_png}
+		/>
+	</div>
+	<div>
+		<Image
+			decoding="async"
+			alt="government icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_government_1984944_9B9B9B_png}
+		/>
+	</div>
+	<div>*Generic images used to honour trademark laws and NDAs.</div>
+</div>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="arrow icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_arrow_1144336_F1584B_png}
+		/>
+	</div>
+	<div>
+		<h2>
+			You&#8217;re going to have questions during the CSPO learning course,<br />but also throughout
+			your Scrum career after you settle into the real work.
+		</h2>
+	</div>
+</div>
+
+<ul>
+	<li>&nbsp;&nbsp;What is the first thing I should do with my team and stakeholders next week?</li>
+	<li>
+		&nbsp;&nbsp;How to answer when asked &#8220;When will this product feature be ready? An exact
+		date please.&#8221;
+	</li>
+	<li>&nbsp;&nbsp;It feels like I&#8217;m being turned into an order taker. Is this normal?</li>
+	<li>&nbsp;&nbsp;What other traps are out there for me to fall into?</li>
+	<li>&nbsp;&nbsp;My stakeholders don&#8217;t understand my customers; what do I do?</li>
+</ul>
+<p>
+	Learn how to navigate the Scrum framework as a Product Owner, from someone who will help well
+	beyond the initial course and CSPO certification, when you have &#8220;yes, but in real
+	life…&#8221; questions like those above. Don&#8217;t settle and pay for a fast food Scrum course.
+	Invest in healthy, full-meal training, with take-home recipes for success and ongoing support
+	during and after the CSPO course.
+</p>
+<div>
+	<em
+		>&#8220;Mark was an excellent instructor and facilitator for the certified product owner course.
+		The content was engaging, not just a typical PowerPoint presentation. Active learning was
+		encouraged through the use of breakout sessions where the course material was practiced; this
+		allowed for better understanding and encouraged practical questions. I would recommend the
+		course to anybody that wants to improve their product ownership skills and has the means to
+		attend.&#8221; – Mark Fobert</em>
+</div>
+<div>
+	<em
+		>&#8220;Mark is a wealth of knowledge and makes agile super easy! The course is interesting,
+		interactive, and extremely informative. I got a lot of takeaways from the course and am excited
+		to take this back to my team. I&#8217;m looking forward to taking the [A-CSM] and Advanced PO
+		[A-CSPO training] courses next Fall.&#8221; – Jenny Cote</em>
+</div>
+<div>
+	<div>
+		<a href="#upcomingCourses"></a>
+		<div>Get Certified</div>
+		<p></p>
+	</div>
+</div>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="arrow icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_arrow_1144336_F1584B_png}
+		/>
+	</div>
+	<div>
+		<h2>Become the Scrum Whisperer – your team will thank you.</h2>
+	</div>
+</div>
+
+<ul>
+	<li>Take one of our immersive Certified Scrum Product Owner workshops.</li>
+	<li>
+		No previous Scrum experience required for our training course. We provide Scrum preparation
+		materials so you can feel comfortable right away.
+	</li>
+	<li>
+		Not just for software development. We&#8217;ve helped many normal people learn what Product
+		Ownership with Scrum looks like.
+	</li>
+	<li>
+		Unique, hands-on approach to learning and practice. Know what it’s actually like to be a Scrum
+		Product Owner, in a safe and supportive learning environment.
+	</li>
+	<li>
+		No extra costs for the certification. Certification fees plus two years of Scrum Alliance
+		membership are included in your Scrum Product Owner training.
+	</li>
+</ul>
+<div>
+	We don’t leave you stranded after the Scrum training workshop.<br />We provide a plan to make your
+	product better, starting right after the Agile product owner course.<br />
+	<span
+		>Humans forget, so we cue up support to remind you of key content after your course, so you
+		retain what you learned and you&#8217;re challenged to take action to achieve your product
+		goals.</span
+	>
+</div>
+<h2>Exclusive bonuses we provide in Scrum Product Owner certification training&#8230;</h2>
+<div>
+	<div>
+		<div>
+			<div>
+				<Image
+					decoding="async"
+					alt="icon of a planning chart"
+					src={assets_images_certified_scrum_product_owner_cspo_training_noun_plan_1169041_png}
+				/>
+			</div>
+			<div>
+				A plan to guide you through your first few months in your new role and help you succeed
+				long-term. Case study examples, evidence-based learning.
+			</div>
+		</div>
+	</div>
+	<div>
+		<div>
+			<Image
+				decoding="async"
+				alt="icon or two people on steps"
+				src={assets_images_certified_scrum_product_owner_cspo_training_noun_coaching_4190192_png}
+			/>
+		</div>
+		<div>
+			Coaching session with Mark after Scrum Product Owner training. Get input on the unique issues
+			you’re faced with at your organization, and how to understand them, deal with them, and take
+			risks.
+		</div>
+	</div>
+</div>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="icon of a stack of books"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_library_3377733_png}
+		/>
+	</div>
+	<div>
+		A Glossary and Resource library so, when you’re confused about a Scrum or Agile topic later, you
+		can go back and read about it. The Scrum and Agile resource library accompanies the glossary so
+		when you need more depth in a topic area, you can study curated content so you don’t waste your
+		time and can keep learning Scrum at your own pace and focus.
+	</div>
+</div>
+
+<div>
+	<div>
+		<div>
+			<Image
+				decoding="async"
+				alt="icon of some speech bubbles"
+				src={assets_images_certified_scrum_product_owner_cspo_training_noun_questions_and_answers_4756959_png}
+			/>
+		</div>
+		<div>
+			Access to our community of students, professionals, and educators where, when you run into
+			challenges, you can ask questions and get experienced answers from not just Mark but also two
+			other Certified Scrum Trainers.
+		</div>
+	</div>
+</div>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="icon of a coffee mug"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_coffee_1437791_png}
+		/>
+	</div>
+	<div>
+		Regular virtual coffee sessions about Scrum and Agile. Ask questions for Mark, and hear from
+		other Certified Scrum Poduct Owners how they do Scrum in their workplace.
+	</div>
+</div>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="icon of a certificate"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_certificate_1016684_png}
+		/>
+	</div>
+	<div>
+		Money-back guarantee. If, after all of the above, you don’t feel you gained valuable skills and
+		learning from the Scrum Product Owner certification course, we’ll refund your registration
+		price.
+	</div>
+</div>
+
+<div>
+	<strong
+		>Scrum training is an investment that will benefit yourself, your team, and your organization,
+		and the improvements can pay back the cost of the course in only a few Sprints.</strong>
+</div>
+<div>
+	<div>
+		<a href="#upcomingCourses"></a>
+		<div>Get Certified</div>
+		<p></p>
+	</div>
+</div>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="arrow icon"
+			src={assets_images_certified_scrum_product_owner_cspo_training_noun_arrow_1144336_F1584B_png}
+		/>
+	</div>
+	<div>
+		<h2>Not sure the Scrum framework and Product Owner role are for you?</h2>
+	</div>
+</div>
+
+<p>
+	We get it. You’re scared that being a Scrum Product Owner will be a daunting amount of work. Or
+	that it will take a long time to see any benefits from the CSPO certification. And what happens if
+	you fail as Product Owner? The mere thought is enough to turn you away and procrastinate
+	certification training a little longer.
+</p>
+<p>
+	<strong>Don’t put off becoming a Certified Scrum Product Owner.</strong> All the project problems you
+	have in your role now will still be there later, and even worse, if you delay training.
+</p>
+<p>
+	You’re fearing the unknown of <a
+		href="/how-to-become-cspo-certified"
+		rel="noopener"
+		target="_blank">becoming a Certified Scrum Product Owner</a
+	>. Does that seem like a healthy and useful thing to do?
+</p>
+<p>
+	Mark helps take out the scary parts of training and certification to become a successful Certified
+	Scrum Product Owner. Life doesn’t come with guarantees and all the answers, but the right training
+	will help you anticipate the unknowns of being a CSPO and know in advance how to confidently deal
+	with them. Our Certified Scrum Product Owner training course will equip you with the knowledge,
+	management skills, and resources necessary to successfully complete your project.
+</p>
+<div>
+	<em
+		>&#8220;Going into this training course my expectation was between boring and somewhat engaging
+		as per my previous experience with training. I was pleasantly surprised. I found [Mark]
+		entertaining and the course material laid out in a way as to keep the class engaged and
+		interactive at all times. Well done. Will not hesitate to recommend your class(es) to
+		anyone.&#8221; – Jean-Michel Hurtubise</em>
+</div>
+<div>
+	<em
+		>&#8220;There was not a single bit of content that wasn&#8217;t helpful.&#8221; &#8211; Bruno
+		Paquette</em>
+</div>
+<p>
+	Invest in making things better for your product teams and organization. Learn from the Scrum
+	expert who can coach you on exactly how to do that, so you can handle what comes your way at work,
+	and make it more rewarding. Mark will teach you Scrum concepts and leave you with key takeaways to
+	improve your product ownership skills.
+</p>
+<div>
+	<div>
+		<a href="#upcomingCourses"></a>
+		<div>Get Certified</div>
+		<p></p>
+	</div>
+</div>
+<h2>Become a Scrum Product Owner: FAQs</h2>
+<h3>What training is needed to be a certified Scrum Product Owner?</h3>
+<p>
+	You can be a Scrum Product Owner without any training, sadly to say. It’s a tough position to
+	throw anyone into without support and resources, but it’s not an uncommon occurrence. Many of our
+	CSPO students came to us for professional Scrum Product Owner training because they had no idea
+	what was expected of them or how to do a good job with their project and teams.
+</p>
+<p>
+	To be a <em>Certified</em> Scrum Product Owner<sup>®</sup> and obtain your CSPO certificate, <strong
+		>the Scrum Alliance requires that you attend and participate in at least 14 hours of CSPO
+		training delivered by a Certified Scrum Trainer.</strong
+	> The CSPO training can be in an online virtual classroom or an in-person course.
+</p>
+<p>
+	None of that, including CSPO certification, guarantees that you’ll be an effective Scrum Product
+	Owner, which should be the goal far more than just holding the title. That’s why we believe in
+	going above and beyond so the Scrum Product Owner training course isn’t just a one-time thing.
+	With Agile Pain Relief, after the class you get included follow-up support and resources, and
+	access to a whole professional community who help take you beyond merely being assigned a job and
+	getting a certificate. We invest and provide continual learning so you can be effective and excel
+	in your Scrum Product Owner position.
+</p>
+<h3>Does a Scrum Product Owner need to know coding?</h3>
+<p>
+	No. While Scrum is used primarily in the world of software development, it’s also used
+	successfully in many industries outside of that, including education, healthcare, and aviation, to
+	name a few. Even in software, the Scrum Product Owner does not have to be a programmer/developer.
+	The CSPO role is to help the team know what excellent product to build, not build it for them.
+	Being a Scrum Product Owner requires leadership skills and the ability to support teams on product
+	development.
+</p>
+<h3>What do Scrum Product Owners do all day?</h3>
+<p>
+	The Product Owner never lives the same day twice. Where the Certified Scrum Master focuses on
+	taking a team beyond critical Scrum and Agile foundations and principles, and coaching them to
+	build the best Scrum team, <strong
+		>Certified Scrum Product Owners focus on working with teams to build and deliver the best
+		products possible</strong
+	>. Some days the CSPO spends most of the day working directly with customers, end users and other
+	stakeholders understanding what the latest product needs are. Other days they spend their day with
+	the Scrum Development Team sharing the knowledge of what they’ve recently learned from the
+	customers. In terms of formal Scrum events, they’re responsible for Refining the Product Backlog.
+	That includes deleting old items from the Product Backlog, reprioritizing, and finding new items.
+	A couple of times every Sprint they meet with the rest of their team to conduct the Product
+	Backlog Refinement event. In the event, a CSPO might summarize recent changes in priority (or old
+	items deleted). A CSPO will also work with the team to understand new items, and answer questions
+	in story splitting and estimation. And a CSPO might meet with team members to be shown the current
+	version of features and provide feedback.
+</p>
+<h3>What does scrum stand for?</h3>
+<p>
+	Many assume that SCRUM is an acronym for something, but it’s not. You may have heard the term
+	&#8220;scrum&#8221; before in reference to rugby, where it refers to a formation of players. A
+	team that works together to move a ball toward a common goal. Don’t overthink it. The analogy
+	works because of the simplicity of it in both contexts.
+</p>
+<h3>What shouldn&#8217;t a Certified Scrum Product Owner do?</h3>
+<p>
+	Say &#8220;yes&#8221; to every product feature request. Micromanage. Assign. Blame. Reward.
+	Instruct. The list goes on. But perhaps one that will surprise many people is that a Product Owner
+	should not tell the team what products to build. Instead, <strong
+		>the Scrum Product Owner should help their team understand the vision for the products or
+		projects, and let them decide how best to bring it to life</strong
+	>. Subtle difference, but critically important when acting as Scrum Product Owner. Live and online
+	virtual training can help you gain the knowledge, skills, and certificate necessary to be a
+	successful Scrum Product Owner.
+</p>
+<h3>How does Certified Scrum Product Owner differ from SAFe Product Ownership?</h3>
+<p>
+	Scrum was invented by the people who created the Scrum Alliance. The Scrum Guide defines the role
+	of the Product Owner as being the person who has ultimate decision-making authority over the
+	product they’re building. SAFe takes away most of the product owner’s responsibility. Instead of
+	owning the product and working to delight customers, a SAFe Product Owner is left to serve up
+	warmed up User Stories to an unwitting development team.
+</p>
+<div>
+	<div>
+		<a href="#upcomingCourses"></a>
+		<div>Get Certified</div>
+		<p></p>
+	</div>
+</div>
+<div>
+	<div>
+		<Image
+			decoding="async"
+			alt="Certified Scrum Trainer Mark Levison"
+			title="Certified Scrum Trainer Mark Levison"
+			src={assets_images_certified_scrum_product_owner_cspo_training_headshot_facing_right_small_jpg}
+		/>
+	</div>
+	<div>
+		<h2>About Your Guide</h2>
+		<p>
+			Mark spent 12 years as a ScrumMaster and Coach helping teams by chance before he started to
+			systemize it. He’s read hundreds of books, thousands of articles, and mittfuls of academic
+			papers, all with the purpose of figuring out what helps teams succeed. Armed with research and
+			proven results, as well as over 30 years of experience in the IT industry, he has been
+			learning and teaching Agile since 2001, introducing Scrum, Lean, and Agile methodology to a
+			large variety of organizations. Mark has brought Scrum to thousands of professionals and
+			helped launch the practice throughout Canada.
+		</p>
+	</div>
+</div>
+
+<div>
+	<span
+		>We know that for some of you two full days is hard to manage, so we now also offer 4 x 1/2 day
+		courses. We will cover the same material, so you can confidently choose the schedule that best
+		fits your needs.</span
+	>
+</div>
+<div id="upcomingCourses">
+	<h3>Upcoming Workshops</h3>
+	<div id="upcomingCourseContainer">
+		<section id="custom-ee-upcoming-events-widget-3">
+			<div>
+				<h3>CSPO</h3>
+				<div>
+					<div>
+						<div><a href="/courses/virtual-20241202cspo">Dec 2 - Dec 3</a></div><div>
+							<div>
+								<Image
+									decoding="async"
+									title="Certified Scrum Product Owner Scrum Alliance seal"
+									alt="TODO: update alt text"
+									src={assets_images_certified_scrum_product_owner_cspo_training_Scrum_Alliance_seal_cspo_600x600_1_150x150_png}
+								/>
+							</div><div>Virtual</div><div>Certified Scrum Product Owner Workshop</div><div>
+								<a href="/courses/virtual-20241202cspo"><div>Get Certified</div></a>
+							</div>
+						</div>
+					</div><div>
+						<div><a href="/courses/virtual-20241219cspo">Dec 19 - Dec 20</a></div><div>
+							<div>
+								<Image
+									decoding="async"
+									title="Certified Scrum Product Owner Scrum Alliance seal"
+									alt="TODO: update alt text"
+									src={assets_images_certified_scrum_product_owner_cspo_training_Scrum_Alliance_seal_cspo_600x600_1_150x150_png}
+								/>
+							</div><div>Virtual</div><div>Certified Scrum Product Owner Workshop</div><div>
+								<a href="/courses/virtual-20241219cspo"><div>Get Certified</div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

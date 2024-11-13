@@ -1,0 +1,76 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_thank_you_mailing_list_ebook_5steps_high_performance_teams_cover_858x1024_png from "@assets/images/thank-you-mailing-list-ebook-5steps/high-performance-teams-cover-858x1024.png"
+
+const wpId = 10642
+const title =
+	"Thank you for joining the Agile Pain Relief mailing list – Five Steps Towards Creating High-Performance Teams e-book offer"
+const description =
+	"Wonderful! Thanks so much for doing that extra little step and confirming your subscription, to help us battle spam and ensure that we never email anyone without consent. Soon you will receive a thank you email containing the link to download your free copy of Mark's Five Steps Towards Creating High-Performance Teams e-book. Please watch ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-02-19T08:08:56")
+const modifiedAt = new Date("2023-05-24T17:12:21")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p><strong>Wonderful!</strong></p>
+	<p>
+		Thanks so much for doing that extra little step and confirming your subscription, to help us
+		battle spam and ensure that we never email anyone without consent.
+	</p>
+	<p>
+		Soon you will receive a thank you email containing <span
+			><strong
+				><a
+					href="https://www.dropbox.com/s/n5k56pg8wo3vsni/Five%20Steps%20Towards%20Creating%20High%20Performance%20Teams.pdf?dl=0"
+					target="_blank"
+					rel="noopener noreferrer">the link to download</a
+				></strong
+			></span
+		> your free copy of Mark&#8217;s <em>Five Steps Towards Creating High-Performance Teams</em> e-book.
+		Please watch your Inbox (or Junk filter) for it, and let us know if you don&#8217;t see it. It may
+		take a few minutes, so please be patient.
+	</p>
+	<p>
+		If you&#8217;ve ever received that email from us in the past, you might not get a new copy (see
+		above note about being super cautious to avoid accidental spamming!)
+	</p>
+	<p>
+		But no worries &#8211; <a
+			href="https://www.dropbox.com/s/n5k56pg8wo3vsni/Five%20Steps%20Towards%20Creating%20High%20Performance%20Teams.pdf?dl=0"
+			target="_blank"
+			rel="noopener noreferrer">we&#8217;ve linked to it here</a
+		>, too, just in case you don&#8217;t get the email link or in case you&#8217;re eager to start
+		reading right away.<Image
+			decoding="async"
+			alt="Five Steps Towards Creating High-Performance Teams e-book by Agile Pain Relief Consulting"
+			width="858"
+			height="1024"
+			sizes="(max-width: 858px) 100vw, 858px"
+			src={assets_images_thank_you_mailing_list_ebook_5steps_high_performance_teams_cover_858x1024_png}
+			widths={[858, 251, 768, 1000]}
+		/>
+	</p>
+	<p>
+		You can also access material for a corresponding <a
+			href="/blog/welcome-to-the-high-performance-teams-game.html">High-Performance Teams Game</a
+		>. The game was developed to help teams see the effects of choices/tradeoffs on productivity and
+		team cohesion. Rounds represent Sprints, and a roll of the dice may have things go smoothly,
+		or&#8230; not so much.
+	</p>
+	<p>
+		We hope you will feel free to <a href="/contact-us" target="_blank" rel="noopener noreferrer"
+			>contact us</a
+		> to ask questions and share your feedback! The e-book and game will be updated from time to time
+		with improvements developed from your suggestions. Your subscription entitles you to receive those
+		future updates.
+	</p>
+	<p>Thanks again!</p>
+</MainLayout>

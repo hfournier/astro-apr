@@ -1,0 +1,60 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 10631
+const title = "Terms and Conditions"
+const description =
+	"Cancellation & Refund Requests If request for registration cancellation is received at least 10 business days prior to course start date, 100% of your registration will be refunded. Registration is non-refundable less than 10 business days prior to course start. If you absolutely can no longer attend, we strongly encourage you to transfer your registration ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-02-19T06:16:52")
+const modifiedAt = new Date("2023-05-24T17:12:20")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<h3>Cancellation &amp; Refund Requests</h3>
+	<p>
+		If request for registration cancellation is received at least 10 business days prior to course
+		start date, 100% of your registration will be refunded.<br />
+		Registration is non-refundable less than 10 business days prior to course start.<br />
+		If you absolutely can no longer attend, we strongly encourage you to transfer your registration rather
+		than cancel, as outlined below.<br />
+		Cancellations due to government health mandates will of course be fully refunded.
+	</p>
+	<h3>Registration Transfers</h3>
+	<p>
+		Transferring a registration to a different person for the same course date can be done at any
+		time, at no additional cost.<br />
+		Transferring a registration to an alternate course date can be done up to 10 business days prior
+		to the start date of the original course. Requests received less than 10 business days prior are
+		not possible. We allow one change in date for free; additional changes will incur a 20% fee.
+	</p>
+	<h3>Attendance</h3>
+	<p>
+		If you do not attend the course and do not notify us in advance to discuss, registration is
+		non-refundable and non-transferable.<br />
+		In the case of <strong>unforeseeable events</strong> such as medical emergencies, please <a
+			href="/contact-us">contact us</a
+		> and provide as much detail and documentation as possible, and we will work together to find an
+		appropriate solution.
+	</p>
+	<h3>Course Location</h3>
+	<p>Course location to be confirmed and may be subject to change.</p>
+	<h3>Guaranteed Dates</h3>
+	<p>
+		We are committed to delivering top quality, reliable education, which is why we offer <a
+			href="/guaranteed-course-dates">guaranteed course dates</a
+		>. In very rare cases, circumstances beyond our control may obstruct that promise. In the event
+		of a family or health crisis, extreme weather or travel complication that makes it impossible
+		for Mark to safely reach the training location, or similar unforeseen factor, we will notify
+		attendees as quickly as possible and promptly process their choice of: a) full refund of all
+		payments, or b) registration transfer to the future course of their preference.
+	</p>
+	<div>
+		<p>rev. 07032017</p>
+	</div>
+</MainLayout>

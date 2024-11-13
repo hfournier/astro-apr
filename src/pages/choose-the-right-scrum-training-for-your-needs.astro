@@ -1,0 +1,159 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_choose_the_right_scrum_training_for_your_needs_caleb_jones_J3JMyXWQHXU_unsplash_jpg from "@assets/images/choose-the-right-scrum-training-for-your-needs/caleb-jones-J3JMyXWQHXU-unsplash.jpg"
+
+const wpId = 11085
+const title = "Choose the Right Scrum Training for Your Needs"
+const description =
+	"Struggling to decide whether to take the ScrumMaster or Product Owner training? First, know the problem that you're trying to solve, then let that guide you. The ScrumMaster workshop helps grow a great team that can build a high quality product rapidly. The Product Owner course is all about working with the customers, stakeholders, and ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-07-22T15:07:31")
+const modifiedAt = new Date("2023-05-24T17:10:42")
+const author = "mark-levison"
+const featuredMedia = {
+	id: 11089,
+	src: "@assets/images/choose-the-right-scrum-training-for-your-needs/caleb-jones-J3JMyXWQHXU-unsplash.jpg",
+	alt: "Different paths image - Photo by Caleb Jones on Unsplash"
+}
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<div id="trainingChoiceHeader">
+		<div id="trainingChoiceImage">
+			<Image
+				decoding="async"
+				alt="Different paths image - Photo by Caleb Jones on Unsplash"
+				width="1024"
+				height="683"
+				sizes="(max-width: 1024px) 100vw, 1024px"
+				src={assets_images_choose_the_right_scrum_training_for_your_needs_caleb_jones_J3JMyXWQHXU_unsplash_jpg}
+				widths={[1020, 300, 768]}
+			/>
+		</div>
+		<div id="trainingChoiceText">
+			<h3>Struggling to decide whether to take the ScrumMaster or Product Owner training?</h3>
+			<p>
+				First, know the problem that you’re trying to solve, then let that guide you. The <a
+					title="Certified ScrumMaster (CSM) Training"
+					href="/certified-scrummaster-csm-training">ScrumMaster</a
+				> workshop helps grow a great team that can build a high quality product rapidly. The <a
+					title="Certified Scrum Product Owner (CSPO) Training"
+					href="/certified-scrum-product-owner-cspo-training">Product Owner</a
+				> course is all about working with the customers, stakeholders, and development team to determine
+				which product to build.
+			</p>
+		</div>
+	</div>
+	<p>A simplified explanation of the differences between our two most popular courses:</p>
+	<div>
+		<h4>ScrumMaster (CSM) training</h4>
+		<div>
+			<h5>Who Should Attend</h5>
+			<div>Individual Contributors (Developer, Tester, BA)</div>
+			<div>ScrumMasters</div>
+			<div>Product Owners</div>
+			<div>Traditional Project Managers</div>
+			<div>Mid-level Executives, etc</div>
+		</div>
+		<div>
+			<ul>
+				<li>usually the best fit for anyone new to Scrum</li>
+				<li>
+					focuses on the role of the team and the ScrumMaster (touches on Product Ownership but only
+					as part of the big picture)
+				</li>
+				<li>understand the <em>how</em> and <em>why</em> of Scrum (not just the <em>what</em>)</li>
+				<li>designing retrospectives that help teams overcome problems</li>
+				<li>coaching your team through challenges, and how to coach your Product Owner</li>
+			</ul>
+		</div>
+	</div>
+	<section id="custom-ee-upcoming-events-widget-14">
+		<div>
+			<h3>CSM Buttons</h3>
+			<div>
+				<div>
+					<a href="/courses/virtual-20241118csm"
+						><div>
+							<div>Nov 18 - Nov 19</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div><div>
+					<a href="/courses/virtual-20241128csm"
+						><div>
+							<div>Nov 28 - Nov 29</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div><div>
+					<a href="/courses/virtual-20241212csm"
+						><div>
+							<div>Dec 12 - Dec 13</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr />
+	<div>
+		<h4>Scrum Product Owner (CSPO) training</h4>
+		<div>
+			<h5>Who Should Attend</h5>
+			<div>Product Owners</div>
+			<div>ScrumMasters</div>
+			<div>Business Analysts</div>
+			<div>Product Managers</div>
+			<div>Project Managers</div>
+			<div>Business Stakeholder</div>
+			<div>Program Managers</div>
+		</div>
+		<div>
+			<ul>
+				<li>focuses on Product Ownership and the role of the Product Owner</li>
+				<li>collaborative efforts with your development team</li>
+				<li>creating an effective vision and strategy,</li>
+				<li>why the PO shouldn&#8217;t be the one to write User Stories</li>
+				<li>splitting large User Stories into manageable-sized chunks</li>
+				<li>delivering a useable product every sprint</li>
+				<li>
+					gets people who want to understand how to build, manage, and maintain an effective product
+					backlog, and/or work with the Product Owner to do so (ScrumMasters, Business Analysts,
+					etc).
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section id="custom-ee-upcoming-events-widget-15">
+		<div>
+			<h3>CSPO Buttons</h3>
+			<div>
+				<div>
+					<a href="/courses/virtual-20241202cspo"
+						><div>
+							<div>Dec 2 - Dec 3</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div><div>
+					<a href="/courses/virtual-20241219cspo"
+						><div>
+							<div>Dec 19 - Dec 20</div><div>Live Online</div><div>Discounts Available</div>
+						</div></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div>
+		<p>
+			Image credit: <a
+				href="https://unsplash.com/@gcalebjones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Caleb Jones</a
+			> on <a
+				href="https://unsplash.com/s/photos/choice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				>Unsplash</a>
+		</p>
+	</div>
+</MainLayout>

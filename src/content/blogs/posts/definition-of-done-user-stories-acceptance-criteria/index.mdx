@@ -1,0 +1,206 @@
+---
+wpId: 10085
+title: 'Definition of Done vs. User Stories vs. Acceptance Criteria'
+description: 'One of the more frequently asked questions in my Scrum workshops is around the difference between Definition of "Done" and Acceptance Criteria, and how they relate to User Stories. While Acceptance Criteria is a commonly understood concept in software development, Definition of "Done" is unique to Scrum. People get confused between these two things but ...'
+type: post
+createdAt: 2019-12-10T07:56:14
+modifiedAt: 2022-04-13T15:27:47
+author: mark-levison
+categories:
+  - blog
+  - product-acceptance-criteria
+tags:
+  - acceptance-criteria
+  - agile-development
+  - definition-of-done
+  - product-backlog
+  - user-stories
+featuredMedia:
+  id: 10087
+  src: "APR_Blog-Illustrations_Nov2019_AcceptanceCriteria_A_v2.jpg"
+  alt: "Definition of Done vs. User Stories vs. Acceptance Criteria - image by Agile Pain Relief Consulting"
+  caption: ""
+---
+
+import { Image } from "astro:assets"
+
+import colo_APR_Blog_Illustrations_Nov2019_AcceptanceCriteria_A_v2_jpg from "APR_Blog-Illustrations_Nov2019_AcceptanceCriteria_A_v2.jpg";
+import colo_User_Story_slices_png from "User-Story-slices.png";
+import colo_APR_Blog_Illustrations_Nov2019_AcceptanceCriteria_B_v2_jpg from "APR_Blog-Illustrations_Nov2019_AcceptanceCriteria_B_v2.jpg";
+
+
+<Image decoding="async" alt="Definition of Done vs. User Stories vs. Acceptance Criteria" width="1416" height="840" sizes="(max-width: 1416px) 100vw, 1416px" src={colo_APR_Blog_Illustrations_Nov2019_AcceptanceCriteria_A_v2_jpg} widths={[1416, 300, 1024, 768]} />
+
+One of the more frequently asked questions in my Scrum workshops is around the difference between **Definition of “Done”** and **Acceptance Criteria**, and how they relate to User Stories.
+
+While Acceptance Criteria is a commonly understood concept in software development, Definition of “Done” is unique to Scrum. People get confused between these two things but they’re distinctly different, and it’s important to know how to tell them apart so they can be used effectively. This post will help you better understand each, as well as User Stories, and their unique roles and relationships with each other in the context of Scrum.
+
+Since both Definition of “Done” and Acceptance Criteria apply to User Stories, let’s make sure that we understand User Stories first.
+
+## User Stories
+
+A User Story is a tool to move the focus from What we’re building (what often happens with traditional requirements) to Why and Who. It’s intended to start a conversation between the people who will implement the Story and the Product Owner, with the goal of ensuring the Team solves the underlying business problem instead of just delivering a requirement.
+
+<Image decoding="async" alt="User Story slices" width="400" height="362" sizes="(max-width: 400px) 100vw, 400px" src={colo_User_Story_slices_png} widths={[400, 300]} />The goals of a User Story are:
+
+*   to focus on the business problem that needs to be solved, not the solution to that problem.
+*   to start a conversation about why a problem needs solving, who needs it, and what problem to solve.
+*   to demonstrate a need in as concise and simple a form as possible.
+*   to be a [small, vertical slice of functionality](/blog/story-slicing-how-small-is-enough.html) – if we were making a cake, this is something that goes through all the layers – as opposed to delivering only the icing. In technical terms: through the entire system, not a description of the component layers or technical need (_as illustrated by the picture_). Traditional approaches often describe work to be done in technical layers (e.g. Business Logic or Database). This leads to waste in the form of Over Production. User Stories avoid this waste by challenging teams to build only the pieces in each layer required at that moment.
+
+A User Story is an invitation to a conversation.
+
+Since User Stories are not official Scrum tools, there is no required format, but a common structure is “As a &lt;role&gt; I want &lt;to do&gt; so that &lt;value&gt;”.
+
+The three components of User Stories, often referred to as **the three C’s**, are:
+
+• **Conversations**: Conversations that discuss the Story details and result in creating the acceptance criteria.
+
+• **Confirmations**: Acceptance criteria that, in software, can be turned into automated acceptance tests. These automated tests enable the simple and light approach implemented by the other two C’s.
+
+• **Card**: A token (with a Story title/description, traditionally written on a small paper card or sticky note), used for planning and acts as a reminder to have conversations.
+
+Here is an example of User Stories for an imaginary Point-of-Sale system. The user is denoted as a Buyer.
+
+_As a buyer, I want to pay by tapping my debit card so that I spend less time in the checkout process._
+
+_As a buyer, I want to be able to enter my pin code when transactions are over $100 so that I know that I’m secure if my card is stolen._
+
+_As a merchant, I want debit cards to be checked to ensure that they’re valid so I don’t lose money by accepting invalid cards._
+
+Each User Story (sometimes called a Product Backlog Item or PBI) and its associated Acceptance Criteria (we’ll cover them last) are then checked against the Definition of “Done” to ensure correctness and completeness.
+
+## Definition of “Done”
+
+[The Scrum Guide](https://scrumguides.org/scrum-guide.html), in a way that is maddeningly vague, says that:
+
+> _**When a Product Backlog item or an Increment is described as ‘Done’, everyone must understand what ‘Done’ means.**_
+
+I promise you, that sentence and the paragraphs that follow are the most poorly understood aspects of the Scrum Guide. Some Team members will assume “Done” means it works on their machine. Others will believe it means they throw their work over the wall to Quality Assurance or Test. Still others will assume that “Done” is limited to checking in working code. Since the Scrum Guide is so vague, Teams need to establish their own shared understanding of what they will call “Done,” and put it in writing so it’s clear.
+
+That’s **why** the Definition of “Done” exists: to ensure that the members of the Development Team and the Product Owner (PO) agree about the quality and completeness of the work they’re producing. Used effectively, the PO will know that, if the Team can show that they have met the list of conditions of “Done,” then the PO can safely deliver the product to the client.
+
+This is intended to be applicable to _all_ items in the Product Backlog, not just an individual User Story.
+
+Here is an example of a simplified Definition of “Done” from the World’s Smallest Online Bookstore that we use as a model in our [Scrum by Example series](/blog/scrum-by-example.html):
+
+**Item**
+
+Whenever changes are made to existing code, a Unit Test is written to cover that method
+
+Usability Review Completed
+
+Tested on iPad, iPhone and Android Phone
+
+Performance Tests run
+
+Code Peer Reviewed (if not written using Pair Programming)
+
+End-User Documentation has been updated
+
+The Definition of “Done” is different from Acceptance Criteria because “Done” doesn’t change from one User Story to the next, while the Acceptance Criteria is written specifically and uniquely for each individual feature or User Story. It also differs in that it has a formal Scrum definition, whereas Scrum doesn’t require either User Stories or Acceptance Criteria to be used.
+
+To summarize, the goals of “Done” are:
+
+*   to build a common understanding within the Team about quality and completeness.
+*   for that understanding of “Done” to include the Product Owner.
+*   to be a checklist that User Stories are checked against.
+*   to ensure the increment shipped at the end of the Sprint has high quality and that the quality is well understood by all involved.
+
+<Image decoding="async" alt="Definition of Done vs. User Stories vs. Acceptance Criteria" width="1416" height="840" sizes="(max-width: 1416px) 100vw, 1416px" src={colo_APR_Blog_Illustrations_Nov2019_AcceptanceCriteria_B_v2_jpg} widths={[1416, 300, 1024, 768]} />
+
+## Acceptance Criteria
+
+While a User Story is deliberately vague to allow the Team freedom to decide the precise details of how something will be built, Acceptance Criteria are the precise details. They are unique to each User Story. _(For more details on how and when the Acceptance Criteria are discovered see: [the Lifecycle of a User Story and Acceptance criteria](/blog/lifecycle-of-a-user-story.html))_
+
+The goals of Acceptance Criteria are:
+
+*   to clarify what the Team should build before they start work.
+*   to ensure everyone has a common understanding of the problem.
+*   to help Team members know when they should cease work on a Story. This is distinct from “Done” because they may have met the acceptance criteria but not checked everything against “Done.”
+*   to help verify the Story via automated tests.
+
+**An example of Acceptance Criteria:**
+
+**This** User Story:
+
+_As a buyer, I want to pay by tapping my debit card so that I spend less time in the checkout process._
+
+**results in the following Acceptance Criteria:**
+
+_Tap limit is $100  
+__Tap not allowed under $10  
+__Linked account is checked to ensure the balance is sufficient_
+
+The trouble with Acceptance Criteria written in a plain English format, as above, is that they’re full of ambiguity. So, **a popular approach to describing Acceptance Criteria is “Specification By Example”, also known as Behaviour Driven Development (BDD) or Acceptance Test-Driven Development (ATDD).**
+
+User Story: Tap Credit Card  
+Acceptance Criteria:
+
+**Sale Amount**
+
+**Bank Balance**
+
+**Expected Result**
+
+**Expected Message**
+
+$0.00
+
+$99.00
+
+Fail
+
+No purchase
+
+$9.99
+
+$99.00
+
+Fail
+
+Below minimum threshold for tap
+
+$10.00
+
+$99.00
+
+Pass
+
+$90.01
+
+$90.00
+
+Fail
+
+Purchase over the amount of money in the account
+
+$100.00
+
+$100.00
+
+Pass
+
+No numbers
+
+$100.01
+
+$200.00
+
+Fail
+
+Purchase is over the maximum tap limit
+
+### Conclusion
+
+Definition of “Done” is the global requirement checklist for all User Stories. Acceptance Criteria are the specific details needed to complete a User Story. A User Story is a placeholder for a conversation about meeting a User need.
+
+#### Your Guide to Demystifying Scrum
+
+_People using Agile and Scrum sometimes throw around terms and phrases and assume everyone listening understands what they mean. This is not only problematic – a kind of gatekeeping against people new to the field and/or not from a software background – but it does little to help people find new solutions for their challenges._
+
+_Agile Pain Relief is committed to helping new Scrum professionals who want to learn the language of Scrum and become confident knowing what’s what, so you can focus on helping teams become the most effective they can be. If you share this view, we invite you to join us for our [Certified ScrumMaster courses across Canada](/certified-scrummaster-csm-training)._
+
+Image attribution: Agile Pain Relief Consulting
+
+_4 December 2019: Updated for 2019 from 2017_

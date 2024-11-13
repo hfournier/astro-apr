@@ -1,0 +1,44 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 10628
+const title = "Guaranteed Course Dates"
+const description =
+	"We respect your time and training. That's why when we offer a course, we are committed to deliver it as promised. We don't believe in the practice used by some trainers of shotgunning the calendar with courses, intending to cancel anything that doesn't book a promising number of seats. This approach leaves you and your ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-02-19T06:13:48")
+const modifiedAt = new Date("2023-10-23T21:33:25")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<h3>
+		We respect your time and training. That&#8217;s why when we offer a course, we are committed to
+		deliver it as promised.
+	</h3>
+	<p>
+		We don&#8217;t believe in the practice used by some trainers of shotgunning the calendar with
+		courses, intending to cancel anything that doesn&#8217;t book a promising number of seats. This
+		approach leaves you and your training plans by the wayside in the pursuit of profits. Instead,
+		we carefully plan our courses around rational travel plans (we travel a lot!) and demand
+		patterns that we&#8217;ve seen since starting Agile Pain Relief in 2009.
+	</p>
+	<p>
+		Occasionally we may need to shift area venues (normally a comparable venue near the original
+		location) to better accommodate training size and needs, and rarely a travel or medical
+		emergency will throw a wrench into plans, but these are truly rare exceptions. The one temporary
+		exclusion to this policy is our <a href="/advanced-certified-scrummaster-acsm-training"
+			>Advanced Certified ScrumMaster training</a
+		> since this is a new and developing product and a minimum number of attendees is needed for effective
+		training.
+	</p>
+	<p>
+		As always, our <a href="/terms-and-conditions">cancellation and refund policy</a> protects you, and
+		our <a href="/private-scrum-agile-training">private training</a> can fulfill dates and locations
+		of your choosing.
+	</p>
+</MainLayout>

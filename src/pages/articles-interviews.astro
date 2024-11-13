@@ -1,0 +1,100 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 49
+const title = "Articles & Interviews"
+const description =
+	"Scrum and Agile articles and interviews: Learning Best Approaches for Your Brain – Mark Levison, 2009 Making TDD Stick: Problems and Solutions for Adopters Mark observed that, after solid classroom training, teams in larger companies still struggle to adopt TDD. To better understand the problem he surveyed team members. In this article he shares the problems he ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2019-09-13T05:46:16")
+const modifiedAt = new Date("2023-05-30T15:54:54")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<h3>Scrum and Agile articles and interviews:</h3>
+	<p>
+		<a
+			href="/blog/learning-best-approaches-for-your-brain-slide-deck.html"
+			target="_blank"
+			rel="noopener noreferrer">Learning Best Approaches for Your Brain</a
+		> – Mark Levison, 2009
+	</p>
+	<p>
+		<a
+			href="https://www.infoq.com/articles/levison-TDD-adoption-strategy/"
+			target="_blank"
+			rel="noopener noreferrer">Making TDD Stick: Problems and Solutions for Adopters</a
+		> Mark observed that, after solid classroom training, teams in larger companies still struggle to
+		adopt TDD. To better understand the problem he surveyed team members. In this article he shares the
+		problems he uncovered and his own comprehensive strategy, designed to help anyone introducing TDD
+		into an organization.- Mark Levison, 2009
+	</p>
+	<p>
+		<a
+			href="https://www.infoq.com/articles/technical-debt-levison/"
+			target="_blank"
+			rel="noopener noreferrer">Technical Debt a Perspective for Managers</a
+		>: Developers often talk about Technical Debt saying it&#8217;s slowing your projects down. What
+		are they really saying? What measures can you take to reduce it before it cripples your
+		projects? – Mark Levison, 2010
+	</p>
+	<p>
+		<a
+			href="https://www.infoq.com/articles/science-of-learning/"
+			target="_blank"
+			rel="noopener noreferrer">The Science of Learning: Best Approaches for Your Brain</a
+		>: Why don’t people understand your idea in a meeting? Why does the developer you’re mentoring
+		still not get it? Why do attendees in your course only learn 10% of the material? We are all
+		teachers in some way, yet only professional educators receive training in this area. This
+		article discusses lessons from neuroscience and how they can be applied to Agile Software
+		Development and beyond. – Mark Levison, 2010
+	</p>
+	<h3>These interviews feature our team:</h3>
+	<p>
+		<a
+			href="https://www.infoq.com/articles/scrum-not-enough/"
+			target="_blank"
+			rel="noopener noreferrer">Scrum Alone is Not Enough – An InfoQ Interview with Mark Levison</a
+		>: Video from the Agile 2015 Conference. Mark answers questions about his Scrum Alone is Not
+		Enough <a href="/blog/scrum-alone-is-not-enough.html" target="_blank" rel="noopener noreferrer"
+			>blog series</a
+		>. Also available, <a
+			href="https://www.infoq.com/articles/scrum-not-enough/"
+			target="_blank"
+			rel="noopener noreferrer">written interview version</a
+		>.
+	</p>
+	<p>
+		<a
+			href="https://www.solutionsiq.com/resource/agile-amped-podcast/5-steps-for-creating-high-performing-teams-mark-levison-at-agile-2015/"
+			target="_blank"
+			rel="noopener noreferrer"
+			>5 Steps For Creating High Performing Teams – Mark Levison at Agile 2015</a
+		>: Video interview with Agile Amped discussing Mark’s <a
+			href="/high-performance-teams"
+			target="_blank"
+			rel="noopener noreferrer">e-book</a
+		> on creating high-performance teams.
+	</p>
+	<p>
+		<a
+			href="https://www.infoq.com/interviews/agile2014-levison-teams/"
+			target="_blank"
+			rel="noopener noreferrer"
+			>Mark Levison on the Magic and Science of Teams – An InfoQ Interview</a
+		>: Video interview and transcript from Agile 2014 Conference.
+	</p>
+	<p>
+		<a
+			href="https://www.infoq.com/interviews/creativity-and-brain-science/"
+			target="_blank"
+			rel="noopener noreferrer"
+			>Creativity and Brain Science with Mark Levison and Roger Brown – An InfoQ Interview</a
+		>: Video interview and transcript from Agile 2011 Conference.
+	</p>
+</MainLayout>

@@ -1,0 +1,92 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 15528
+const title =
+	"Should I do Certified ScrumMaster training (CSM) or Certified Scrum Product Owner training (CSPO) training?"
+const description =
+	"Facing a dilemma on whether to do CSM or CSPO training? It all comes down to identifying your specific needs. If you haven't yet read the outlines of the Scrum Master and Scrum Product Owner roles in the Scrum Guide, that's a good place to start. When it comes to choosing certified scrum training, here's ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2023-09-24T16:32:41")
+const modifiedAt = new Date("2023-10-23T15:33:52")
+const author = "heather-uhlagilepainrelief-com"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Facing a dilemma on whether to do CSM or CSPO training? It all comes down to identifying your
+		specific needs. If you haven’t yet read the outlines of the Scrum Master and <a
+			href="/product-owner-scrum-guide"
+			target="_blank"
+			rel="noopener">Scrum Product Owner roles in the <em>Scrum Guide</em></a
+		>, that’s a good place to start. When it comes to choosing certified scrum training,
+		here&#8217;s a rough breakdown to help you choose:
+	</p>
+	<h2>Certified ScrumMaster® (CSM®) Training</h2>
+	<ul>
+		<li>Ideal for those new to Scrum.</li>
+		<li>
+			Focuses primarily on the team and the ScrumMaster role, with some insights into Product
+			Ownership within the broader context.
+		</li>
+		<li>
+			Provides a deep understanding of the &#8220;how&#8221; and &#8220;why&#8221; of Scrum, not
+			just the &#8220;what.&#8221;
+		</li>
+		<li>Equips you with the ability to design retrospectives that help teams tackle challenges.</li>
+		<li>
+			Teaches coaching techniques for guiding your team through obstacles and coaching your Product
+			Owner.
+		</li>
+	</ul>
+	<h3>Who Could Benefit from CSM Training:</h3>
+	<ul>
+		<li>Individual Contributors (e.g., Developers, Testers, Business Analysts)</li>
+		<li>ScrumMasters</li>
+		<li>Product Owners</li>
+		<li>Traditional Project Managers</li>
+		<li>Mid-level Executives, and more</li>
+	</ul>
+	<h2>Certified Scrum Product Owner® (CSPO®) Training</h2>
+	<ul>
+		<li>
+			Focuses specifically on the role of <a
+				href="/certified-scrum-product-owner-cspo-training"
+				target="_blank"
+				rel="noopener">Product Ownership</a
+			>.
+		</li>
+		<li>Emphasizes collaboration with your development team.</li>
+		<li>Teaches you how to create an effective vision and strategy.</li>
+		<li>Highlights why the Product Owner shouldn&#8217;t be the sole author of User Stories.</li>
+		<li>Covers the art of breaking large User Stories into manageable pieces.</li>
+		<li>Emphasizes delivering a usable product during each sprint.</li>
+		<li>
+			Suitable for individuals interested in understanding how to build, manage, and maintain an
+			effective product backlog, or those looking to work closely with the Product Owner (e.g.,
+			ScrumMasters, Business Analysts).
+		</li>
+	</ul>
+	<h3>Who Could Benefit from CSPO Training:</h3>
+	<ul>
+		<li>Product Owners</li>
+		<li>Scrum Masters</li>
+		<li>Business Analysts</li>
+		<li>Product Managers</li>
+		<li>Project Managers</li>
+		<li>Business Stakeholders</li>
+		<li>Program Managers</li>
+	</ul>
+	<p>
+		Ultimately, your choice should align with your specific goals and the role you aspire to play
+		within your Scrum team.
+	</p>
+	<h3>
+		<a href="/cspo-vs-pspo-certifications" target="_blank" rel="noopener"
+			>Certified Scrum Product Owner training® (CSPO) vs Professional Scrum Product Owner™ (PSPO)</a>
+	</h3>
+</MainLayout>

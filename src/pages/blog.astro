@@ -1,0 +1,18 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 37
+const title = "Notes from a Tool User"
+const description = "TODO: Add description"
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2019-09-13T05:21:16")
+const modifiedAt = new Date("2023-10-23T21:34:25")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+</MainLayout>

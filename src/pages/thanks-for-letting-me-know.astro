@@ -1,0 +1,35 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_thanks_for_letting_me_know_headshot_facing_left_square_jpg from "@assets/images/thanks-for-letting-me-know/headshot-facing-left-square.jpg"
+
+const wpId = 14681
+const title = "Thanks for letting me know!"
+const description =
+	"It will help me better curate the information I send your way so you can get the most value and best content to help you with your Scrum and Agile goals. ~ Mark"
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2023-01-23T17:55:44")
+const modifiedAt = new Date("2023-05-24T17:12:22")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		<Image
+			decoding="async"
+			alt="Certified Scrum Trainer Mark Levison, Agile Pain Relief Consulting"
+			width="206"
+			height="275"
+			sizes="(max-width: 206px) 100vw, 206px"
+			src={assets_images_thanks_for_letting_me_know_headshot_facing_left_square_jpg}
+			widths={[300, 225]}
+		/>It will help me better curate the information I send your way so you can get the most value
+		and best content to help you with your Scrum and Agile goals.
+	</p>
+	<p>~ Mark</p>
+</MainLayout>

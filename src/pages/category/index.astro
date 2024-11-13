@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content"
+import MainLayout from "@layouts/MainLayout.astro"
+import Seo from "@components/seo/Seo.astro"
+import { SITE_TITLE } from "../../consts"
+
+const categories = await getCollection("categories")
+---
+
+<MainLayout>
+	<Seo
+		slot="head"
+		seo={{ title: "Authors", description: "List of authors" }}
+		options={{ brand: SITE_TITLE }}
+	/>
+	<div class="">
+		<h1>Categories</h1>
+	</div>
+	<ul class="gap-8 prose-li:mt-0 sm:columns-2 md:columns-3">
+		{
+			categories.map((category) => (
+				<li class="">
+					<a class="" href={`/category/${category.id}`}>
+						{category.data.name}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</MainLayout>

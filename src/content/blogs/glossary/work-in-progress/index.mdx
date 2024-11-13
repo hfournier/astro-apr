@@ -1,0 +1,88 @@
+---
+wpId: 11702
+title: 'Work in Progress [WIP]'
+description: 'In Scrum, Work in Progress is the batch of User Stories or Product Backlog Items that have been started but not finished. These are also referred to as partially finished items. Work that hasn''t been deployed, shipped, or otherwise delivered to a customer has no real value. Value is only realized when the work is ...'
+type: glossary
+createdAt: 2021-12-15T12:54:04
+modifiedAt: 2023-12-15T17:32:07
+author: mark-levison
+---
+
+import { Image } from "astro:assets"
+
+import colo_WSOBS_limit_work_in_progress_png from "WSOBS-limit-work-in-progress.png";
+
+
+In Scrum, **Work in Progress** is the batch of User Stories or Product Backlog Items that have been started but not finished. These are also referred to as partially finished items.
+
+Work that hasn’t been deployed, shipped, or otherwise delivered to a customer has no real value. Value is only realized when the work is available for use by the customer. The naive assumption is that the more work in progress there is, the more work will get to ‘Done’. Yet evidence is to the contrary. More work in progress results in _less_ work done. (See [The Impact of Agile Quantified](/glossary/impact-of-agile) for more).
+
+<Image decoding="async" alt="Limit Work in Progress Kanban board" width="491" height="324" sizes="(max-width: 491px) 100vw, 491px" src={colo_WSOBS_limit_work_in_progress_png} widths={[899, 300, 768]} />
+
+The use of a Kanban board is a simple way to help limit Work in Progress (WIP) by having a column that visually displays the work that exists in that state, and setting a maximum limit of the quantity. The idea is that we shouldn’t start new work before the existing work gets to the Definition of Done.
+
+Many teams discover WIP Limits when there is large batch of work stuck waiting for someone else to complete it. In software development teams, this queue typically forms in front of Quality Assurance or Documentation.
+
+A large Work In Progress queue highlights a bottleneck where the throughput of the team is constrained by the speed at which that station can complete work. Once a column hits a WIP limit and fills up, then we’re forced to help get the most downstream work to truly ‘Done’. Over time, teams often reduce their WIP limit to improve flow, and each reduction challenges the team to cross-skill and collaborate more.
+
+## Measurements
+
+To understand the effect of changing our WIP limit, we need to measure a few simple things. Start off just by observing bottlenecks. Each day, count the number of Product Backlog Items/User Stories in progress that are stuck waiting for someone to pick them up. That gives a sense of how big our bottlenecks are and where they’re located. Measure Throughput and Cycle Time. **Throughput** is just the number of PBIs/Stories the team complete in a Sprint. **Cycle Time** is how long it takes for an item to go from being started to being delivered to the customer.
+
+## Effects of Reducing WIP
+
+As with any improvement, for a short while the measures will get worse until the team adapts. As we reduce the WIP limit, first we would expect the size of the bottlenecks to be reduced. Then as the bottlenecks get smaller, the throughput will increase, and the cycle time will be reduced. You will know that you’re succeeding with limiting WIP when your throughput increases, your cycle time decreases, and you can see an increase in collaboration among team members. _Remember that these effects will take a few months to build up a measurable effect._
+
+## What is a Good WIP Limit for My Team?
+
+A long-winded answer would say something about your team size, skill, strengths and then say it’s too complicated to give you a real answer. The practical approach? Observe the largest number of items your team had in progress in the past few Sprints, then reduce that number by one. This is your initial WIP limit. Display it on your Sprint Backlog. For the next few Sprints, observe how the team adapt to the reduced WIP limit. Possibly coach them to encourage collaboration, pair programming and cross-skilling. Once they’ve adapted, reduce the Work in Progress limit again by one. Eventually your team will hit their own practical limit. Most Scrum teams discover that they can limit the WIP to 2-3 items for the entire team (hint: this requires improving collaboration and learning pair-programming, perhaps also BDD). Some teams go even further to discover Ensemble Programming and set their WIP limit to one. **A key point is that the WIP Limit should be set for the whole team**, and not just per person. For teams that are used to having three items in progress per team member, this can require a large mindset change with a change in focus from individual work to collaboration and teamwork.
+
+## WIP Limit: Per Task or Per User Story?
+
+Which is better? Many Scrum Teams create tasks for each User Story and then focus their efforts on delivering those tasks. My recommendation to those teams is to ensure all tasks are one day or less in size. The problem with a task focus is that it increases the emphasis on individual work and limits the focus on the real value of the User Story. A better approach is to define the tasks, not for tracking purposes, but to ensure that everyone has a clear understanding of what needs to be completed. The Sprint Backlog should focus on User Stories and ensuring that each Story solves a customer problem, meets the Acceptance Criteria, and the Definition of Done.
+
+## What to Do When a WIP Limit is Too High or Too Low
+
+**Too high?** If you use the above suggested approach of reducing the limit by one at a time, this shouldn’t occur as it will naturally get lowered over a few months until it settles where the team is currently able. Since the team finds its own limit, that will avoid the problem.
+
+**Too low?** The theoretical risk is that if the limit is too low, the team will ignore it. Yes, this is a risk. Again, we avoid it by discovering what the team is capable of over time. Instead of imposing a theoretical limit, we discover what the team is capable of today and adjust to suit.
+
+**What is the absolute lower bound?** Is a WIP limit of one story in progress at one time for the entire team actually possible? Or practical? Yes. Scrum Teams that use Ensemble Programming typically only have one item in progress for the entire team.
+
+**When and where do you adjust?** WIP Limits are an excellent topic for discussion in the Team’s retrospective.
+
+## Does the WIP Limit Change?
+
+As a Scrum team cross-skills and improves collaboration, they should be able to reduce WIP limits. I’ve been asked things like “The limit has been stable for over a month; should we stay here forever?” Probably not. As the team becomes better able to handle the current WIP limit, it could be reduced again to see if that provokes further improvement.
+
+I’ve also been asked “Does the Work in Progress Limit ever go up?”
+
+If there is a fundamental change in the team – like a new team member, a big change in the type of work, etc. – then, for a time, the WIP limit might increase. However, once the situation has stabilized, we would expect the steady march back down to continue.
+
+## How and Why do Work in Progress Limits Work?
+
+As the number of in-progress items are reduced, team members are challenged to move outside of the narrow confines of a particular type of work. For example, on a team where there are a number of items building up in front of Quality Assurance (QA), the WIP limit will show a developer that they shouldn’t just start coding the next story. Instead, when their team is at the limit for the number of items that can be worked on right now, the developer might talk to someone in QA to see how they can help. The help might involve:
+
+*   Pairing with a tester
+*   Automating a small task
+*   Doing a first test on a piece of code they didn’t write
+
+As this happens again and again over the course of a few weeks, our developer is also starting to cross-skill, learning a little about how to do QA and what QA needs to make the product easier to test.
+
+So, the WIP limit itself isn’t magical. Instead, it helps team members get unstuck from the status quo, challenges them to learn, and improves collaboration.
+
+[Scrum by Example – The Story of an Incomplete Sprint](/blog/scrum-by-example-the-story-of-an-incomplete-sprint.html)
+
+#### Resource Links:
+
+*   [How to Set WIP Limits on Your Columns When You’re Just Getting Started](https://getnave.com/blog/set-wip-limits/)
+*   [Limiting Work in Progress (WIP) in Kanban](https://www.scrumexpert.com/knowledge/limiting-work-in-progress-wip-in-kanban/)
+*   [Scrum With Kanban WIP Limits](https://www.digite.com/blog/scrum-kanban-wip-limits/)
+*   [Why you should limit work in progress and stop multitasking](https://medium.com/@Adrien_Liard/why-you-should-limit-work-in-progress-and-stop-multitasking-ba7ecd4670f)
+*   [WIP Limit Definition](https://searchsoftwarequality.techtarget.com/definition/WIP-limit)
+
+#### See Also:
+
+[Kanban](/glossary/kanban)  
+[Interruptions](/glossary/interruptions)  
+[Multitasking](/glossary/multitasking)

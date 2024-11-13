@@ -1,0 +1,463 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_the_story_of_a_sprint_Story_of_a_Sprint__Users_Stories_1024x577_jpg from "@assets/images/the-story-of-a-sprint/Story_of_a_Sprint_-Users-Stories-1024x577.jpg"
+import assets_images_the_story_of_a_sprint_Story_of_a_Sprint__Sprint_Review_1024x578_jpg from "@assets/images/the-story-of-a-sprint/Story_of_a_Sprint_-Sprint-Review-1024x578.jpg"
+import assets_images_the_story_of_a_sprint_Story_of_a_Sprint__Retrospective_1024x577_jpg from "@assets/images/the-story-of-a-sprint/Story_of_a_Sprint_-Retrospective-1024x577.jpg"
+
+const wpId = 12820
+const title = "The Story of a Sprint"
+const description =
+	"If the language of Scrum sounds intimidating to you, don't worry, you're not alone. I get it, Scrum can be difficult to understand at first, but it's a lot easier when you think about it as simply different steps that a team moves through as they build a working product, then continue to build and ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-06-30T16:33:01")
+const modifiedAt = new Date("2024-01-16T17:30:55")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		<iframe
+			title="Story of a Sprint"
+			width="500"
+			height="281"
+			src="https://www.youtube.com/embed/QHD4RpyWxHY?feature=oembed"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen></iframe>
+	</p>
+	<p>
+		If the language of <a href="/glossary/scrum" target="_blank" rel="noopener">Scrum</a> sounds intimidating
+		to you, don’t worry, you’re not alone.
+	</p>
+	<p>
+		I get it, Scrum can be difficult to understand at first, but it’s a lot easier when you think
+		about it as simply different steps that a team moves through as they build a working product,
+		then continue to build and improve it.
+	</p>
+	<p>To help show what I mean, let me introduce you to the WorldsSmallestOnlineBookStore.</p>
+	<p>
+		The WorldsSmallestOnlineBookStore is a fictional product we use to demonstrate how Scrum works
+		in the real world. The bookstore caters to the view that Amazon is wrong. Readers don’t want an
+		infinite supply of books that they have to spend hours agonizing over and deciding from. They
+		just want the right choice for them, so they can quickly buy and then spend more time reading.
+	</p>
+	<p>
+		So we’re going to join the team who have already built and launched an early version of the
+		bookstore website.
+	</p>
+	<p>
+		So far, the team has a website up and running where a book buyer can visit the site, find books
+		recommended by staff, and purchase them. There is a rudimentary shopping cart system in place,
+		but more features are needed.
+	</p>
+	<p>
+		We’ll use this scenario to demonstrate the different aspects of Scrum, in a way that moves the
+		Scrum team through the process so you can understand how it’s structured, and – even more
+		importantly &#8211; why.
+	</p>
+	<h3>Our Story So Far</h3>
+	<p>
+		The <a href="/blog/scrum-team-size.html" target="_blank" rel="noopener">Scrum Team</a> has just completed
+		their ninth <a href="/glossary/sprint" target="_blank" rel="noopener">Sprint</a> and they are about
+		to meet with their ScrumMaster and Product Owner to begin the next one.
+	</p>
+	<p>
+		But before we let them jump into <a
+			href="/glossary/sprint-planning"
+			target="_blank"
+			rel="noopener">Sprint Planning</a
+		>, the first event in a Sprint, we need to clear up some common confusion. And to do <em
+			>that</em
+		>, we need to explain what <a
+			href="/glossary/product-backlog-refinement"
+			target="_blank"
+			rel="noopener">Product Backlog Refinement</a
+		> is, and why it should happen <em>before</em> Sprint Planning ever begins.
+	</p>
+	<h3>Product Backlog Refinement &#8211; Before the Sprint Starts</h3>
+	<p>
+		The <a href="/glossary/product-backlog" target="_blank" rel="noopener">Product Backlog</a> is the
+		big picture list of all the items that the Team intends to build for a product or project in the
+		near term.
+	</p>
+	<p>
+		<strong>Product Backlog Refinement</strong> is when the Product Owner and the Team refine that list
+		to prepare for Sprint Planning, by ensuring that:
+	</p>
+	<ul>
+		<li>
+			the Team understand the work items in the Product Backlog so they build the correct thing
+			(e.g. <strong>User Stories</strong>)
+		</li>
+		<li>
+			the Team give their best guess as to how much effort Product Backlog item will take to
+			complete (<strong>Estimation</strong>)
+		</li>
+		<li>
+			and the Product Owner <strong>prioritizes</strong> the Product Backlog queue for what is next most
+			important
+		</li>
+	</ul>
+	<p>
+		This Product Backlog Refinement is preparation work that happens before the first Sprint, and
+		during, every subsequent Sprint.
+	</p>
+	<h4><strong>Prioritization</strong></h4>
+	<p>
+		That&#8217;s pretty self-explanatory, but let’s touch briefly on User Stories and Estimation.
+	</p>
+	<p>
+		<a href="/wp-content/uploads/2021/06/Story_of_a_Sprint_-Users-Stories.jpg"
+			><Image
+				decoding="async"
+				alt="Story of a Sprint - User Stories become product backlog"
+				width="1024"
+				height="577"
+				sizes="(max-width: 1024px) 100vw, 1024px"
+				src={assets_images_the_story_of_a_sprint_Story_of_a_Sprint__Users_Stories_1024x577_jpg}
+				widths={[1024, 300, 768, 1536, 1836]}
+			/></a>
+	</p>
+	<h4>User Stories</h4>
+	<p>
+		The team can’t build the right product unless they spend time with the Product Owner learning
+		their current thinking. They do this by discussing each upcoming Product Backlog Item with the
+		Product Owner to understand how it relates to a user’s needs.
+	</p>
+	<p>
+		This is where <a href="/glossary/user-story" target="_blank" rel="noopener">User Stories</a> come
+		in to use by many teams. In our WorldsSmallestOnlineBookStore example, Paula has collaborated with
+		the team to create User Stories that describe each feature in a language that the whole team understands.
+		Each User Story is a short description that acts as a reminder to the Team members of the bigger
+		discussion they had around the user’s needs. They can be handy, but it’s important to note that User
+		Stories are not officially part of, or required by, Scrum.
+	</p>
+	<h4>Estimation</h4>
+	<p>
+		<a href="/glossary/estimation" target="_blank" rel="noopener">Estimation</a> is when the Team … well,
+		estimates… how much work is required for each of those items on the list, and how long each will
+		take to accomplish.
+	</p>
+	<h4>Story Splitting</h4>
+	<p>
+		The Team also <a href="/glossary/user-story-splitting" target="_blank" rel="noopener"
+			>split large Product Backlog Items</a
+		> into smaller, more manageable, parts during Product Backlog Refinement.
+	</p>
+	<p>
+		Many people think that Sprint Planning includes reviewing the Product Backlog Items (or User
+		Stories) and Estimating them, but that just isn’t effective. Yet too many teams do this in
+		Planning, and I strongly recommend against it. If you do it in a single session it takes forever
+		and makes it difficult to also focus on planning. For a host of reasons, this leads to a crappy
+		Sprint.
+	</p>
+	<p>
+		The Product Backlog Refinement preparation work should be ongoing and happen at any convenient
+		time during the Sprint. This keeps the understanding about what they’re building current and
+		consistent among all team members. That way, when Sprint Planning actually starts, the Team
+		already has the best information to work with.
+	</p>
+	<p>
+		So now our World’s Smallest Online Bookstore Team has refined their Product Backlog and they can
+		start their Sprint with a Sprint Planning session and focus on the question, “What is our Goal?
+		Which Product Backlog Items can we do this Sprint that contribute towards our goal?”
+	</p>
+	<h3>Sprint Planning &#8211; Goal Setting</h3>
+	<p>
+		The Developers, along with ScrumMaster Steve and Product Owner Paula, meet at the beginning of
+		their 10th Sprint for Sprint Planning. They start by discussing what they think they can
+		accomplish in the next two weeks. This will become their <a
+			href="/glossary/sprint-goal"
+			target="_blank"
+			rel="noopener">Sprint Goal</a
+		>.
+	</p>
+	<p>
+		Paula explains that she has been getting a lot of requests for the ability to send gift cards to
+		friends. She also wants to allow authors to give their readers discount codes, so that they can
+		promote their new books.
+	</p>
+	<p>
+		The Team spends half an hour discussing the Backlog Items with Product Owner Paula to get more
+		clarity, and they craft the following summary statement: “Buy, Send and Use Gift Card” as their
+		Sprint Goal.
+	</p>
+	<p>
+		They decide that handling the discount code is too much work for the next two weeks and so they
+		don’t do it this Sprint.
+	</p>
+	<h3>Sprint Planning &#8211; Sprint Backlog</h3>
+	<p>
+		After setting the Sprint goal, they walk through the product backlog, in priority order,
+		determining which Product Backlog items they forecast they can achieve this Sprint.
+	</p>
+	<p>
+		Once the Team has determined what they’re capable of accomplishing in the Sprint, they finish
+		planning by discussing how they are going to accomplish the work. Many teams also use this time
+		to break their Product Backlog Items down into tasks. Since their discussion will be technical,
+		Product Owner Paula steps out of the room to work on other things, but stays nearby in case the
+		Team has follow-up questions.
+	</p>
+	<p>
+		After completing their Sprint Planning, the Team takes their list of Product Backlog Items with
+		associated tasks and turn them into a <a
+			href="/glossary/sprint-backlog"
+			target="_blank"
+			rel="noopener">Sprint Backlog</a
+		> (effectively a Task Board for the Sprint).
+	</p>
+	<h3>Sprint Begins</h3>
+	<p>
+		The Team selects two Product Backlog Items (PBIs) to start work on immediately. They break into
+		groups: Tonia, Martin, and Doug tackle “Buy a $10 Gift Card”, and Brad, Ian, and Kirby work on
+		“Send Gift Card by Email.”
+	</p>
+	<p>
+		For the next hour or two they work together to ensure that they have precise agreement about
+		what they’re building and what the underlying need is. This will reduce the chance of a surprise
+		after the Product Backlog Item is implemented when one Team member says that item isn’t built in
+		the way they expected. For the next few days, they work on these PBIs.
+	</p>
+	<p>
+		To ensure everyone on the Team is collaborating and are focused on the goal, (“Buy, Send, and
+		Use Gift Card”) they meet for Daily Scrum.
+	</p>
+	<h3>Daily Scrum</h3>
+	<p>
+		<a href="/glossary/daily-scrum" target="_blank" rel="noopener">Daily Scrum</a> is a short event that
+		occurs first thing in the morning on each day of the Sprint. The Team stands in front of their Sprint
+		Backlog to review where they’re at and recheck their progress towards the goal they set for the Sprint.
+	</p>
+	<p>Each Team member explains:</p>
+	<p>&#8211; What did I complete towards achieving the Sprint goal in the past day?</p>
+	<p>&#8211; What do I commit to today towards achieving the Sprint goal?</p>
+	<p>&#8211; What is slowing our progress towards meeting the Sprint goal?</p>
+	<p>
+		Since Daily Scrum is a self organizing activity for and by the team, they should adapt the
+		questions to help them meet the need: improving collaboration and completion of the Sprint Goal.
+	</p>
+	<h3>Product Backlog Refinement&#8230; again&#8230;</h3>
+	<p>
+		Sometime during the Sprint the team work together for a couple of hours to refine the Product
+		Backlog. This is the activity we discussed as happening before the Sprint began. The team work
+		to see if all of the existing Product Backlog Items still make sense. They also split larger
+		items as they move up the product backlog, and they estimate in preparation for the next Sprint
+		Planning.
+	</p>
+	<p>
+		We do Product Backlog Refinement frequently to make sure that the Team always has a good
+		understanding of what’s coming next in the Product, and to have the information needed for
+		Sprint Planning at the start of each Sprint.
+	</p>
+	<h3>End of Sprint</h3>
+	<p>
+		As the Sprint draws to a close, our Team has had some successes and some challenges. Throughout
+		the two-week Sprint, the Team collaborated to build and test the Product Backlog Items. In
+		addition, they checked in with their Product Owner on a regular basis to ensure that they were
+		delivering the product she expected. They have completed four of the five Items that they
+		forecast they would achieve in Sprint Planning. They also checked them against the <a
+			href="/glossary/definition-of-done"
+			target="_blank"
+			rel="noopener">Definition of Done</a
+		>.
+	</p>
+	<p>
+		The Definition of Done is a checklist of specific criteria that the Team compiled to ensure that
+		each item is, indeed, finished to a high standard of quality and is deliverable. It’s not a
+		set-it-once and move on kind of thing. It gets updated frequently as the team learns more about
+		their product and the technical environment, and as their skills grow.
+	</p>
+	<h3>Sprint Review</h3>
+	<p>
+		On the last day of the Sprint, the team gather with Paula (Product Owner), Steve (ScrumMaster)
+		and various stakeholders to review what they have built. In the <a
+			href="/glossary/sprint-review"
+			target="_blank"
+			rel="noopener">Sprint Review</a
+		>, Paula reminds people of the Sprint Goal, explains which Product Backlog Items, have been
+		completed. She checks them against the Definition of Done list that the Team has previously
+		compiled.
+	</p>
+	<p>
+		<a href="/wp-content/uploads/2021/06/Story_of_a_Sprint_-Sprint-Review.jpg"
+			><Image
+				decoding="async"
+				alt="Story of a Sprint - Sprint Review"
+				width="1024"
+				height="578"
+				sizes="(max-width: 1024px) 100vw, 1024px"
+				src={assets_images_the_story_of_a_sprint_Story_of_a_Sprint__Sprint_Review_1024x578_jpg}
+				widths={[1024, 300, 768, 1536, 1838]}
+			/></a>
+	</p>
+	<p>
+		The “Done” items are shared so everyone has a good understanding of how the changes actually
+		work. Ideally this isn’t done as a demonstration but, instead, with the stakeholders themselves
+		using the done items. The intention is to engage them in the actual use of the product and
+		ensure that their feedback is grounded in that personal experience. The group (including
+		executives, end users and other interested people) collaborate on deciding what is the next most
+		valuable thing to be worked on.
+	</p>
+	<p>
+		After a lot of discussion, it’s decided that the gift card features have been well enough
+		implemented and that discount codes are no longer the highest priority.
+	</p>
+	<p>
+		The Team is now being asked to refocus on items that help to sell more books to the same
+		customer.
+	</p>
+	<p>
+		The Product Owner wants bundle pricing – if you buy the book that you’re looking at along with
+		two other books, you get a small discount. The hope is that this feature of the website will
+		increase the volume of books being sold.
+	</p>
+	<p>
+		The resulting new Product Backlog Item is: “Related Products – Bundled Pricing” and it’s agreed
+		that Paula will add this to the Backlog before the next Sprint. This is a great example of the
+		power of Scrum and its ability to adapt quickly to the changing needs of a client.
+	</p>
+	<h3>Sprint Retrospective</h3>
+	<p>
+		Once the Sprint Review is complete, the Team, including Product Owner and Scrum Master,
+		reconvene for a <a href="/glossary/sprint-retrospective" target="_blank" rel="noopener"
+			>Sprint Retrospective</a
+		> to look at the last two weeks, with the goal of improving how they worked together in the last
+		Sprint.
+	</p>
+	<p>
+		As a result of their discussion, the Team identifies several things that contributed to them
+		missing the goal for the Sprint:
+	</p>
+	<ul>
+		<li>They over-committed.</li>
+		<li>
+			They took on large Product Backlog Items without splitting them down to smaller Product
+			Backlog Items.
+		</li>
+		<li>They put too much work into progress.</li>
+	</ul>
+	<p>
+		<a href="/wp-content/uploads/2021/06/Story_of_a_Sprint_-Retrospective.jpg"
+			><Image
+				decoding="async"
+				alt="Story of a Sprint - Sprint Retrospective"
+				width="1024"
+				height="577"
+				sizes="(max-width: 1024px) 100vw, 1024px"
+				src={assets_images_the_story_of_a_sprint_Story_of_a_Sprint__Retrospective_1024x577_jpg}
+				widths={[1024, 300, 768, 1536, 1836]}
+			/></a>
+	</p>
+	<p>For the next Sprint they identified several improvements they could make:</p>
+	<ul>
+		<li>Always split large Product Backlog Items into several smaller parts.</li>
+		<li>
+			Never have more than 3 Product Backlog Items in progress at once (this forces people to
+			collaborate and focus on completing items).
+		</li>
+		<li>
+			Find a way to start testing the original the Product Backlog Items before they’re complete
+		</li>
+	</ul>
+	<p>
+		Having completed their Sprint Retrospective, the Team is ready to start planning the next Sprint
+		tomorrow morning.
+	</p>
+	<h4>
+		Read more stories of the WorldsSmallestOnlineBookStore team finding their way with Scrum in <a
+			href="/blog/scrum-by-example.html"
+			target="_blank"
+			rel="noopener">Scrum by Example</a
+		>.
+	</h4>
+	<div>
+		To gain hands-on experience working your way through the different elements of a Sprint, and
+		understanding why things are structured the way they are, join us for our <a
+			href="/certified-scrummaster-csm-training"
+			target="_blank"
+			rel="noopener">Certified ScrumMaster training</a
+		>.
+	</div>
+	<div>
+		<div>
+			<div>
+				<a href="/certified-scrum-agile-training"></a>
+				<div>Get Training</div>
+				<p></p>
+			</div>
+			<div>
+				<a href="/choose-the-right-scrum-training-for-your-needs"></a>
+				<div>No Idea What Training to Choose</div>
+				<p></p>
+			</div>
+		</div>
+		<hr />
+		<h2>Frequently Asked Questions About Scrum and Scrum Events</h2>
+		<p>
+			Our story tries to answer many of the common questions about Scrum, but story-telling format
+			can’t answer all questions. Below are some of the most common questions we hear.
+		</p>
+		<h3>What is Agile vs. Scrum?</h3>
+		<p>
+			Agile itself is just what founders of the movement agreed to 2001. There is no Agile
+			methodology. Rather Agile is four value statements and twelve accompanying principles. You
+			can’t &#8220;do Agile&#8221; because there isn’t enough detail there to follow a process.
+		</p>
+		<p>
+			In contrast, Scrum is a framework, and it provides just enough guidance to help your team get
+			organized and then gets out of your way. As a framework, it avoids telling you how to do your
+			job.
+		</p>
+		<h3>What is an Agile sprint? What is the purpose of a Sprint?</h3>
+		<p>
+			As mentioned above, Agile doesn’t have any practices and so there aren’t Agile Sprints. The
+			Scrum Framework is where Sprints come from. In Scrum, a Sprint is a fixed period of time where
+			the team turn ideas into a product. Each Sprint is expected to produce a Product Increment – a
+			small change(s) in the product. This is at the core of Scrum.
+		</p>
+		<p>
+			In Scrum, the Sprint acts as focusing tool, getting the team tackle a specific goal. At the
+			beginning of a Sprint, the team plan what work they will complete . At the end, they examine
+			what they built, with the intent to make it better and reflect on how they worked as a team.
+			The dual improvement process &#8211; product and process/team &#8211; sets Scrum apart from
+			other approaches.
+		</p>
+		<h3>What are the 4 phases of Sprint in Agile?</h3>
+		<p>
+			No Agile approach has phases. Phases (like requirements gathering, implementation and testing)
+			are things that happen in the traditional world. In the Scrum approach, every Sprint is
+			intended to build a working product increment. So <em>every</em> Sprint needs a little bit of requirements
+			gathering, some implementation and testing, etc. Effective teams learn how to do this continuously.
+		</p>
+		<h3>How many days is a Sprint in Agile/Scrum?</h3>
+		<p>
+			Before we answer this question we need to step back and ask ourselves why we have Sprints. As
+			covered earlier, the Sprint is a focusing tool and each Sprint should create an new increment.
+			At the end of every Sprint, the team pauses to get feedback on the Product Increment they
+			built. They also take the time to learn about improving their process and how they work as a
+			team.
+		</p>
+		<p>
+			The Scrum Guide sets the upper bound for Sprint length at one calendar month. Most teams now
+			select shorter Sprint lengths of 1 – 2 weeks, rather than longer 3 weeks to 1 calendar month
+			periods. When <a
+				href="/glossary/sprint-length"
+				title="Sprint Length"
+				rel="noopener"
+				target="_blank">selecting the Sprint length</a
+			>, we need to balance allowing enough time to build something meaningful with the need to get
+			feedback (both on product and team). Too short of a Sprint (2 days?), and it will be hard to
+			do meaningful work. Too long of a Sprint, and feedback opportunities will have been missed.
+			The latter is especially important, because the faster we get the feedback, the faster we
+			learn. Optimizing for speed of learning maximizes the amount of value the organization will
+			deliver in the long run.
+		</p>
+	</div>
+</MainLayout>

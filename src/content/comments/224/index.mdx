@@ -1,0 +1,18 @@
+---
+wpId: 224
+createdAt: 2007-10-10T22:20:59
+parentId: 0
+postId: 198
+status: approved
+type: comment
+author:
+  avatar_urls:
+    - "24": "https://secure.gravatar.com/avatar/de3713d9f21c7ec7788a71abb04151c9?s=24&d=mm&r=g"
+    - "48": "https://secure.gravatar.com/avatar/de3713d9f21c7ec7788a71abb04151c9?s=48&d=mm&r=g"
+    - "96": "https://secure.gravatar.com/avatar/de3713d9f21c7ec7788a71abb04151c9?s=96&d=mm&r=g"
+  name: Greg
+---
+
+State is part of the interface of a class. This is very frequently forgotten, since it doesn’t get typed in most languages.
+
+The only guarantee that derived classes adhere to that part of your interface is to make the state private. Protected accessor methods are better but no panacaea – the method must take responsibility for making sure state doesn’t change in a way that breaks your interface.

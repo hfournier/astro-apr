@@ -1,0 +1,118 @@
+---
+wpId: 13128
+title: 'Scrum by Example – How Sprint Planning Mistakes Can Derail a Team'
+description: 'Sprint Planning is the most underappreciated Agile event. Unfortunately, that leads to a whole host of errors and problems, as we will soon see. The ScrumGuide says: "Sprint Planning initiates the Sprint by laying out the work to be performed for the Sprint. This resulting plan is created by the collaborative work of the entire ...'
+type: post
+createdAt: 2021-09-28T10:27:46
+modifiedAt: 2022-04-13T15:24:42
+author: mark-levison
+categories:
+  - scrum-by-example
+  - sprint
+tags:
+  - scrum
+  - sprint
+  - sprint-planning
+featuredMedia:
+  id: 13212
+  src: "APR_Blog-Illustrations_Sept2021_SprintPlanning_v3.jpg"
+  alt: "Scrum team assembles for Sprint planning - image by Agile Pain Relief Consulting"
+  caption: ""
+---
+
+import { Image } from "astro:assets"
+
+import colo_APR_Blog_Illustrations_Sept2021_SprintPlanning_v3_1024x607_jpg from "APR_Blog-Illustrations_Sept2021_SprintPlanning_v3-1024x607.jpg";
+
+
+Sprint Planning is the most underappreciated Agile event. Unfortunately, that leads to a whole host of errors and problems, as we will soon see.
+
+The ScrumGuide says: “Sprint Planning initiates the Sprint by laying out the work to be performed for the Sprint. This resulting plan is created by the collaborative work of the entire Scrum Team.”
+
+The Guide goes on to say that the team is expected to cover three topics:
+
+**Why is the Sprint Valuable?**  
+**What can be Done this Sprint?**  
+**How will the chosen work get done?**
+
+So let’s peek in on our [World’s Smallest Online Bookstore team](/blog/scrum-by-example.html) that you’ll recall from other blog posts. We’ll use them as an example of a typical Scrum team.
+
+<Image decoding="async" alt="illustration of anxious Scrum team meeting for Sprint planning with the product owner" width="1024" height="607" sizes="(max-width: 1024px) 100vw, 1024px" src={colo_APR_Blog_Illustrations_Sept2021_SprintPlanning_v3_1024x607_jpg} widths={[1024, 300, 768, 1416]} />
+
+ScrumMaster Steve creates an agenda for the team’s next Sprint Planning session. The event starts at 9:00 am, and he will allow five minutes for people to drift in. He divides the remaining time (nearly four hours) into four x 50 minute blocks, allowing for a ten minute break every hour. He has allocated one block per topic (Why is the Sprint Valuable? What can be Done this Sprint? How will the chosen work get done?) and leaves the last block for extra time if needed.
+
+Product Owner Paula and the rest of the team met last week to [refine the Product Backlog](/blog/deal-with-bad-scrum-user-stories-as-a-scrummaster.html). What can possibly go wrong?
+
+Steve starts the Sprint Planning session by explaining that, during the last Sprint, the team finished six items. Hearing this, the team then agree on their [Sprint Goal](/blog/sprint-goals-provide-purpose.html): deliver five product backlog items and fix two bugs. (Astute readers will have noticed that the team has barely begun, and they’ve already skipped some important stuff. They think they’ve covered Why is the Sprint Valuable?)
+
+They go through the Product Backlog in priority order, selecting the following items:
+
+*   Reader can add star ratings to a book
+*   Reader can write a review of a book (plain text only)
+*   Reader can add pictures to their reviews
+*   When a review is written by someone who purchased the book through our store, the system highlights their review as a “verified buyer”
+*   Registered site users can click a button to vote that a review is helpful
+
+And then they select the top two bugs to be fixed.
+
+After the Team is done planning the five backlog items and two bugs that they agreed was their Sprint Goal, Product Owner Paula explains that she is under a lot of pressure from the Director of Support to get another feature into the next Sprint. The Bookstore needs to integrate with the support tool HelpFast.\[[1](#footnotes)\]
+
+Tonia pipes up, “This is just one feature too far.” Brad adds, “And this isn’t a feature we’ve discussed before, so why do they think we can finish it this Sprint?” Paula presses on, explaining, “Being able to log defects directly from the Bookstore will reduce the workload for the overburdened support team.”
+
+Sympathizing with the pressure that Paula is under, the team relent and commit to achieving the new item in addition to the items they had already selected. (They think they’ve covered What can be Done this Sprint?)
+
+Having now selected the Product Backlog items for the Sprint, the team members spend the next hour figuring out how they will get them to “Done”. The plan is challenging, but they think it’s achievable. Since they spent only three of the budgeted four hours, they feel like heroes and use the extra hour of time to work on the Product Backlog Items (PBIs). (They think they’ve covered How will the chosen work get done?). Sprint Planning is finished, so our team rush for the exit and start to do the real work.\[[2](#footnotes)\]
+
+Skipping along to the 8th (or 2nd last) day of the Sprint, the team are in a panic. They’ve mostly completed the integration with the HelpFast support tool, however there are still some rough edges and it can’t be deployed. Two of the book review backlog items are complete, but everything else is half-finished. It’s clear that they won’t meet the Sprint Goal and the quality of work isn’t great.
+
+With great trepidation, the team approach Paula to explain their situation. Ian says, “We overcommitted in Sprint Planning and now we’re behind with lower quality.” Brad explains, “It was the extra feature that killed us. We didn’t understand it well and the effort we put into it detracted from the other items.”
+
+Paula is frustrated, “How do I explain this to the Director of Support? He said that the HelpFast integration was really important to his team right now. How do I go back to the Marketing Director and tell her that our book review system is half-baked?”
+
+### Analysis
+
+How did the team get here? Ian provided the obvious answer: the team overcommitted in Sprint Planning. Easy to say, but the challenge ran much deeper than just one problem. Often teams attempt to solve only the surface problem or challenge, but then they play a game of whack-a-mole, where the solution to one problem leads to another.
+
+Challenges in reverse order, from when they happened:
+
+*   The Developers didn’t ask clarifying questions or spend very much time figuring out how to build the items they had selected.
+*   And while creating their plan for these items, they didn’t involve Paula in making sure they had deeply understood the specific needs represented by the Product Backlog Items/User Stories.
+*   The Developers also didn’t understand the HelpFast integration when they committed to it.
+*   Instead of protecting the team and saying “no” or “not yet” to outside demands, Paula pressured the team to take just one more item (the HelpFast integration) and the team caved in.
+*   Paula raised the importance of the HelpFast integration late in the Planning game. If it was important, it should have been her first priority.
+*   The whole Scrum Team (i.e. Paula, Steve and the Developers) didn’t take the time to discuss why the Sprint was valuable and set a proper Sprint Goal. “Implement five Product Backlog Items and fix two bugs” isn’t meaningful. It’s like going to the gym and saying I want to do bicep curls with 25lbs weights at the end of the week. Why? To win a contest? To look good in someone else’s eyes? To eventually lift a truck?
+*   Steve’s agenda focused on the mechanics of the Sprint Planning process without paying attention to the content and the outcomes.
+
+### What could they do differently next time?
+
+#### Why is the Sprint Valuable?\[[3](#footnotes)\]
+
+Start by having a real conversation about creating a meaningful Sprint Goal. The Product Owner should walk into the room with a rough goal in mind. The team collaborate to take that and make it into something that they co-own with the Product Owner. In our story, a good Sprint Goal might have been “Have basic reader review system in place so book buyers can see a variety of opinions about a book”.
+
+#### What can be Done this Sprint?
+
+Select Product Backlog Items that support the Sprint Goal. This might not have changed the items that were initially selected, but what would have changed is that, when the pressure for the HelpFast integration came up, the team could have pointed out that it didn’t fit the Sprint Goal, so they would have to either change the Goal or drop the item.
+
+#### How will the chosen work get done?
+
+Once the team move into this final topic in Sprint Planning, they should take the time to make sure they really understand each item they’ve committed to. The team might:
+
+*   sketch out the user interface of the items they’re creating
+*   take the time to ask questions about the purpose of each item
+*   break the items down into tasks of a half-day or less in size
+*   clarify vague statements (e.g. instead of “the page loads quickly” specify “the page loads in less than one second”)
+*   discuss who is using the item that the team will be working on. (E.g. Are existing Bookstore users the only ones who will leave book reviews? Can you review a book if you’re a Bookstore user but you’ve not yet purchased it?)
+*   discuss what failures are in the context of this item and how they will be handled. (E.g. If the reader attempts to submit a review with no text, how should the Bookstore behave?)
+
+Overall, one of the biggest things they could do differently is they could start to see Planning as part of the real work. Taking the time to think more deeply about the work we’re about to do can save time and increase quality.
+
+These practices won’t help the Product Owner or the Team avoid potential planning problems, but they will go a long way to creating some rigour in the planning process and reducing end of Sprint surprises – whether from over-commitment or misunderstood items.
+
+**Want to have a better understanding of the _why_ and _how_ of more things in Scrum, and not just the book-level _what_?** Practising Scrum without proper understanding can bring poor results and, ultimately, frustration and resistance. In our Certified ScrumMaster workshops, attendees learn in a fun and non-judgmental environment how to make Scrum work effectively in the real world, not just in principle. [Join us to learn and to gain practical, hands-on experience](/certified-scrummaster-csm-training).
+
+  
+\[1\] HelpFast is a purely fictional tool. No real company was harmed in the making of this article.  
+\[2\] Hint: thinking that Planning isn’t real work is a trap. When we think that, we rush through the process and miss the chance to avoid many time-wasting mistakes.  
+\[3\] These headings are quotes from the [Scrum Guide](https://scrumguides.org/).
+
+Image attribution: Agile Pain Relief Consulting

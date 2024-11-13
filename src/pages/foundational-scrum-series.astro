@@ -1,0 +1,73 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 13215
+const title = "Foundational Scrum"
+const description =
+	"Looking for a better understanding of the basics of Scrum and the Scrum Roles? Hoping to learn common mistakes that Scrum teams make and how you can avoid them? Want to save 20% off certified Scrum training? It's easy to get all that – no strings attached. This free email series consists of learning emails—one ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-09-27T13:56:10")
+const modifiedAt = new Date("2023-05-24T17:11:09")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<div>
+		<h4>Looking for a better understanding <br />of the basics of Scrum and the Scrum Roles?</h4>
+		<h4>Hoping to learn common mistakes that Scrum teams make<br /> and how you can avoid them?</h4>
+
+		<h4>Want to save 20% off certified Scrum training?</h4>
+	</div>
+	<h3>It&#8217;s easy to get all that &#8211; no strings attached.</h3>
+	<p>
+		This free email series consists of learning emails—one a week for roughly two months—that will
+		offer exactly that. The material comes from early questions that our course attendees often
+		raise, as well as a mix from my experience with coaching new Agile teams.
+	</p>
+	<p>
+		No sales pitches or heavy pressure. Just free educational content, without any obligations. If
+		you don&#8217;t find them useful, you can unsubscribe at any point.
+	</p>
+	<h4>
+		BONUS: You instantly get a discount code that saves 20% off the Regular registration cost of any
+		of our courses.
+	</h4>
+	<form
+		action="https://www.getdrip.com/forms/496996274/submissions"
+		method="post"
+		data-drip-embedded-form="496996274"
+		id="drip-ef-496996274">
+		<div>
+			<label for="drip-email">* Email Address (required)</label><br />
+			<input type="email" id="drip-email" name="fields[email]" value="" />
+		</div>
+		<div>
+			<label for="drip-first-name">* First Name (required)</label><br />
+			<input type="text" id="drip-first-name" name="fields[first_name]" value="" />
+		</div>
+		<div>
+			<label for="drip-last-name">Last Name (optional)</label><br />
+			<input type="text" id="drip-last-name" name="fields[last_name]" value="" />
+		</div>
+		<div aria-hidden="true">
+			<label for="website">Website</label><br />
+			<input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="" />
+		</div>
+		<p>
+			<input
+				type="hidden"
+				name="tags[]"
+				id="tags_"
+				value="Subscribed - via Foundational Scrum Page"
+				tabindex="-1"
+			/>
+		</p>
+		<div>
+			<input type="submit" value="Subscribe" data-drip-attribute="sign-up-button" />
+		</div>
+	</form>
+</MainLayout>

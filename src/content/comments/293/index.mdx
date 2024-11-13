@@ -1,0 +1,26 @@
+---
+wpId: 293
+createdAt: 2008-07-28T17:10:19
+parentId: 0
+postId: 173
+status: approved
+type: comment
+author:
+  avatar_urls:
+    - "24": "https://secure.gravatar.com/avatar/7e25817b47e3f6a1cec646ad15b966b3?s=24&d=mm&r=g"
+    - "48": "https://secure.gravatar.com/avatar/7e25817b47e3f6a1cec646ad15b966b3?s=48&d=mm&r=g"
+    - "96": "https://secure.gravatar.com/avatar/7e25817b47e3f6a1cec646ad15b966b3?s=96&d=mm&r=g"
+  name: Tim Fischer
+  url: https://www.enlighten-dev.com
+---
+
+Mark,  
+Well – it’s javascript that I am working in, but most interpreted languages work the same. To be honest, I searched the net for timings on all things js before attempting to make my grid work faster. I got massive speed increases when not using foreach and by unrolling the loops. probably around 400% faster or better. Other speed increases came from using arrays to joing strings instead of concatenating, etc – but when dealing with over 10,000 rows consisting of 5 or more cells each – every microsecond is seriously worth the trouble.
+
+I wish I could give you more on the foreach other than my personal experience and “best Guess” – which is that in a foreach loop, each iteration has more calculations etc to do in order to “figure” out what it is that “Each” means, but if I iterate through an array of objects I am directly accessing the pointer via it’s index – no calcs required.
+
+My grid loads 3000 rows in about 17 seconds with all of the functionality of the infragistics WebGrid (which takes closer to 2 and 1/2 minutes to render). Through the above tweaks, I gained much in the manner of speed.
+
+For Compiled languages – I may just do the same for consistency sake though – unless I find a bottleneck! 😉
+
+\-Tim

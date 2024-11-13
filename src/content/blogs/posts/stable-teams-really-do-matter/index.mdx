@@ -1,0 +1,55 @@
+---
+wpId: 3228
+title: 'Stable Teams Really Do Matter'
+description: 'A study from Rally Software explores dedicated stable teams, what contributes to them, and what Scrum Practices they implement.'
+type: post
+createdAt: 2013-09-30T10:41:16
+modifiedAt: 2021-11-30T23:42:53
+author: mark-levison
+categories:
+  - estimations
+  - scrum-tools
+  - teams
+tags:
+  - agile-culture
+  - rally
+  - scrum-team
+  - story-estimates
+  - story-points
+  - work-in-progress
+featuredMedia:
+  id: 10256
+  src: "3d-men-holding-hands-in-a-circle-xs.jpg"
+  alt: "3D men holding hands in a circle. - image by PhotoDune"
+  caption: ""
+---
+
+import { Image } from "astro:assets"
+
+import colo_3d_men_holding_hands_in_a_circle_xs_jpg from "3d-men-holding-hands-in-a-circle-xs.jpg";
+
+
+<Image decoding="async" alt="3D men holding hands in a circle. - image by PhotoDune" width="488" height="409" sizes="(max-width: 488px) 100vw, 488px" src={colo_3d_men_holding_hands_in_a_circle_xs_jpg} widths={[488, 300]} />  
+For years now Rally has been performing a large ongoing experiment on the Agile world. As a side effect of providing one of the better known tools they’ve managed to see a lot of data accumulate about what makes an effective Agile team. In a report called “[The Impact of Agile Quantified](https://www.infoq.com/presentations/agile-quantify/)” they’ve sanitized the data and then run some statistical analysis on it.
+
+Here’s what they saw:
+
+*   **Dedicating Team Members** to one team doubles productivity, reduces variance throughput and leads to a small reduction in defects. _They note that this is a fairly common practice among teams._
+*   **Stable Teams** – keeping a team intact for the long term resulted in 60% more productivity; teams were more predictable and responsive.
+*   **Limiting Work In Progress** – reduces defect rates; however, if your WIP limit is already low, reducing it further might affect productivity.
+*   **Relative/Story Point Estimation**\[[1](#footnotes)\] – They divide the world into teams that: A – Don’t estimate; B – Estimate Stories in hours; C – Estimate Stories in Points – tasks in hours, and D – teams that only Estimate using Story Points (i.e. teams that have dropped task hours). Their discovery – the teams (A) not using estimates had 2.5 times as many defects as the teams (C) using Story Points and Task hours. An additional surprise – teams (C) using Story Points and task hours had fewer defects than (D) teams only using Story Points. _Some of the discoveries in this one could use further investigation._
+*   **Team Size** – **7+/- 2** – the findings suggest that teams before the Agile norms are more productive, but have a higher defect rate and reduced predictability, whilst larger teams were more predictable. The authors note that the larger teams typically also used “Story Point Estimation for Stories and Hours for Tasks” – this might explain some of the productivity differences. The authors recommend sticking to the traditional recommendation of 5-9. Before switching all your teams to 3 people or less – which is tempting with the promise of more productivity – also consider the effect on the work if even one team member leaves. _This is another datapoint that bears digging into._
+
+I was surprised to find that stable teams are less frequent among the Rally customers than my own. Rally noticed that 1 in 4 people changed every 3 months. Experience at my regular clients suggests that it should be less than that. No matter what the frequency, we have to appreciate that every change is expensive; both in terms of the knowledge lost and the consequent slowdown while team members renegotiate their relationships. It’s hard to build the high performance teams that we all seek when we have frequently changing membership.
+
+As with any set of measures, I think the value isn’t so much in the number as the signal regarding what to look at in our teams. In addition, I suspect some high performing teams will probably be doing things that don’t show up well in the larger dataset. For instance, I’ve seen many high performing teams with less WIP than the number of team members. Instead they swarm all work, etc.
+
+The [report](https://docs.broadcom.com/doc/outcomes-driven-organization) from Rally is well worth reading, although it’s sixteen pages long. (You will have to give away your email address).
+
+To my friends at Rally, there are many interesting questions to be asked here. If we look only at stable teams – what do we learn about team size? If we look only at mature teams (>1 yr old and stable) – do any of our discoveries around team size and estimation change? What about time to fix defects vs. productivity or quality? What about time to fix defects vs. team size? Story size vs. productivity vs. defects? Distributed teams’ productivity? What about the highest performing teams – what where they doing…? Have you considered releasing your dataset to the rest of the world so we can help you mine it? Two reasons: more eyes will spot more ideas and the Agile ideas have always been developed and evolved in an open fashion. Perhaps you could release with the rule that anything someone else discovers from it has to be shared openly.
+
+Hat tip to [Dave Nicolette](https://davenicolette.wordpress.com/2013/08/16/correlation-between-high-wip-and-defects/) who first pointed this paper out to me  
+
+\[1\]In the paper this is referred to “Full Scrum” – which is odd since Scrum doesn’t require Estimation at all.
+
+Image attribution: Photodune.net

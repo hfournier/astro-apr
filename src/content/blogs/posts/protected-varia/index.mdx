@@ -1,0 +1,54 @@
+---
+wpId: 198
+title: 'Protected variables cause subtle bugs – don''t use them'
+description: 'This has been said before: Protected variables are evil (blog post gone). But apparently as I''ve been doing some debugging into the Eclipse code I''m reminded it needs saying again. Let''s suppose we write a base class public class SimpleBase'
+type: post
+createdAt: 2007-10-10T02:01:58
+modifiedAt: 2020-01-31T10:35:58
+author: mark-levison
+categories:
+  - software-development
+tags:
+  - eclipse
+---
+
+
+This has been said before: Protected variables are evil (blog post gone). But apparently as I’ve been doing some debugging into the Eclipse code I’m reminded it needs saying again.
+
+Let’s suppose we write a base class
+
+```
+public class SimpleBase {
+   protected Object value = new Integer(10);
+   public printValue() {
+      system.out.println(value.toString());
+   }
+}
+
+public class Derived extends SimpleBase {    public Derived() {      value = null;    } } ... main() {   new SimpleBase().printNumber();   new Derived().printNumber(); }
+```
+
+The output of this is:
+
+10
+NullPointerException
+
+This output is expected. The problem: the designer of SimpleBase relied on the author of the Derived behaving well and only setting value to a valid value. I prefer to [trust no one](https://en.wikipedia.org/wiki/Paranoia_%28role-playing_game%29). In our simple case this was easy to debug. But in more complex code is like finding a needle in haystack – slow, time consuming and completely unnecessary.
+
+Most examples of protected variables (e.g. Eclipse: TextCellEditor) that I’ve found could easily be replaced by a protected getter. Now the derived class can’t damage the base class data.
+
+In the rare cases the derived class really needs to change something the base class: provide a setter. The setter can do some simple argument checking: null, empty string, -1, …
+
+However I’ve never personally found a case where a derived class really needs to set something on the base class.
+
+Is protected final any better? On the surface it is. However I assume that some later developer might strip away the final part to solve some other problem and boom you’re back at square one with a difficult to diagnose bug.
+
+The final point that most people don’t remember protected is really just public lite. Not only do your derived classes get access to your protecteds but so other classes in the same package.
+
+In short there is no sane or safe reason for protected variable and no circumstance where they can’t be replaced with getters (or **maybe** a setter) – so don’t use them.
+
+This rant brought to you by the Eclipse foundation whose code has more than a few protected member variables. Again I ask my friends at Eclipse – why did anyone think this was a good idea?
+
+This is the second in an occasional series of posts on really bad coding practices. The first was [Don’t call overridable methods in constructors](/blog/dont-call-overr.html).
+
+_BTW I really like Eclipse I just wish that there was better code quality. Really it doesn’t take any more time and effort._

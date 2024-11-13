@@ -1,0 +1,28 @@
+---
+wpId: 138
+createdAt: 2007-07-19T10:51:28
+parentId: 0
+postId: 213
+status: approved
+type: comment
+author:
+  avatar_urls:
+    - "24": "https://secure.gravatar.com/avatar/4a12588abc47e3780574b16dc5527793?s=24&d=mm&r=g"
+    - "48": "https://secure.gravatar.com/avatar/4a12588abc47e3780574b16dc5527793?s=48&d=mm&r=g"
+    - "96": "https://secure.gravatar.com/avatar/4a12588abc47e3780574b16dc5527793?s=96&d=mm&r=g"
+  name: Ian Robinson
+---
+
+I haven’t used RMock or EasyMock in anger, but have grown to really like JMock; despite all its faults. It had been adopted already by a project I joined mid-way through, but at that point not really used extensively. Now I hardly write a line of code that isn’t exercised by it.
+
+Admittedly, the string based approach is a real limitation when refactoring.
+
+Just a couple of points to help with your annoyances…
+
+I’m not sure why you would want to set up an expectation for something you don’t care about, but you can specify an exact number of invocations with exactly(expectedCount).
+
+You can mock Classes with JMock using CGLIB.  
+See [https://www.jmock.org/jmock1-cglib.html](https://www.jmock.org/jmock1-cglib.html)
+
+Cheers,  
+Ian

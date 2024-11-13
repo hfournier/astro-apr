@@ -1,0 +1,25 @@
+---
+wpId: 268
+createdAt: 2008-11-23T17:37:40
+parentId: 0
+postId: 153
+status: approved
+type: comment
+author:
+  avatar_urls:
+    - "24": "https://secure.gravatar.com/avatar/8d67eedc1442e8392a7add197abacd66?s=24&d=mm&r=g"
+    - "48": "https://secure.gravatar.com/avatar/8d67eedc1442e8392a7add197abacd66?s=48&d=mm&r=g"
+    - "96": "https://secure.gravatar.com/avatar/8d67eedc1442e8392a7add197abacd66?s=96&d=mm&r=g"
+  name: Misko Hevery
+  url: https://misko.hevery.com
+---
+
+To clarify, I said, in my code I don’t create statics. I have no choice but to call Math.abs(). And I am not going to wrap it in another class just to stick to my guns.
+
+Math.abs() is not a problem since it is a leaf of a call graph. Static methods become a problem when they move closer to the main method. With main method being the worst.
+
+Suppose you have User.get() where inside of it you talk to the the database to fetch the user. The issue here is that you can’t prevent User.get() from executing. Sprinkling your code with Math.abs() is benign. But User.get() will make it impossible to test.
+
+The other problem is that suppose you have a benign method such as ID.parse() which converts a string to some typesafe id. What if you change the strategy and put some calls to the DB inside to ID.parse()? You just went from benign to problem. The point is that static method is a slippery slope. And it is very easy for it to be a problem.
+
+So I have a simple policy. No static methods in the code I write. 🙂

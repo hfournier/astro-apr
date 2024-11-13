@@ -1,0 +1,129 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 11420
+const title = "Scrum Education Units (SEU)"
+const description =
+	"To maintain your Scrum Alliance® certifications, you are required to earn Scrum Education Units (SEUs) by completing educational training or learning opportunities. It's easy to do and will help you stay relevant (and competitive) in the market. There are many opportunities for earning SEUs that don't cost money, and don't require special courses One hour of ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-01-07T20:31:32")
+const modifiedAt = new Date("2024-05-08T16:23:21")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		To maintain your Scrum Alliance® certifications, you are required to earn Scrum Education Units
+		(SEUs) by completing educational training or learning opportunities. It’s easy to do and will
+		help you stay relevant (and competitive) in the market.
+	</p>
+	<div>
+		<h3>
+			There are many opportunities for earning SEUs that don&#8217;t cost money, and don&#8217;t
+			require special courses
+		</h3>
+	</div>
+	<p><strong>One hour of activity = 1 SEU</strong></p>
+	<p>We are happy to offer several resources that qualify for SEUs:</p>
+	<ul>
+		<li>
+			<strong
+				><a
+					href="/guide-to-effective-agile-retrospectives"
+					target="_blank"
+					rel="noopener noreferrer">The Guide to Effective Agile Retrospectives</a
+				></strong
+			><br />
+			This eBook and accompanying email series help you take Retrospectives from groans to grins. You
+			could reasonably claim 2 hours of reading the book, and 10 hours of taking action with the email
+			exercises. Free with newsletter subscription.
+		</li>
+		<li>
+			<strong
+				><a href="/lean-coffee" target="_blank" rel="noopener noreferrer">Our Lean Coffee Events</a
+				></strong
+			><br />
+			Hang out online and have a virtual coffee with CST Mark Levison. Bring your Scrum questions and
+			challenges. A great opportunity to meet and interact with Mark, even if you haven&#8217;t attended
+			his training yet. <a href="/newsletter" target="_blank" rel="noopener"
+				>Free for newsletter subscribers</a
+			>.
+		</li>
+		<li>
+			<strong
+				><a href="/blog" target="_blank" rel="noopener noreferrer">Notes from a Tool User</a
+				></strong
+			><br />
+			Reading blog posts counts too! We have a wide variety including posts featuring <a
+				href="/blog/scrum-by-example.html"
+				target="_blank"
+				rel="noopener noreferrer">a fictional new Scrum team and all the mishaps they face</a
+			>, features on <a
+				href="/blog/scrum-anti-patterns.html"
+				target="_blank"
+				rel="noopener noreferrer">Anti-Patterns</a
+			>, and <a href="/blog/beyond-scrum-blog-series.html" target="_blank" rel="noopener noreferrer"
+				>how to be successful beyond the basic Scrum framework</a>
+		</li>
+		<li>
+			<strong>Email Learning Series</strong> &#8211; two free subscription choices to address different
+			levels of knowledge and experience
+			<ul>
+				<li>
+					<a
+						href="https://www.getdrip.com/forms/496996274/submissions/new"
+						target="_blank"
+						rel="noopener">Foundational Scrum email series</a
+					> — for anyone struggling to grasp the basic concepts or wanting a quick general introduction
+					to Scrum. This is a series of emails, one a week, that helps them understand the why and how,
+					and not just the what.
+				</li>
+				<li>
+					<a
+						href="https://www.getdrip.com/forms/805574682/submissions/new"
+						target="_blank"
+						rel="noopener">Advanced ScrumMaster learning email series</a
+					> — a free team survey as well as other tools, resources, and ongoing support to help ScrumMasters
+					guide their team through improvements and challenges to become truly high-performing and effective.
+				</li>
+			</ul>
+		</li>
+		<li>
+			<strong>High-Performance Teams Game</strong><br />
+			Where will you allocate your resources? How will that affect your team? A lighthearted look at
+			the choices and tradeoffs that Scrum teams make, to illustrate benefits and costs.<br />
+			<a href="https://teamsgame.agilepainrelief.com/" target="_blank" rel="noopener"
+				>*NEW* Beta version of the online game</a
+			>. We&#8217;d love your feedback!
+		</li>
+		<li>
+			<strong
+				><a href="/building-high-performance-organizations-game" target="_blank" rel="noopener"
+					>High-Performance Organizations Game</a
+				></strong
+			><br />
+			A board game that builds on the success of the previous Teams Game to focus on building high-performance
+			Organizations. Explores options for an Organization to understand itself and the current state
+			of the work, and then bring about real, ongoing change. Free download.
+		</li>
+		<li>
+			<strong>Scrum Training follow-up email exercises</strong><br />
+			Part of our committment to provide ongoing support and resources when you attend our <a
+				href="/certified-scrum-agile-training"
+				target="_blank"
+				rel="noopener noreferrer">Certified Scrum training workshops</a
+			>. Free with course registration. (Currently CSM only, but additional very soon.)
+		</li>
+	</ul>
+	<p>
+		For more detailed information about Scrum Education Units, visit the <a
+			href="https://www.scrumalliance.org/get-certified/scrum-education-units"
+			target="_blank"
+			rel="noopener noreferrer">Scrum Alliance® SEU information page</a
+		>, or <a href="/contact-us">contact us with your questions</a> &#8211; we&#8217;d be happy to help!
+	</p>
+</MainLayout>

@@ -1,0 +1,58 @@
+---
+wpId: 152
+title: 'Misconceptions with Test Driven Development'
+description: 'Debunking misconceptions about Test Driven Development; including effectiveness, writing tests after code has been written, and impact on program architecture.'
+type: post
+createdAt: 2008-11-18T03:34:13
+modifiedAt: 2022-06-30T23:26:35
+author: mark-levison
+categories:
+  - software-development
+tags:
+  - open-source
+  - test-driven-development
+  - yagni
+featuredMedia:
+  id: 10307
+  src: "test-xs.jpg"
+  alt: "a pencil sitting on a test bubble sheet - image licensed from Photodune"
+  caption: ""
+---
+
+import { Image } from "astro:assets"
+
+import colo_test_xs_jpg from "test-xs.jpg";
+
+
+<Image decoding="async" alt="a pencil sitting on a test bubble sheet - image licensed from Photodune" width="547" height="366" sizes="(max-width: 547px) 100vw, 547px" src={colo_test_xs_jpg} widths={[547, 300]} />  
+In the past few weeks I’ve heard several misconceptions raised about Test Driven Development:
+
+*   Does TDD really work? I’ve written about this before: [Advantages of TDD](/blog/advantages-of-tdd.html "Advantages of TDD"); In addition [George Dinwiddie maintains a list](https://biblio.gdinwiddie.com/biblio/StudiesOfTestDrivenDevelopment) of case studies (including one from IBM). Finally Keith Braithwaite has recently done some research on measuring the benefit of TDD. Currently the results are buried in a presentation ([pdf](https://www.keithbraithwaite.demon.co.uk/professional/presentations/2008/qcon/MeasureForMeasure.pdf)). Key message: “measuring a over 20 projects: if you have a large number of unit tests your code will be **an order of magnitude** less complex.”
+*   Writing the tests **after** the code has been written is the same as Test Driven Development. Its not, there are significant benefits to TDD that I outlined in: “[Test Driven Development vs Plain Old Unit Testing](/blog/test-driven-dev.html)“.
+*   TDD isn’t useful for helping to design the architecture of programs.
+
+The later is an interesting question. You can find voices on the net that say TDD **by itself** (with no thought given to the architecture is bad). The best example of this is “[Coplien and Martin Debate TDD, CDD and Professionalism](https://www.infoq.com/interviews/coplien-martin-tdd/)” (with some excellent comments) and a few blog posts that follow: “[The TDD Controversy – JAOO 2007](https://community.ative.dk/blogs/ative/archive/2007/09/28/the-tdd-controversy-jaoo-2007.aspx) ” and “[TDD vs good design/architecture principles](https://xebia.com/blog/tdd-vs-good-designarchitecture-principles/)” – outline the debate.
+
+If we accept that TDD isn’t entirely sufficient for design, then the question becomes how much architecture is required and what would a good project designed with TDD look like?
+
+The real trick is balancing upfront design with the principle of [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it). Since like most developers I’m tempted to over design (“I know I will need this method/class later on”), I force myself to wait until the last responsible moment (typically just before I would need the code) to do my design work (saving a lot of waste – in the form of unused code). In the case of the larger architecture I discourage people from thinking more than one iteration ahead, any further ahead and the requirements are likely change. On rare occasions this means missing a big issue that forces a lot of rework. Since I have a rock solid tests I’m not all that upset and I believe I’ve still saved a lot of time with the architecture I didn’t build.
+
+So if TDD can be used on a large scale and to help drive architecture there must be examples. The leading members of the community (JB Rainsberger, Nat Pryce and Lasse Koskela) all have clients with products built and architected using TDD. Unfortunately these are all closed source or clients that don’t want to be talked about publicly.
+
+In the open source world there are a number of applications and libraries developed using TDD:
+
+*   Obviously all of the Agile related tools ([JUnit](https://sourceforge.net/projects/junit/files/junit/), [NUnit](https://nunit.org), [MbUnit](https://code.google.com/p/mb-unit/), [Gallio](https://www.gallio.org/), [JMock](https://jmock.org/repository.html), [RMock](https://sourceforge.net/projects/rmock/files/rmock/2.0.0/), [CruiseControl](https://cruisecontrol.sourceforge.net/svn.html), [CruiseControl.NET](https://confluence.public.thoughtworks.org/display/CCNET/Welcome+to+CruiseControl.NET) and Hudson) were developed using TDD. However this is just a bit self referential
+*   [Bazaar](http://bazaar.canonical.com/en/) – a distributed version control system, used by: LaunchPad, MySQL and Mailman (**Python**)
+*   [Allelogram](https://code.google.com/p/allelogram/) – a program for normalizing and binning microsatellite genotypes. (**Java**)
+*   [Jena](https://jena.sourceforge.net/) – a framework for building [Semantic Web](https://www.w3.org/2001/sw/) applications. It provides a programmatic environment for [RDF](https://www.w3.org/RDF/), [RDFS](https://www.w3.org/TR/rdf-schema/) and [OWL](https://www.w3.org/2001/sw/WebOnt/), [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) and includes a rule-based inference engine. (**Java**) Related: [Eyeball](https://jena.sourceforge.net/Eyeball/) – lint for RDF/OWL
+*   [Helium](https://sourceforge.net/projects/he-project/files/) – (He) is a lightweight and extremely useful templating engine based entirely on XML. He is 100% Java and 100% TDD (Test Driven Development) (**Java**)
+*   http.net – a dirt simple HTTP server written in C#. It supports minimal functionality and is primarily intended as example code for TDD et al. (**C#)**
+*   [Joda](https://joda-time.sourceforge.net/) – provides a quality replacement for the Java _date_ and _time_ classes. (**Java**)
+*   Joyent Connector (source) – The Connector suite of applications provide cool features such as search, tagging, and RSS feeds that we believe will make your life easier on a day to day basis. (**ruby**)
+*   [Task Coach](https://www.taskcoach.org/) – a task manager written in **Python**.
+*   In addition the Google Chrome browser was developed in part with TDD: Chromium has used a combination of test-driven and other development processes. Sometimes we write tests first and then implement features to pass them, sometimes we use existing tests as a guide to what to work on next, and sometimes we implement first and test afterward. It depends on the subject at hand, and on the individual developer.
+*   [Mark Shuttleworth](https://www.markshuttleworth.com/archives/150) remarks TDD is used in developing Ubuntu.
+
+Undoubtedly there are a number of open source projects that are Test Driven, please let me know if you’re aware of some I missed. In addition to proving its possible these projects also act as examples as to the sort of architecture that TDD can help build.
+
+Image via: [https://photodune.net/](https://photodune.net/)

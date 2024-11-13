@@ -1,0 +1,33 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 11252
+const title = "Thank you – please confirm your subscription"
+const description =
+	"Thank you for subscribing. If you're brand new to our mailing list, please watch your Inbox (or spam filter) for an email asking you to click the link provided to confirm your subscription, because we hate spam as much or more than anyone and take your privacy very seriously. If you already receive other emails ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-10-06T16:13:12")
+const modifiedAt = new Date("2023-05-24T17:12:20")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>Thank you for subscribing.</p>
+	<p>
+		If you&#8217;re brand new to our mailing list, please watch your Inbox (or spam filter) for an
+		email asking you to click the link provided to confirm your subscription, because we hate spam
+		as much or more than anyone and take your privacy very seriously. If you already receive other
+		emails from us, you should see your regular confirmation email in your Inbox shortly.
+		Whitelisting @agilepainrelief.com is a great idea too.
+	</p>
+	<p>We appreciate you!</p>
+	<p>
+		If you have any questions or concerns, don&#8217;t hesitate to <a href="/contact-us"
+			>contact us</a
+		> and let us know.
+	</p>
+</MainLayout>

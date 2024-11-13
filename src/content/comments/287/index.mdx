@@ -1,0 +1,23 @@
+---
+wpId: 287
+createdAt: 2008-08-08T07:03:03
+parentId: 0
+postId: 169
+status: approved
+type: comment
+author:
+  avatar_urls:
+    - "24": "https://secure.gravatar.com/avatar/a1b5997b7fb9d94a0efdf4d4f8372105?s=24&d=mm&r=g"
+    - "48": "https://secure.gravatar.com/avatar/a1b5997b7fb9d94a0efdf4d4f8372105?s=48&d=mm&r=g"
+    - "96": "https://secure.gravatar.com/avatar/a1b5997b7fb9d94a0efdf4d4f8372105?s=96&d=mm&r=g"
+  name: William Pietri
+  url: https://www.scissor.com/
+---
+
+I agree with Dave.
+
+In well-factored code, early returns are fabulous. I use them all the time to dispose of contract violations and degenerate cases, so that the method code can focus on the interesting part of the problem.
+
+They can also be nice when expressing a simple set of rules. E.g., in a Java equals method, I often find it much more readable to express it as a series of “if … return” lines rather than one giant boolean expression. And I’m sure they have other uses as well.
+
+In ugly code, I do think they can make things mildly uglier. But I think the solution there is refactoring for clarity, not adding rules to try to make mud slightly less dirty.

@@ -1,0 +1,27 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 11262
+const title = "Thank you for joining the Course Notification list"
+const description =
+	"Thank you for joining the Scrum Course notification list. We will send you a brief email letting you know when new Scrum courses are posted on our Training Schedule page and open for registrations. Please consider whitelisting us so it doesn't end up in your Junk filter. Cheers!"
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-10-15T18:08:19")
+const modifiedAt = new Date("2023-05-24T17:12:21")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for joining the Scrum Course notification list. We will send you a brief email letting
+		you know when new Scrum courses are posted on our <a href="/certified-scrum-agile-training"
+			>Training Schedule page</a
+		> and open for registrations. Please consider whitelisting us so it doesn&#8217;t end up in your
+		Junk filter.
+	</p>
+	<p>Cheers!</p>
+</MainLayout>

@@ -1,0 +1,67 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_thank_you_mailing_list_high_performance_teams_cover_png from "@assets/images/thank-you-mailing-list/high-performance-teams-cover.png"
+
+const wpId = 10639
+const title = "Thank you for joining the Agile Pain Relief mailing list"
+const description =
+	"Thank you for joining the Agile Pain Relief mailing list, where we periodically share information to help you in your Scrum/Agile journey. If you're brand new to our mailing list, please watch your Inbox (or spam filter) for an email asking you to click the link provided to confirm your subscription, because we hate spam ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-02-19T08:06:20")
+const modifiedAt = new Date("2023-05-24T17:12:20")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for joining the Agile Pain Relief mailing list, where we periodically share
+		information to help you in your Scrum/Agile journey.
+	</p>
+	<p>
+		If you&#8217;re brand new to our mailing list, please watch your Inbox (or spam filter) for an
+		email asking you to click the link provided to confirm your subscription, because we hate spam
+		as much or more than anyone and take your privacy very seriously.
+	</p>
+	<p>
+		Also, if you haven&#8217;t yet received your free copy of Mark&#8217;s Five Steps Towards
+		Creating High-Performance Teams e-book before, watch for a special email with the link to
+		download it. It may take a few minutes, so please be patient.
+	</p>
+	<p>Cheers!</p>
+	<p>
+		<a
+			href="https://www.dropbox.com/s/n5k56pg8wo3vsni/Five%20Steps%20Towards%20Creating%20High%20Performance%20Teams.pdf?dl=0"
+			rel="attachment wp-att-8474"
+			><br />
+			<Image
+				decoding="async"
+				alt="Five Steps Towards Creating High-Performance Teams e-book by Agile Pain Relief Consulting"
+				width="1000"
+				height="1193"
+				sizes="(max-width: 1000px) 100vw, 1000px"
+				src={assets_images_thank_you_mailing_list_high_performance_teams_cover_png}
+				widths={[1000, 251, 858, 768]}
+			/></a>
+	</p>
+	<p>
+		You can also access material for a corresponding <a
+			href="/blog/welcome-to-the-high-performance-teams-game.html">High-Performance Teams Game</a
+		>. The game was developed to help teams see the effects of choices/tradeoffs on productivity and
+		team cohesion. Rounds represent Sprints, and a roll of the dice may have things go smoothly,
+		or&#8230; not so much.
+	</p>
+	<p>
+		We hope you will feel free to <a href="/contact-us" target="_blank" rel="noopener noreferrer"
+			>contact us</a
+		> to ask questions and share your feedback! The e-book and game will be updated from time to time
+		with improvements developed from your suggestions. Your subscription entitles you to receive those
+		future updates.
+	</p>
+	<p>Thanks again!</p>
+</MainLayout>

@@ -1,0 +1,38 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 10997
+const title =
+	"Thank you for joining the Agile Pain Relief mailing list – Agile Retrospectives e-book offer"
+const description =
+	"Thank you for subscribing to the Agile Pain Relief newsletter and taking advantage of our offer for a free copy of The Guide to Effective Agile Retrospectives e-book. You will receive an email with the download link, but we'll put it here too, for your convenience: CLICK TO DOWNLOAD YOUR COPY As an extra bonus, ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-06-29T19:57:21")
+const modifiedAt = new Date("2023-05-24T17:12:21")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		Thank you for subscribing to the Agile Pain Relief newsletter and taking advantage of our offer
+		for a free copy of <em>The</em> G<em>uide to Effective Agile Retrospectives</em> e-book. You will
+		receive an email with the download link, but we&#8217;ll put it here too, for your convenience:
+	</p>
+	<p>
+		<a
+			href="https://drip.la/c/eyJhY2NvdW50X2lkIjoiNzE0NTgxMiIsInRyaWdnZXJfaWQiOiIyMDEwMzc1MjIiLCJkeW5hbWljX3VybCI6bnVsbCwidXJsIjoiaHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xdXJIOEtoME5weEVpXzZDemg2RDJQbzBvU3Jyc3NGemgvdmlldz91c3A9c2hhcmluZyJ9"
+			>CLICK TO DOWNLOAD YOUR COPY</a>
+	</p>
+	<p>
+		As an extra bonus, you will also receive a short series of follow-up support emails to help you
+		implement what you learn. The first email will arrive in roughly four days, and then subsequent
+		emails in the series will arrive once a week. Please consider whitelisting us in your email
+		client to ensure they don&#8217;t end up in your Spam folder.
+	</p>
+	<p>Stay well,</p>
+	<p>Mark and the APR Team</p>
+</MainLayout>

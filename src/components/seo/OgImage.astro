@@ -1,0 +1,54 @@
+---
+import { getImage } from "astro:assets"
+
+type Props = {
+	image: {
+		image?: ImageMetadata
+		url?: string
+		height?: number
+		width?: number
+		mimeType?: string
+		alt?: string
+	} | null
+}
+const { image } = Astro.props
+const ogImage =
+	image && image.image
+		? await getImage({
+				src: image.image,
+				height: image.image.height < 630 ? image.image.height : 630,
+				width: image.image.width < 1200 ? image.image.width : 1200,
+				format: "jpg",
+				quality: 80
+			})
+		: undefined
+---
+
+{
+	ogImage && (
+		<>
+			<meta property="og:image" content={ogImage.src} />
+			<meta property="og:image:url" content={ogImage.src} />
+			<meta
+				property="og:image:type"
+				content={`image/${ogImage.options.format === "jpg" ? "jpeg" : ogImage.options.format === "svg" ? "svg+xml" : ogImage.options.format}`}
+			/>
+			<meta property="og:image:width" content={ogImage.options.width?.toString()} />
+			<meta property="og:image:height" content={ogImage.options.height?.toString()} />
+			{image && image.alt && <meta property="og:image:alt" content={image.alt} />}
+		</>
+	)
+}
+
+{
+	!ogImage && image && (
+		<>
+			{image.url && <meta property="og:image" content={image.url} />}
+			{image.url && <meta property="og:image:url" content={image.url} />}
+			{image.mimeType && <meta property="og:image:type" content={image.mimeType} />}
+			{image.width && <meta property="og:image:width" content={image.width?.toString()} />}
+			{image.height && <meta property="og:image:height" content={image.height?.toString()} />}
+			{image.alt && <meta property="og:image:alt" content={image.alt} />}
+		</>
+	)
+}

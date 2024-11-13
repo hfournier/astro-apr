@@ -1,0 +1,1120 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+// import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+// import wp_content_plugins_TooltipProPlus_assets_css_images_ajax_loader_gif from "@wp-content/plugins/TooltipProPlus/assets/css/images/ajax-loader.gif"
+
+const wpId = 11563
+const title = "Agile Glossary and Reference Library"
+const description =
+	"World's Largest Opinionated Agile Reference Library. The content is created and the links are curated through the lens of Agile Pain Relief Consulting's view of what is effective in the practice of Scrum and Agile. We don't accept submissions, and emails to that effect are marked as spam. Book listings may use affiliate links that ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-02-05T19:49:58")
+const modifiedAt = new Date("2023-05-24T17:10:41")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		World&#8217;s Largest Opinionated Agile Reference Library. The content is created and the links
+		are curated through the lens of Agile Pain Relief Consulting&#8217;s view of what is effective
+		in the practice of Scrum and Agile. We don&#8217;t accept submissions, and emails to that effect
+		are marked as spam. Book listings may use affiliate links that could result in a small
+		commission received by us if you purchase, but they do not affect the price at all. From
+		experience, this won&#8217;t amount to anything more than a cup of coffee in a year.
+	</p>
+	<p>
+		<em
+			>We’re always looking for all things Agile. As a result, we’ve amassed a large collection of
+			information covering lots of practical topics, techniques, tips, and case studies which we
+			believe may help you toward your Scrum/Agile goals. They have been curated and organized into
+			one spot, to share with you to help you on your Agile journey. We routinely scan for broken
+			links, but if you spot one before we do, please <a href="/contact-us">let us know</a>.</em
+		>
+	</p>
+	<div>
+		<div>
+			<input type="hidden" name="glossary_index_style" value="classic-definition" />
+			<!-- <div>
+				<Image
+					decoding="async"
+					alt="AJAX progress indicator"
+					src={wp_content_plugins_TooltipProPlus_assets_css_images_ajax_loader_gif}
+				/>
+			</div> -->
+			<div></div>
+
+			<input type="hidden" name="disable_listnav" value="0" />
+			<input type="hidden" name="exact_search" value="0" />
+			<input type="hidden" name="show_search" value="0" />
+			<input type="hidden" name="glossary-hide-terms" value="0" />
+			<input type="hidden" name="glossary-hide-categories" value="0" />
+			<input type="hidden" name="glossary-hide-abbrevs" value="1" />
+			<input type="hidden" name="glossary-hide-synonyms" value="0" />
+			<input type="hidden" name="glossary-perpage" value="0" />
+			<input type="hidden" name="tooltip_language" value="" />
+			<input type="hidden" name="language_dropdown" value="" />
+			<input type="hidden" name="languages_for_table" value="" />
+			<ul role="tablist" id="glossaryList">
+				<li>
+					<a href="/glossary/10-minute-build" role="term">10 Minute Build</a><dfn role="definition"
+						>10 Minute Build is the idea that we should be able to build a system and run its test
+						suites in 10 minutes or less. Fast build-and-test provides quicker(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/acceptance-criteria" role="term">Acceptance Criteria</a><dfn
+						role="definition"
+						>Acceptance Criteria are used to ensure that a feature (or User Story) the team is
+						building meets the needs of the End User. The common practice is for(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile" role="term">Agile</a><dfn role="definition"
+						>Agile is a mindset for doing work in a team environment that improves teamwork,
+						professional performance, and adaptability. The Agile mindset is focused(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/anti-patterns" role="term">Agile Anti-Patterns</a><dfn
+						role="definition"
+						>In software development work, a design pattern is a description of a solution to a
+						recurring problem. It outlines the elements that are necessary to solve(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-architects" role="term">Agile Architects</a><dfn
+						role="definition"
+						>Agile Architect – An Oxymoron Agile Architects Reimagined? Not at the top of the
+						pyramid, but perhaps aside Resource Links: Coaching the Agile(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-architectural-patterns" role="term"
+						>Agile Architectural Patterns</a
+					><dfn role="definition"
+						>Resource Links: Catalog of Patterns of Enterprise Application Architecture Event
+						Sourcing Mistakes we made adopting event sourcing (and how we(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-architecture" role="term">Agile Architecture</a><dfn
+						role="definition"
+						>Agile Architecture emphasizes the minimum amount of design upfront, and focusing on
+						building something and evolving the architecture as our understanding(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/branching-strategies" role="term">Agile Branching Strategies</a><dfn
+						role="definition"
+						>Git, Mercurial and other source control tools provide robust and easy to use branching
+						capabilities. For work with OpenSource software —where anyone could(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-business-intelligence" role="term">Agile Business Intelligence</a
+					><dfn role="definition"
+						>Business Intelligence (aka BI) is the dark art of extracting knowledge from a database
+						in a way that humans can understand it. Agile Business Intelligence(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-contracts" role="term">Agile Contracts</a><dfn role="definition"
+						>Traditional fixed price, fixed outcome contracts don't fare well in an Agile world. The
+						traditional approach puts the emphasis on getting the details(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-documentation" role="term">Agile Documentation</a><dfn
+						role="definition"
+						>Agile Documentation. Is it an oxymoron? The Agile Manifesto says "Working Software over
+						Comprehensive Documentation". It doesn't say no documentation, and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-engineering-practices" role="term">Agile Engineering Practices</a
+					><dfn role="definition"
+						>In my workshops, I often have people who are focused on the question: “How can I help
+						my team go faster?”, or “How can we deliver this Product sooner?”(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-for-embedded-software" role="term">Agile for Embedded Software</a
+					><dfn role="definition"
+						>Embedded Software Development is about building software that is installed inside a
+						device example: thermostat, car engine controller, planes, WiFi(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-game-development" role="term">Agile Game Development</a><dfn
+						role="definition"
+						>Agile Game Development is different from classical software development. Building a
+						game from scratch will require a broader group of people than we're(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-government" role="term">Agile Government</a><dfn
+						role="definition"
+						>Agile is about adapting to changing requirements and needs. Governments, just like
+						anyone else, have to deal with dynamic issues as they arise and evolve,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-hardware" role="term">Agile Hardware</a><dfn role="definition"
+						>Agile approaches have taken over the world of software, because teams that deliver
+						value sooner with higher quality beat the slow. Hardware teams face(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-lean-ux" role="term">Agile/Lean UX</a><dfn role="definition"
+						>Agile or Lean UX (User eXperience) is about incorporating UX into the flow of work of a
+						development team. Many try the approach of having the UX people(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-mainframe-development" role="term">Agile Mainframe Development</a
+					><dfn role="definition"
+						>Resource Links: Agile in a Mainframe and Cobol world Make Your Mainframe Systems and
+						Technology More Agile: An Interview with Jay McFarling and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/organizational-structure" role="term">Agile Organizational Structure</a
+					><dfn role="definition"
+						>It's strange to start becoming Agile and assume that Organizational Structure won't
+						change. As Agile steers an organization to focus on Product and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-outside-of-software" role="term">Agile Outside of Software</a
+					><dfn role="definition"
+						>In the over 20 years since the Agile Manifesto was written, we've seen Agile approaches
+						applied in a large variety of fields outside of software(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-contracts" role="term">Agile Procurement</a><dfn
+						role="definition"
+						>Traditional fixed price, fixed outcome contracts don't fare well in an Agile world. The
+						traditional approach puts the emphasis on getting the details(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-sales-and-marketing" role="term">Agile Sales and Marketing</a
+					><dfn role="definition"
+						>Sales and Marketing are challenged in the same way that software development was over
+						20 years ago. The work is often split over multiple groups, and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-schools" role="term">Agile Schools</a><dfn role="definition"
+						>Scrum in the world of work, allows teams to self-organize around a common goal
+						(Delivering a Product). Scrum in education is about getting kids to self(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/fake-agile" role="term">Agile Theatre</a><dfn role="definition"
+						>Agile's success is also its Achilles heel. Everyone wants to do Agile, but not everyone
+						wants to make any changes to be Agile. There is a lot of focus on(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/appreciative-inquiry" role="term">Appreciative Inquiry</a><dfn
+						role="definition"
+						>Appreciative Inquiry is an approach to team development and organizational change that
+						works by focusing on the strengths and positive aspects of the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/approval-tests" role="term">Approval Tests</a><dfn role="definition"
+						>Resource Links: Approval Tests Approval Tests with Llewellyn Falco Approval Testing
+						Using ApprovalTests in .Net 17 Wpf See Also: Legacy(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/arc-motivational-model" role="term">ARC Motivational Model</a><dfn
+						role="definition"
+						>ARC motivation model is part of Self Determination Theory, which shows there are two
+						kinds of motivation: Intrinsic and Extrinsic. Intrinsic(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/product-backlog-refinement" role="term">Backlog Refinement</a><dfn
+						role="definition"
+						>Product Backlog Refinement (formerly known as "Product Backlog Grooming") is a session
+						during which the Scrum Team (Developers, Product Owner,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/behaviour-driven-development" role="term"
+						>Behaviour Driven Development [BDD]</a
+					><dfn role="definition"
+						>Behaviour Driven Development (or BDD) is an approach that gets team members to
+						collaborate on describing the behaviours of the user story or product(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/bottlenecks" role="term">Bottlenecks</a><dfn role="definition"
+						>A bottleneck is a constraint that slows the delivery of value in our system. That is
+						awfully abstract language, so let’s provide an example from everyday(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/bugs" role="term">Bugs</a><dfn role="definition"
+						>Resource Links: 0 Bugs Policy The #1 bug predictor is not technical, it's
+						organizational complexity Bug Prediction Tool from Google Bug(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/burndowns" role="term">Burndowns</a><dfn role="definition"
+						>Burndown charts graph work remaining vs time. They were originally used for tracking
+						work in Sprints and across releases. Sprint Burndowns that track(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/business-analyst-in-scrum" role="term">Business Analyst in Scrum</a
+					><dfn role="definition"
+						>In traditional approaches, the Business Analyst gathers the requirements months or
+						years ahead of the team. Clearly that doesn't work in an Agile world.(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/case-studies" role="term">Case Studies</a><dfn role="definition"
+						>Resource Links: Adobe Premiere Pro Scrum Adoption Agile Transformation @ Salesforce.com
+						An Agile Adoption and Transformation Survival Guide (...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/causal-loop-diagram" role="term">Causal Loop Diagram</a><dfn
+						role="definition"
+						>A Causal Loop Diagram is a visual representation and reference that helps to understand
+						cause and effect connections. It works best when people work(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/coaching" role="term">Coaching</a><dfn role="definition"
+						>Agile Coaching is an ill-defined concept. Self-described "Agile Coaches" appeared in
+						the Agile world long before there was a definition. ScrumAlliance(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/code-reviews" role="term">Code Inspection</a><dfn role="definition"
+						>Traditional approaches put a lot of emphasis on Code Inspection or Reviews for finding
+						defects. In human terms, that is like an editing process. The(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/code-reviews" role="term">Code Reviews</a><dfn role="definition"
+						>Traditional approaches put a lot of emphasis on Code Inspection or Reviews for finding
+						defects. In human terms, that is like an editing process. The(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/code-smells" role="term">Code Smells</a><dfn role="definition"
+						>A code smell is a hint that something might be wrong in your codebase. A smell isn't
+						always a problem, rather it’s a hint that a further look is(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/collective-code-ownership" role="term">Collective Code Ownership</a
+					><dfn role="definition"
+						>Collective Code Ownership is the premise that the whole team owns the code. Anyone on
+						the team can add new features, fix a bug, write a test case, or(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/colocation" role="term">Colocation</a><dfn role="definition"
+						>Colocation is when team members are in the same physical location so in-person
+						interaction and collaboration can take place. While the Scrum Guide does(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/community-of-practice" role="term">Community of Practice</a><dfn
+						role="definition"
+						>A Community of Practice (CoP) is a group that brings people with a common cause or
+						purpose together on a regular basis. They can be formed around a role(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/complexity" role="term">Complexity and the Cynefin Framework</a><dfn
+						role="definition"
+						>We encounter complexity whenever we're asked to estimate how long it will take to fix a
+						bug. Or when we're asked how long it will take to bring a novel(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/continuous-delivery" role="term">Continuous Delivery</a><dfn
+						role="definition"
+						>Continuous Delivery is the game of delivering features to Production whenever a change
+						is made. It shortens the feedback, and even the payment cycle,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/continuous-delivery" role="term">Continuous Delivery and Deployment</a
+					><dfn role="definition"
+						>Continuous Delivery is the game of delivering features to Production whenever a change
+						is made. It shortens the feedback, and even the payment cycle,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/continuous-delivery" role="term">Continuous Deployment</a><dfn
+						role="definition"
+						>Continuous Delivery is the game of delivering features to Production whenever a change
+						is made. It shortens the feedback, and even the payment cycle,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/continuous-integration" role="term">Continuous Integration [CI]</a><dfn
+						role="definition"
+						>In software development, Continuous Integration is the practice of merging all
+						developers' working code to the main or head branch several times a day.(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-contracts" role="term">Contracts</a><dfn role="definition"
+						>Traditional fixed price, fixed outcome contracts don't fare well in an Agile world. The
+						traditional approach puts the emphasis on getting the details(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/core-protocols" role="term">Core Protocols</a><dfn role="definition"
+						>A set of protocols that can aid teams in improving communications. They're modelled on
+						a similar principle to Design patterns. Resource Links: (...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/cross-functional-teams" role="term">Cross-Functional Teams</a><dfn
+						role="definition"
+						>In the Agile world a cross-functional team is one that has all the skills it requires
+						to get the work finished, without relying on external help. Wow,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/cross-skilling" role="term">Cross-Skilling</a><dfn role="definition"
+						>Cross-skilling is where a team member decides (without being pushed) to learn a new
+						skill area. This learning will, of course, take time and in the short(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/cumulative-flow-diagram" role="term">Cumulative Flow Diagram [CFD]</a
+					><dfn role="definition"
+						>A Cumulative Flow Diagram is a visual summary of the information contained on the Scrum
+						Wall, Task Board, or Kanban Wall. A Cumulative Flow Diagram(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/cycle-time" role="term">Cycle Time</a><dfn role="definition"
+						>Cycle Time is the time it takes from the moment a team starts work on an item, until
+						the moment value is delivered to the customer. It matters because the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/complexity" role="term">Cynefin</a><dfn role="definition"
+						>We encounter complexity whenever we're asked to estimate how long it will take to fix a
+						bug. Or when we're asked how long it will take to bring a novel(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/daily-scrum" role="term">Daily Scrum</a><dfn role="definition"
+						>The Daily Scrum is the daily meeting where the Scrum Team get ready to collaborate for
+						the day, and check if they’re still on track to complete their goal(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/daily-scrum" role="term">Daily Standup</a><dfn role="definition"
+						>The Daily Scrum is the daily meeting where the Scrum Team get ready to collaborate for
+						the day, and check if they’re still on track to complete their goal(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/fake-agile" role="term">Dark Agile</a><dfn role="definition"
+						>Agile's success is also its Achilles heel. Everyone wants to do Agile, but not everyone
+						wants to make any changes to be Agile. There is a lot of focus on(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/fake-agile" role="term">Dark Scrum</a><dfn role="definition"
+						>Agile's success is also its Achilles heel. Everyone wants to do Agile, but not everyone
+						wants to make any changes to be Agile. There is a lot of focus on(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/decision-making-tools" role="term">Decision Making Tools</a><dfn
+						role="definition"
+						>Agile Teams need to make small decisions frequently. Many teams experiment with
+						majority rules and quickly discover that it's a way to ensure a few team(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/part-time-team-members" role="term">Dedicated Team Membership</a><dfn
+						role="definition"
+						>People should be dedicated to one and only one team. The science of team work shows
+						this over and over again. Yet, on occasion, we’re stuck when we have(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/bugs" role="term">Defects</a><dfn role="definition"
+						>Resource Links: 0 Bugs Policy The #1 bug predictor is not technical, it's
+						organizational complexity Bug Prediction Tool from Google Bug(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/definition-of-done" role="term">Definition of Done</a><dfn
+						role="definition"
+						>Definition of Done is the official checklist that Scrum Teams maintain of the qualities
+						they intend their work to achieve. It helps the team assess(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/definition-of-ready" role="term">Definition of Ready</a><dfn
+						role="definition"
+						>Definition of Ready is an agreement between the Product Owner and the team that
+						describes what state Product Backlog Items (or User Stories) need to be in(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/dependencies" role="term">Dependencies</a><dfn role="definition"
+						>Resource Links: A lesson in agile: How one team ended dependency delays Agile
+						Organizations Must Address Both Structural and Instantiated(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/developers" role="term">Developers</a><dfn role="definition"
+						>If you thought that ScrumMaster was a poorly named role in Scrum, check out Developers.
+						In recent years, the ScrumGuide has been making changes to help(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/devops" role="term">DevOps</a><dfn role="definition"
+						>DevOps (also now DevSecOps) is the practice of Development working more closely with
+						Operations. Over time, the Developers automate various aspects of(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/distributed-teams" role="term">Distributed Teams</a><dfn
+						role="definition"
+						>Resource Links: 12 ways to improve cross-office collaboration Agile Alternatives for a
+						Geographically Distributed Team Agile in Dispersed or(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/diversity" role="term">Diversity</a><dfn role="definition"
+						>Diversity in Agile helps reduce the risk of problems created through cognitive and
+						other biases, by ensuring the Scrum team has access to a wider range of(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-documentation" role="term">Documentation</a><dfn
+						role="definition"
+						>Agile Documentation. Is it an oxymoron? The Agile Manifesto says "Working Software over
+						Comprehensive Documentation". It doesn't say no documentation, and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/dot-voting" role="term">Dot Voting</a><dfn role="definition"
+						>Dot voting is a mechanism to help an Agile team select a single item from many or
+						prioritize among a number of options. It's a remarkably simple tool. We(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/effective-teams" role="term">Effective Teams</a><dfn role="definition"
+						>(Placeholder. Resources and content to be added shortly.)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-architecture" role="term">Emergent Architecture</a><dfn
+						role="definition"
+						>Agile Architecture emphasizes the minimum amount of design upfront, and focusing on
+						building something and evolving the architecture as our understanding(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/empathy-map" role="term">Empathy Map</a><dfn role="definition"
+						>Empathy Maps are a tool to help us record what we understand about our audience. The
+						maps prompt the team to answer questions about what the users do,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-engineering-practices" role="term">Engineering Practices</a><dfn
+						role="definition"
+						>In my workshops, I often have people who are focused on the question: “How can I help
+						my team go faster?”, or “How can we deliver this Product sooner?”(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/ensemble-programming" role="term"
+						>Ensemble (formerly Mob) Programming</a
+					><dfn role="definition"
+						>Ensemble Programming (formerly known as Mob Programming) is the logical extension of
+						Pair Programming. The entire team work together to deliver a single(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/estimation" role="term">Estimation</a><dfn role="definition"
+						>An estimate is a qualified guess to help people make a decision about doing work. In
+						the Agile world, one approach to estimation has become prevalent: the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-architecture" role="term">Evolutionary Architecture</a><dfn
+						role="definition"
+						>Agile Architecture emphasizes the minimum amount of design upfront, and focusing on
+						building something and evolving the architecture as our understanding(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/extreme-programming" role="term">Extreme Programming</a><dfn
+						role="definition"
+						>Resource Links: Extreme Programming What is Extreme Programming? EXTREME PROGRAMMING
+						BOOKS Extreme Programming Installed – Ron Jeffries,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/facilitation" role="term">Facilitation</a><dfn role="definition"
+						>Facilitation is the art of helping a group of people reach agreement or understanding,
+						without direct involvement in the process itself. In the game of(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/failure-demand" role="term">Failure Demand</a><dfn role="definition"
+						>"Failure demand is demand caused by a failure to do something or do something right for
+						the customer." - John Seddon 2009 All work a team does comes(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/failure-modes" role="term">Failure Modes</a><dfn role="definition"
+						>Resource Links: 10 Reasons Why You Are Doomed to Fail With Scrum 12 Failure Modes in
+						Agile Transformation 12 Reasons Scrums Fail for Agile(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/fake-agile" role="term">Fake Agile</a><dfn role="definition"
+						>Agile's success is also its Achilles heel. Everyone wants to do Agile, but not everyone
+						wants to make any changes to be Agile. There is a lot of focus on(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/feedback" role="term">Feedback</a><dfn role="definition">
+						Giving and Taking Design Criticism – with Rebecca Wirfs-Brock Early Feedback Reduces
+						Anger and Frustration Scrum Anti-Patterns: Micromanagement How(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/forecasting" role="term">Forecasting</a><dfn role="definition"
+						>Forecasting in the Agile world asks the difficult questions: How much of our product
+						backlog will ready by a certain date? or By which date a specific(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/healthy-teams" role="term">Healthy Teams</a><dfn role="definition"
+						>Magic of Science and Teams – #GOAT13 Presentation How Escape Rooms Teach About Teams
+						Resource Links: Healthy teams, unhealthy teams: in your(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/impact-mapping" role="term">Impact Mapping</a><dfn role="definition"
+						>Impact Mapping is a tool to help teams focus their work on the feature by identifying
+						portfolio items or strategic changes that will have the greatest(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/impact-of-agile" role="term">Impact of Agile</a><dfn role="definition"
+						>Resource Links: The Impact of Lean and Agile Quantified – Rally Research Study
+					</dfn>
+				</li><li>
+					<a href="/glossary/impediments" role="term">Impediments</a><dfn role="definition"
+						>In the context of a Scrum team, anything that slows the team’s progress towards the
+						Sprint Goal is an impediment. And since one of the primary(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/improvement-experiments" role="term">Improvement Experiments</a><dfn
+						role="definition"
+						>Agile teams attempt to use Retrospectives as a tool for Team Improvement. Yet our
+						improvements often lead nowhere. Consider making your improvements into(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/interruptions" role="term">Interruptions</a><dfn role="definition"
+						>Team members get interrupted throughout their working day. Some of the interruptions
+						are high value - e.g. a team member asking questions that helps the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/iterative-incremental-development" role="term"
+						>Iterative and Incremental Development</a
+					><dfn role="definition"
+						>Iterative and Incremental Development is fancy language for working in cycles and
+						always releasing a version of the product at the end of a cycle. In(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/kanban" role="term">Kanban</a><dfn role="definition"
+						>Kanban isn't just a board that you find in JIRA or Trello. It is a method to help
+						improve the flow of work through a system. A kanban board is one way to(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/less-large-scale-scrum" role="term">Large Scale Scrum</a><dfn
+						role="definition"
+						>LeSS, aka Large Scale Scrum. The abbreviation leads to some good puns (do more with
+						LeSS). There isn’t a one-size-fits-all solution to scaling. When the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/lean_software_development" role="term">Lean Software Development</a
+					><dfn role="definition"
+						>Resource Links: Applying Lean Tools and Techniques to Scrum Grown-Up Lean - The Nature
+						of Software Little's Law - The ONE thing you can do to(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/lean-startup" role="term">Lean Startup</a><dfn role="definition"
+						>Lean Startup is a way for a group of people with a product idea to test it with the
+						market and gain rapid feedback on whether the world wants what they're(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/lean-startup-experiments" role="term">Lean Startup Experiments</a><dfn
+						role="definition"
+						>A core concept of Lean Startup is that we need to validate aspects of your product or
+						business idea that are assumptions or that represent risk. Looking(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-lean-ux" role="term">Lean UX</a><dfn role="definition"
+						>Agile or Lean UX (User eXperience) is about incorporating UX into the flow of work of a
+						development team. Many try the approach of having the UX people(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/slack" role="term">Learning Time</a><dfn role="definition"
+						>Slack, in the context of Agile/Scrum, is when the time isn't solely focused on
+						delivering. (It's important not to confuse this with Slack, a popular(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/legacy-code-and-systems" role="term">Legacy Code and Systems</a><dfn
+						role="definition"
+						>Legacy code is often described as code checked into the system without a unit test. A
+						popular definition from Michael Feathers, author of Working(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/liberating-structures" role="term">Liberating Structures</a><dfn
+						role="definition"
+						>Liberating Structures are tools that create balance in self-organization, which is at
+						the heart of all Agile approaches. Too often self-organized events(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/production-support" role="term">Maintenance</a><dfn role="definition"
+						>When a team has a product that is live in the field, they need a pattern to handle the
+						support issues that come up, so that the critical defects get fixed(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/metrics-and-measurement" role="term">Metrics and Measurement</a><dfn
+						role="definition"
+						>Metrics are the tools we use (and misuse) to help us understand how we're evolving.
+						Used well, Metrics can give us feedback on our team's experiments and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/minimum-viable-product-mvp" role="term">Minimum Viable Product [MVP]</a
+					><dfn role="definition"
+						>MVP or Minimum Viable Product is often misunderstood, and confused with MCF - Minimum
+						Crappy Feature. Where MCF is the minimum version of a product or(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scrummerfall" role="term">Mini Waterfalls in Scrum</a><dfn
+						role="definition"
+						>Alias: Mini Waterfalls in Scrum A Scrum team should work on only a couple of Product
+						Backlog Items (or User Stories) at a time. Most of the work should(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/ensemble-programming" role="term">Mob Programming</a><dfn
+						role="definition"
+						>Ensemble Programming (formerly known as Mob Programming) is the logical extension of
+						Pair Programming. The entire team work together to deliver a single(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/morale" role="term">Morale</a><dfn role="definition"
+						>Team health checks have been popular in the Agile Community for years. Getting people
+						to pay attention to the joy in their teams is a boon. The challenge(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/motivation" role="term">Motivation</a><dfn role="definition"
+						>Traditional approaches in the workplace assume that there is a strong linkage between
+						motivation and financial reward. Theory is, if you pay people enough(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/multitasking" role="term">Multitasking</a><dfn role="definition"
+						>Buried in most job ads is the phrase "Looking for a great multitasker". Too bad they
+						don't exist. Contrary to what some books would have you believe,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/minimum-viable-product-mvp" role="term">MVP</a><dfn role="definition"
+						>MVP or Minimum Viable Product is often misunderstood, and confused with MCF - Minimum
+						Crappy Feature. Where MCF is the minimum version of a product or(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/niko-niko" role="term">Niko-Niko</a><dfn role="definition"
+						>Niko-Niko calendars are used to track mood, energy, happiness, etc, but not everyone
+						thinks that they're a good idea. The good: a team that tracks how(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/onboarding" role="term">Onboarding</a><dfn role="definition"
+						>Onboarding is a term to describe introducing a newly-hired person into an organization.
+						In the case of Scrum and Agile teams, it's important to recognize(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/organizational-structure" role="term">Organizational Structure</a><dfn
+						role="definition"
+						>It's strange to start becoming Agile and assume that Organizational Structure won't
+						change. As Agile steers an organization to focus on Product and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/pair-programming" role="term">Pair Programming</a><dfn
+						role="definition"
+						>Pair Programming is when two people write code together on one machine. This
+						collaboration helps improve code quality, readability, and simplicity. Not(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/part-time-team-members" role="term">Part-time Team Members</a><dfn
+						role="definition"
+						>People should be dedicated to one and only one team. The science of team work shows
+						this over and over again. Yet, on occasion, we’re stuck when we have(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/persona" role="term">Persona</a><dfn role="definition"
+						>A Persona is a fictional character created to represent a group of users of a product.
+						A persona is based in research of real users, usually discovered(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/personal-readme" role="term">Personal README</a><dfn role="definition"
+						>Github style READMEs can be turned to personal use. A Personal README, aka Personal
+						Manual, is a document that describes how a person likes to communicate(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/estimation" role="term">Planning Poker</a><dfn role="definition"
+						>An estimate is a qualified guess to help people make a decision about doing work. In
+						the Agile world, one approach to estimation has become prevalent: the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/portfolio-management" role="term">Portfolio Management</a><dfn
+						role="definition"
+						>Agile Portfolio Management is a tool for a group of teams that have too many major
+						chunks of work in flight. Traditional Portfolio Management is centred(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/prioritization" role="term">Prioritization</a><dfn role="definition"
+						>Resource Links: 20 Product Prioritization Techniques: A Map and Guided Tour The 2023
+						guide to product prioritization + the best frameworks An(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/product-backlog" role="term">Product Backlog</a><dfn role="definition"
+						>The Product Backlog is an ordered list of all the work items or value the Product Owner
+						would like to see the Team work on in the foreseeable future.(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/product-backlog-refinement" role="term">Product Backlog Grooming</a
+					><dfn role="definition"
+						>Product Backlog Refinement (formerly known as "Product Backlog Grooming") is a session
+						during which the Scrum Team (Developers, Product Owner,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/product-backlog-refinement" role="term">Product Backlog Refinement</a
+					><dfn role="definition"
+						>Product Backlog Refinement (formerly known as "Product Backlog Grooming") is a session
+						during which the Scrum Team (Developers, Product Owner,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/lean-startup-experiments" role="term">Product Experiments</a><dfn
+						role="definition"
+						>A core concept of Lean Startup is that we need to validate aspects of your product or
+						business idea that are assumptions or that represent risk. Looking(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/production-support" role="term">Production Support</a><dfn
+						role="definition"
+						>When a team has a product that is live in the field, they need a pattern to handle the
+						support issues that come up, so that the critical defects get fixed(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/product-owner-role" role="term">Product Owner Role</a><dfn
+						role="definition"
+						>"The Product Owner owns the product that the team is building." “The Product Owner is
+						accountable for maximizing the value of the product resulting from(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/roadmaps-and-strategy" role="term">Product Strategy</a><dfn
+						role="definition"
+						>In traditional approaches, a Roadmap is a list of dates and promises that are being
+						made to the customer. Traditional Roadmaps don’t work because there is(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/vision" role="term">Product Vision</a><dfn role="definition"
+						>The Product Vision is a shared understanding of the overall goal and purpose for
+						creating a product. Your vision describes the motivation behind creating(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/project-vs-product" role="term">Project vs. Product</a><dfn
+						role="definition"
+						>Resource Links: Project Focus Is An Impediment to Long-Lived Teams Products Over
+						Projects Product vs. Project Teams Skateboards vs. Cars(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/psychological-safety" role="term">Psychological Safety</a><dfn
+						role="definition"
+						>Psychological safety is about being part of a team and knowing that you can share ideas
+						and information without fear. Psychological safety isn’t the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/pull-requests" role="term">Pull Requests</a><dfn role="definition"
+						>Pull Requests are a proposal to merge a set of changes from one branch to another. They
+						emerged from the world of open source and are optimized for(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/quality-assurance-in-scrum" role="term">Quality Assurance in Scrum</a
+					><dfn role="definition"
+						>In traditional approaches, the QA, Tester, or Quality Assurance tests the work of
+						developers in a separate phase - sometimes months later. Clearly that(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/refactoring" role="term">Refactoring</a><dfn role="definition"
+						>Refactoring is the process of restructuring existing code without changing its external
+						behaviour. Refactoring is done to improve the simplicity and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/distributed-teams" role="term">Remote Teams</a><dfn role="definition"
+						>Resource Links: 12 ways to improve cross-office collaboration Agile Alternatives for a
+						Geographically Distributed Team Agile in Dispersed or(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/resource-utilization-trap" role="term">Resource Utilization Trap</a
+					><dfn role="definition"
+						>In many organizations, the people who do the work are treated like economic resources
+						(think: iron ore) and it’s felt that they have a price, and so must(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/sprint-retrospective" role="term">Retrospective</a><dfn
+						role="definition"
+						>The Sprint Retrospective is an event at the end of the Sprint where the Scrum Team
+						reflects on all that happened in that period, with the intention to(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/roadmaps-and-strategy" role="term">Roadmaps and Strategy</a><dfn
+						role="definition"
+						>In traditional approaches, a Roadmap is a list of dates and promises that are being
+						made to the customer. Traditional Roadmaps don’t work because there is(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/safe-scaled-agile-framework" role="term">SAFe</a><dfn role="definition"
+						>Scaled Agile Framework, aka SAFe, is probably the least Agile approach to getting many
+						teams to work together. At the heart of all of Agile approaches has(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/safety-check" role="term">Safety Check</a><dfn role="definition"
+						>A team safety check is a way of understanding the team’s readiness to be open and
+						honest. It starts with a question like “Are you able to be open and(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/safe-scaled-agile-framework" role="term">Scaled Agile Framework</a><dfn
+						role="definition"
+						>Scaled Agile Framework, aka SAFe, is probably the least Agile approach to getting many
+						teams to work together. At the heart of all of Agile approaches has(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scaling" role="term">Scaling and Large Teams</a><dfn role="definition"
+						>When attempting to get many teams to work effectively together in an Agile world, we
+						need some coordination model. This is typically referred to as(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scarf-model" role="term">SCARF Model</a><dfn role="definition"
+						>The SCARF Model of human behaviour is useful to understand how people respond to the
+						world through the lenses of Status, Certainty, Autonomy, Relatedness,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scrum" role="term">Scrum</a><dfn role="definition"
+						>Scrum is an approach to applying the Agile mindset. Scrum is a way of organizing a team
+						of people to deliver incremental parts or features of a product(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scrummaster-anti-patterns" role="term">ScrumMaster Anti-Patterns</a
+					><dfn role="definition"
+						>An Anti-Pattern is a recurring pattern that frequently shows up, where the behaviour
+						creates new problems somewhere else in the system. Example: the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scrummaster-role" role="term">ScrumMaster Role</a><dfn
+						role="definition"
+						>The ScrumMaster is one of the more poorly-named aspects of Scrum. The intended meaning
+						isn’t to imply a controller or giver of orders. Rather, a(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scrummerfall" role="term">Scrummerfall</a><dfn role="definition"
+						>Alias: Mini Waterfalls in Scrum A Scrum team should work on only a couple of Product
+						Backlog Items (or User Stories) at a time. Most of the work should(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scrum-team" role="term">Scrum Team</a><dfn role="definition"
+						>The Scrum Team is all of the people needed to get the product built and into the
+						customer’s hands: ScrumMaster, who helps the team grow capacity to(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/scrum-vs-kanban" role="term">Scrum vs Kanban</a><dfn role="definition"
+						>Scrum is a tool that organizes a team to deliver value to a customer. Along the way,
+						the team is expected to improve the product and also the way they(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/security-in-scrum" role="term">Security in Scrum</a><dfn
+						role="definition"
+						>How do we build Secure products in Scrum? In a world where the development team deliver
+						value every Sprint, it is hard to see how to ensure products are(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/self-organization" role="term">Self-Organization</a><dfn
+						role="definition"
+						>A self-organizing team is one where team members make all relevant decisions on how to
+						achieve their goals. Contrary to the beliefs some people hold,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/self-selecting-teams" role="term">Self-Selecting Teams</a><dfn
+						role="definition"
+						>The default assumption when creating a new team is that the management and team leads
+						will do the selecting and organizing. (Wait, team leads... are they(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/servant-leadership" role="term">Servant Leadership</a><dfn
+						role="definition"
+						>Servant leadership is the act of leading through service to others. Okay, so how does
+						that differ from traditional leadership? Traditional leadership(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/cross-skilling" role="term">Skills Matrix</a><dfn role="definition"
+						>Cross-skilling is where a team member decides (without being pushed) to learn a new
+						skill area. This learning will, of course, take time and in the short(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/slack" role="term">Slack</a><dfn role="definition"
+						>Slack, in the context of Agile/Scrum, is when the time isn't solely focused on
+						delivering. (It's important not to confuse this with Slack, a popular(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-engineering-practices" role="term"
+						>Software Engineering Practices</a
+					><dfn role="definition"
+						>In my workshops, I often have people who are focused on the question: “How can I help
+						my team go faster?”, or “How can we deliver this Product sooner?”(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/special-teams" role="term">Special Teams</a><dfn role="definition"
+						>Sometimes organizations form Special Teams assigned to tackle technical bugs or other
+						challenges. Frequently, these special teams make the very problem(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/behaviour-driven-development" role="term">Specification by Example</a
+					><dfn role="definition"
+						>Behaviour Driven Development (or BDD) is an approach that gets team members to
+						collaborate on describing the behaviours of the user story or product(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/spotify-model" role="term">Spotify Model</a><dfn role="definition"
+						>The "Spotify Model" is often misunderstood and misapplied in organizations. It consists
+						of Squads, Tribes, Chapters, and Guilds. Squads are like Scrum(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/sprint" role="term">Sprint</a><dfn role="definition"
+						>A Sprint is a fixed period, ranging from one week to one month in length, during which
+						the Scrum Team works to meet specific customer needs. As one Sprint(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/sprint-backlog" role="term">Sprint Backlog</a><dfn role="definition"
+						>The Sprint Backlog is a list of Product Backlog Items (PBIs) the Team has committed to
+						for the next Sprint. It is the Scrum Team’s plan for how to achieve(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/burndowns" role="term">Sprint Burndown</a><dfn role="definition"
+						>Burndown charts graph work remaining vs time. They were originally used for tracking
+						work in Sprints and across releases. Sprint Burndowns that track(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/sprint-goal" role="term">Sprint Goal</a><dfn role="definition"
+						>Sprint Goal is a single product objective shared by the Scrum Team that describes the
+						purpose of the Sprint and ensures that everyone moves in the same(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/sprint-length" role="term">Sprint Length</a><dfn role="definition"
+						>The ScrumGuide says that Sprints "are fixed length events of one month or less to
+						create consistency" and "When a Sprint’s horizon is too long the Sprint(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/sprint-planning" role="term">Sprint Planning</a><dfn role="definition"
+						>Sprint Planning is an event at the beginning of a Sprint where the Team plans the items
+						they can complete in the next Sprint. They also craft a Goal to(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/sprint-retrospective" role="term">Sprint Retrospective</a><dfn
+						role="definition"
+						>The Sprint Retrospective is an event at the end of the Sprint where the Scrum Team
+						reflects on all that happened in that period, with the intention to(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/sprint-review" role="term">Sprint Review</a><dfn role="definition"
+						>Sprint Review is an event at the end of the Sprint where the Scrum Team review the
+						completed work with stakeholders. Stakeholders provide feedback on the(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/stable-teams" role="term">Stable Teams</a><dfn role="definition"
+						>A stable team is one in which team membership doesn’t change often and, instead, is
+						consistent over time. When team membership changes every few months,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/story-mapping" role="term">Story Mapping</a><dfn role="definition"
+						>A Story Map is a way to help visualize the flow or story of a product. Across the top
+						or horizontal axis of the map we place the major steps (often(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/user-story-splitting" role="term">Story Splitting</a><dfn
+						role="definition"
+						>User Story Splitting is the art of splitting User Stories or Product Backlog Items
+						(PBI) into smaller parts when an item is too big. My recommendation is(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/roadmaps-and-strategy" role="term">Strategy</a><dfn role="definition"
+						>In traditional approaches, a Roadmap is a list of dates and promises that are being
+						made to the customer. Traditional Roadmaps don’t work because there is(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/swarming" role="term">Swarming</a><dfn role="definition"
+						>If Pair Programming is two people working together on a single problem at the same time
+						(pre-Covid, Pairing meant sitting side by side with one computer),(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/systems-thinking" role="term">Systems Thinking</a><dfn
+						role="definition"
+						>Systems Thinking takes the view that any problem we're working on is part of a larger,
+						interconnected system. Instead of making a quick fix, Systems(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/tdd-vs-bdd" role="term">TDD vs BDD</a><dfn role="definition"
+						>Test Driven Development [TDD] and Behaviour Driven Development [BDD] are often confused
+						because the similarity of their names. TDD is the original(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/team-formation-models" role="term">Team Formation Models</a><dfn
+						role="definition"
+						>Team Formation Models are helpful in understanding what state a team is at, and then
+						using that information to make an educated guess as to what will help(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/team-launch" role="term">Team Launch</a><dfn role="definition"
+						>The purpose of the team launch or liftoff is to help the team move from a group of
+						unconnected people to have the start of a real team. (Additional(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/slack" role="term">Team Learning</a><dfn role="definition"
+						>Slack, in the context of Agile/Scrum, is when the time isn't solely focused on
+						delivering. (It's important not to confuse this with Slack, a popular(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/team-size" role="term">Team Size</a><dfn role="definition"
+						>The Scrum Guide offers very limited guidance, suggesting 3-9 people per team (exclusive
+						of ScrumMaster and Product Owner), without giving reasons or(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/technical-debt" role="term">Technical Debt</a><dfn role="definition"
+						>Technical Debt is a deeply misunderstood term. It was originally coined at the
+						beginning of Agile time by Ward Cunningham - from 1992: Shipping(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/test-driven-development" role="term">Test Driven Development [TDD]</a
+					><dfn role="definition"
+						>Test Driven Development (TDD) is the engineering practice where the developer writes
+						their Unit Test case before they write their code. Like Unit Testing,(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/testing" role="term">Testing</a><dfn role="definition"
+						>Agile Testing is "collaborative testing practices that occur continuously, from
+						inception to delivery and beyond, supporting frequent delivery of value(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/theory-of-constraints" role="term">Theory of Constraints</a><dfn
+						role="definition"
+						>The Theory of Constraints is a system improvement tool. It illustrates how in a system
+						where we find a bottleneck, the bottleneck is the constraint that(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/branching-strategies" role="term">Trunk Based Development</a><dfn
+						role="definition"
+						>Git, Mercurial and other source control tools provide robust and easy to use branching
+						capabilities. For work with OpenSource software —where anyone could(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/unit-testing" role="term">Unit Testing</a><dfn role="definition"
+						>Unit Testing is an approach to test small, isolated chunks of code that prove whether
+						the method did what the developer intended when the test was(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/user-story" role="term">User Story</a><dfn role="definition"
+						>In Scrum, a User Story is a tool used to provoke, and then summarize, a conversation
+						between the Development Team and their Product Owner, for a better(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/user-story-splitting" role="term">User Story Splitting</a><dfn
+						role="definition"
+						>User Story Splitting is the art of splitting User Stories or Product Backlog Items
+						(PBI) into smaller parts when an item is too big. My recommendation is(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/agile-lean-ux" role="term">UX</a><dfn role="definition"
+						>Agile or Lean UX (User eXperience) is about incorporating UX into the flow of work of a
+						development team. Many try the approach of having the UX people(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/vision" role="term">Vision</a><dfn role="definition"
+						>The Product Vision is a shared understanding of the overall goal and purpose for
+						creating a product. Your vision describes the motivation behind creating(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/when-to-use-scrum" role="term">When to Use Scrum</a><dfn
+						role="definition"
+						>Frequently in workshops, I get asked, “Where shouldn’t we use Scrum?” The short answer
+						is there are lots of instances where the Scrum framework doesn’t(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/working-agreements" role="term">Working Agreements</a><dfn
+						role="definition"
+						>A Working Agreement is a short set of guidelines created by the Team, for the Team,
+						that establishes what the expectations of the Team are for one(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/work-in-progress" role="term">Work in Progress</a><dfn
+						role="definition"
+						>In Scrum, Work in Progress is the batch of User Stories or Product Backlog Items that
+						have been started but not finished. These are also referred to as(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/work-week" role="term">Work Week</a><dfn role="definition"
+						>Our modern work week of five days on and two days off is nothing more than an accident
+						of history. Many organizations, and now even countries, are(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/fake-agile" role="term">Zombie Scrum</a><dfn role="definition"
+						>Agile's success is also its Achilles heel. Everyone wants to do Agile, but not everyone
+						wants to make any changes to be Agile. There is a lot of focus on(...)</dfn
+					>
+				</li><li>
+					<a href="/glossary/zoom-fatigue" role="term">Zoom Fatigue</a><dfn role="definition"
+						>During the COVID-19 pandemic, we learned the hard way that being on Zoom, or any other
+						video conferencing system, wears us down. A few things we've(...)</dfn
+					>
+				</li>
+			</ul>
+		</div>
+	</div>
+</MainLayout>

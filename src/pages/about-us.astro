@@ -1,0 +1,83 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_about_us_headshot_facing_left_square_jpg from "@assets/images/about-us/headshot-facing-left-square.jpg"
+
+const wpId = 45
+const title = "About Us"
+const description =
+	"Approach We focus on giving you the best possible return on investment. Through the initial meetings we will assess your highest priority areas of concern. Looking at the whole, we will put together a plan to determine how we can best help you. We set clear success goals for our engagement, which through regular collaboration, ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2019-09-13T05:43:24")
+const modifiedAt = new Date("2023-05-24T17:10:41")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<h2>Approach</h2>
+	<p>
+		We focus on giving you the best possible return on investment. Through the initial meetings we
+		will assess your highest priority areas of concern. Looking at the whole, we will put together a
+		plan to determine how we can best help you. We set clear success goals for our engagement, which
+		through regular collaboration, we adjust to meet your needs.
+	</p>
+	<p>
+		We provide many services to help you become Agile. While Agile is the primary focus of our
+		services we have many years of experience running all sizes of software projects from the very
+		small to the very large. We understand what it takes for teams to collaborate to create to best
+		possible solution. We also have very deep understanding of the full software development
+		lifecycle and of how to implement best practices around that lifecycle in the context of <strong
+			>your
+		</strong>organization with your goals and constraints in mind.
+	</p>
+	<p>
+		While we are passionate about the work we do, we are also pragmatic about ensuring that the
+		services that we deliver fit with your organization and your goals. The relationship that we
+		build with you is of utmost importance.
+	</p>
+	<h2>Mark Levison</h2>
+	<p>
+		<Image
+			decoding="async"
+			alt="Certified Scrum Trainer Mark Levison, Agile Pain Relief Consulting"
+			width="300"
+			height="400"
+			sizes="(max-width: 300px) 100vw, 300px"
+			src={assets_images_about_us_headshot_facing_left_square_jpg}
+			widths={[300, 225]}
+		/>mark@agilepainrelief.com
+	</p>
+	<p>
+		Mark Levison is the Certified Scrum Trainer and Agile Coach behind Agile Pain Relief Consulting.
+		With over 30 years of experience in the IT industry, he has been learning and <a
+			href="/certified-scrum-agile-training"
+			target="_blank"
+			rel="noopener">teaching</a
+		> Agile since 2001. Introducing Scrum, Lean, and Agile methodology to a large variety of organizations
+		—government departments, banks, insurance, healthcare, education, software, logistics and non-profits,
+		to name only a few— Mark has brought Scrum to thousands of professionals and helped launch the practice
+		throughout Canada.
+	</p>
+	<p>
+		Participants benefit from Mark’s voracious study and writing on the neuroscience of learning. A
+		respected international speaker at Agile Alliance conferences and Scrum Gatherings, Mark is also
+		a published author on the subject, including <a
+			href="/guide-to-effective-agile-retrospectives"
+			target="_blank"
+			rel="noopener"><em>The Guide to Effective Agile Retrospectives</em></a
+		>, <em
+			><a href="/high-performance-teams" target="_blank" rel="noopener"
+				>Five Steps Towards Creating High-Performance Teams</a
+			></em
+		>, blog “<a href="/blog" target="_blank" rel="noopener">Notes from a Tool User</a>”, “<a
+			href="/blog/beyond-scrum-blog-series.html"
+			target="_blank"
+			rel="noopener">Beyond Scrum</a
+		>”, various guides and handbooks, and multiple articles for InfoQ and the Scrum Alliance.
+	</p>
+</MainLayout>

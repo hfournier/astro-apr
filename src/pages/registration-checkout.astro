@@ -1,0 +1,19 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+const wpId = 8901
+const title = "Registration Checkout"
+const description = "[ESPRESSO_CHECKOUT]"
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2019-09-18T05:37:33")
+const modifiedAt = new Date("2023-11-27T22:07:05")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>[ESPRESSO_CHECKOUT]</p>
+</MainLayout>

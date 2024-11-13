@@ -1,0 +1,215 @@
+---
+wpId: 10765
+title: 'What is the Recommended Scrum Team Size?'
+description: 'Nearly every client I work with asks me this question at some point. The Scrum Guide offers very limited guidance, suggesting 3-9 people per team (exclusive of ScrumMaster and Product Owner), without giving reasons or context for those numbers. There isn''t one universally correct answer for optimal team size, but there are a number of ...'
+type: post
+createdAt: 2020-03-13T09:42:54
+modifiedAt: 2024-03-04T15:17:28
+author: mark-levison
+categories:
+  - teams
+tags:
+  - agile
+  - agile-team
+  - product-management
+  - productivity
+  - project-management
+  - scrum
+  - scrum-methodology
+  - scrum-team
+  - team-size
+featuredMedia:
+  id: 10768
+  src: "APR-09_Blog-Illustrations_Mar2020_ScrumTeamSize_v2-A.jpg"
+  alt: "Larger than ideal scrum team size - image by Agile Pain Relief Consulting"
+  caption: ""
+---
+
+import { Image } from "astro:assets"
+
+import colo_APR_09_Blog_Illustrations_Mar2020_ScrumTeamSize_v2_A_jpg from "APR-09_Blog-Illustrations_Mar2020_ScrumTeamSize_v2-A.jpg";
+import colo_team_size_jpg from "team-size.jpg";
+import colo_Parallelizable_vs_Serial_Work_image_1_jpg from "Parallelizable-vs-Serial-Work-image-1.jpg";
+import colo_Parallelizable_vs_Serial_Work_image_3_equation_jpg from "Parallelizable-vs-Serial-Work-image-3-equation.jpg";
+import colo_Parallelizable_vs_Serial_Work_image_2_jpg from "Parallelizable-vs-Serial-Work-image-2.jpg";
+import colo_Amdahls_Law_graph_jpg from "Amdahls-Law-graph.jpg";
+import colo_Sociometry_group_size_jpg from "Sociometry-group-size.jpg";
+import colo_Putnam_Myers_study_person_months_jpg from "Putnam-Myers-study-person-months.jpg";
+import colo_Larry_Maccherone_team_size_to_performance_png from "Larry-Maccherone-team-size-to-performance.png";
+import colo_APR_09_Blog_Illustrations_Mar2020_ScrumTeamSize_v1_B_jpg from "APR-09_Blog-Illustrations_Mar2020_ScrumTeamSize_v1-B.jpg";
+
+
+Nearly every client I work with asks me this question at some point. The [Scrum Guide](https://scrumguides.org/scrum-guide.html#team-dev) offers very limited guidance, suggesting 3-9 people per team (exclusive of ScrumMaster and Product Owner), without giving reasons or context for those numbers.
+
+There isn’t one universally correct answer for optimal team size, but there are a number of factors and trade-offs worth considering when figuring out what will work best for your team.
+
+In this post, we’ll explore the research, and I’ll share my personal experiences about effective team size. While this is primarily about Scrum, the lessons are applicable for any work that is collaborative and knowledge-based.
+
+<Image decoding="async" alt="What is the Recommended Scrum Team Size? This is a larger than ideal scrum team size!" width="1416" height="840" sizes="(max-width: 1416px) 100vw, 1416px" src={colo_APR_09_Blog_Illustrations_Mar2020_ScrumTeamSize_v2_A_jpg} widths={[1416, 300, 1024, 768]} />
+
+## Effective Scrum Team Size is More than Just a Number
+
+When you’re trying to determine what will work best, your Team’s needs should be more important than any arbitrary number. Factors you should consider include:
+
+*   A [sufficiently broad set of skills](/blog/how-to-cross-skill-and-grow-t-shaped-team-members.html) to build their product – aka Cross-Functional
+*   Team members dedicated to one, and only one, team
+*   [Stable membership](/blog/stable-teams-really-do-matter.html) – i.e. team membership that is consistent over a long period of time\[[1](#footnotes)\]
+*   Diversity of thought – a sufficiently broad set of beliefs, attitudes and thinking patterns\[[2](#footnotes)\]
+
+Once the Team is formed, these are often just as important as team size when predicting success:
+
+*   Psychological safety – the environment is safe for all team members to share their ideas\[[3](#footnotes)\]
+*   Collective Intelligence of the Team – strongly correlated with average sensitivity of team members\[[4](#footnotes)\]
+*   Equal Communication – the most expressive team member is no more than twice as expressive as the quietest\[[5](#footnotes)\]
+*   Open-Mindedness and Willingness to Learn\[[6](#footnotes)\]
+*   A Shared Vision of which all Team members are committed to achieving\[[7](#footnotes)\]
+*   Clear Roles and Responsibilities\[[8](#footnotes)\]
+*   Dynamically Shared Leadership\[[9](#footnotes)\]
+*   External Coach – in Scrum this is the ScrumMaster\[[10](#footnotes)\]
+
+These factors don’t exist in a void, so let’s explore the evidence that supports what others, including myself, have discovered about team size, to help you consider what’s most important for your Team. After all, there is no universal answer, there is only a range that will likely work best for your needs.
+
+## The Problem with Arbitrary Numbers
+
+The earliest Scrum and XP books all suggest a team size number of 7+/-2, applying Miller’s number,\[[11](#footnotes)\] believed to be the number of integers you can hold in short-term memory. I’m troubled by this, since I can’t see why one’s ability to keep track of numbers should be correlated with team size. In addition, more recent research\[[12](#footnotes)\] has shown that, as the things you’re keeping track of become more complex, the number of items you can keep in your short-term memory drops to 4 or less. Clearly, we need more useful sources.
+
+Many other coaches cite historical examples going back to the Roman army, which used small military unit sizes of around 8 people. Others observe bonobos, one of the closest genetic relatives to humans, often split into groups of 6-7 to forage for a day. Both of these conveniently support the 7+/-2 number, but since neither example is about teams doing knowledge work, the relevance of these for Scrum is limited.
+
+## What Happens to Relationships When Teams Get Large?
+
+<Image decoding="async" alt="Scrum team size diagram." width="800" height="800" sizes="(max-width: 800px) 100vw, 800px" src={colo_team_size_jpg} widths={[800, 300, 150, 768, 75, 600]} />
+
+In a team, each individual will connect with another individual and form a unique relationship. The bigger the team, the more the relationships. The equation that describes this is N (N – 1)/2. But what exactly does that _mean_? More importantly, how is it supposed to help you? Let’s start by treating it as a high-school math problem, then turn it into something we can actually use in real life.
+
+The above equation tells us how many different relationships will exist within a team of a certain size. N = the number of people in the team. So, in the first example of a team of 5 people, for N=5 you have 10 relationships: 10 different combinations of team members relating with other team members.
+
+In the second example, n=7, you have 21 relationships, and at n=9 in the third image you have 36 relationships. Each pair of people represents one relationship, and that relationship is how they collaborate. High-performing teams, by their nature, must have strong relationships between each of the team members to collaborative effectively.
+
+Why does this matter, and how can it help you? Each new person adds some individual productivity to the Team, but they also increase the communications overhead in the form of an exponentially growing number of relationships. To increase a team from 5 to 7 people, you have to more than double the number of relationships. To go from 7 to 9, you don’t quite double it, but the jump is still large.
+
+Just how expensive is it to maintain these relationships? Anecdotally, having studied team member interactions at clients’ sites, I can say that in teams of 7-8 people, upwards of 90 minutes per person each day is spent interacting with other team members.\[[13](#footnotes)\] This excludes pair programming time. Some of the interaction is talking about work, but just as much is spent socializing. This is good and important because it’s the combination of work and socializing that builds a team’s resilience and ability to handle challenges effectively (see the water cooler section in “[Five Steps Towards Creating High-Performance Teams](/high-performance-teams)“).
+
+So the number of relationships between team members, and the time investment they require, needs to be a factor considered when choosing team size because it will influence productivity.
+
+A general rule of thumb suggests that people typically have from 3½ to 5 hours of productive time at work each day. As a team gets larger, we either lose productivity or, more often, we start to withdraw socially rather than sacrifice productive time for interacting with our peers because the communication costs for each team member is becoming too high to afford. We need strong relationships to become a high-performing team but, as group size grows, we start to avoid the interactions that build those relationships.\[[14](#footnotes)\]
+
+### Many Hands Make Light Work… But Only to a Point
+
+We all want to believe that if we go from 1 person to 2 people, or from 2 to 4 people, we will get a doubling of the amount of work done. Yet, we know intuitively that isn’t the case.
+
+What we’re missing is _why_. Enter “[Amdahl’s Law](https://en.wikipedia.org/wiki/Amdahl%27s_law).” The formula, first presented in 1967, estimates how much of a speedup might be gained if we took a computing task and ran parts of it in parallel. If that sounds like gobbledygook, it just means sometimes programs have parts that can be worked on by multiple processors at the same time (i.e. parallel processing), but other parts that must be done one at a time (i.e. serial programming).
+
+<Image decoding="async" alt="Scrum Team Size - Parallelizable vs Serial Work." width="1209" height="723" sizes="(max-width: 1209px) 100vw, 1209px" src={colo_Parallelizable_vs_Serial_Work_image_1_jpg} widths={[1209, 300, 1024, 768]} />
+
+The first picture imagines work done by one processor. It takes 5 units of time.
+
+If we take the 5 units of work and apply 3 processors to the parts that can be done concurrently (parallel), it doesn’t take 1 and 2/3 units of time (5 divided by 3) to complete. Instead, it takes 3 units because 2 of the units of work can only be done by one processor (serial). It’s certainly an improvement in time, but not as much as you might expect.
+
+The math to explain the problem might look intimidating at first:
+
+<Image decoding="async" alt="Parallelizable vs Serial Work." width="338" height="118" sizes="(max-width: 338px) 100vw, 338px" src={colo_Parallelizable_vs_Serial_Work_image_3_equation_jpg} widths={[338, 300]} />
+
+<Image decoding="async" alt="Parallelizable vs Serial Work." width="590" height="233" sizes="(max-width: 590px) 100vw, 590px" src={colo_Parallelizable_vs_Serial_Work_image_2_jpg} widths={[590, 300]} />
+
+Work in teams has similar properties. In fact, if we turn it into a graph, we see just how inefficient increased team size can be:
+
+<Image decoding="async" alt="Amdahl's Law graph." width="1408" height="854" sizes="(max-width: 1408px) 100vw, 1408px" src={colo_Amdahls_Law_graph_jpg} widths={[1408, 300, 1024, 768]} />
+
+Just focus for now on the 80% line (teal, at the top) of the graph. Let’s be optimistic (and unrealistic) and assume that 80% of the work can be done by working in parallel. This suggests that the more people doing it, the faster it will get done – right? Ah, but wait. If we go from 1 person to 2 people, we don’t get twice as much done. To get a 2 times improvement in work completed, we actually need 3 people. 7 people only create a 3.2 times improvement over 1 person. To get 4 times as much work done as 1 person, we would need 16 people!
+
+What happens if even less of the work can be done concurrently (parallel)? What if 50% of the work must be done in serial (red line on the graph)? Then with 9 people, we still have only a 1.8 times speedup.
+
+What’s the solution? There’s no easy fix, but there are things you can do to mitigate the effect of Amdahl’s Law:
+
+*   Make it so as much of the work as possible can be done in parallel. This may mean increasing cross-skilling and collaboration.
+*   Reduce cross-team dependencies, so there are no bottlenecks and delays.
+*   Increase the speed of the work process overall by improving quality and practices.
+
+Speed doesn’t come from throwing more people at the job and making bigger teams. It comes from [building a high-performance team](/high-performance-teams) that is an optimal size for effectiveness, communication, and quality.
+
+## Research-Backed Evidence
+
+The American Sociological Association published a study by Hackman JR, Vidmar NJ on the “Effects of size and task type on group performance and member reactions.”\[[15](#footnotes)\]
+
+<Image decoding="async" alt="Figure 1 - Source: Hackman JR, Vidmar NJ. Effects of size and task type on group performance and member reactions. Sociometry. 1970;33 :37-54." width="900" height="975" sizes="(max-width: 900px) 100vw, 900px" src={colo_Sociometry_group_size_jpg} widths={[900, 277, 768]} />
+
+##### Figure 1 – Source: Hackman JR, Vidmar NJ. Effects of size and task type on group performance and member reactions. Sociometry. 1970;33 :37-54.
+
+In this study, they had participants complete a number of tasks – a mix of Production (writing), Discussion, and Problem-Solving. The participants were placed in different groups sized from 2 to 7. After completing each task, volunteers were asked a number of questions, including two that this graph displays: “was your group too small?”, “was your group too large?”. As you can see from the graph, groups around 4-5 in size seemed to have the least negative reaction. The oft-cited number is 4.6. The participants were undergraduate students (all men, sadly), the tasks had a cognitive load but were not programming, and the groups weren’t together long enough for a real sense of a “team” to form. Nonetheless, it is an interesting data point.
+
+By the time Hackman wrote the book _Leading Teams_, his rule of thumb for team size was 6.\[[16](#footnotes)\]
+
+Jennifer Mueller cited in “[Is Your Team Too Big? Too Small? What’s the Right Number?](https://knowledge.wharton.upenn.edu/article/is-your-team-too-big-too-small-whats-the-right-number-2/):”
+
+> _if companies are dealing with coordination tasks and motivational issues, and you ask, ‘What is your team size and what is optimal?’ that correlates to a team of six. “Above and beyond five, and you begin to see diminishing motivation,” says Mueller. “After the fifth person, you look for cliques. And the number of people who speak at any one time? That’s harder to manage in a group of five or more.”_
+
+It’s not just personal opinions from team members that teach us about optimal group size: we also have objective statistics. Putnam and Myers surveyed data from 491 software projects in a large corporation.\[[17](#footnotes)\] These were projects with 35,000 – 90,000 source lines of code. They broke projects down into buckets based on the number of people involved in the project: 1.5-3, 3-5, 5-7, 9-11, and 15-20. On average, the smaller groups (3-5, 5-7) took significantly less time (11.9 and 11.6 months, respectively) than the larger groups (17.1 and 16.29 months) to complete similar-sized projects.
+
+When you multiply the number of team members times the number of months, you get a graph that is even more shocking:
+
+<Image decoding="async" alt="Putnam Myers study graph. " width="778" height="560" sizes="(max-width: 778px) 100vw, 778px" src={colo_Putnam_Myers_study_person_months_jpg} widths={[778, 300, 768]} />
+
+A team of 9-11 people took around2.5-3.5 times as long as teams of 5-7 and 3-5 to complete projects of a similar size. That suggests that teams larger than seven in this dataset were just a way to spend money faster because of the increased team size but reduced net performance.
+
+## Evidence from Agile Projects
+
+Larry Maccherone, in his work through both Rally, Tasktop, and AgileCraft, has helped build large datasets about practices in Agile Teams. His data shows:
+
+<Image decoding="async" alt="Used with Permission from Larry Maccherone – from Impact of Agile Quantified Late 2014." width="900" height="480" sizes="(max-width: 900px) 100vw, 900px" src={colo_Larry_Maccherone_team_size_to_performance_png} widths={[900, 300, 768]} />
+
+##### Figure 2 – Used with Permission from Larry Maccherone – from Impact of Agile Quantified Late 2014
+
+Based on Larry’s data, it would appear that teams of 1-3 are more productive but have lower quality. Teams of 3-5 are marginally more productive than 5-9, although they might still have slightly lower quality – the difference is small. Larry’s notes suggest he thinks the entire range of 3-9 is fine.\[[18](#footnotes)\] The reason for the lower quality in smaller teams is not apparent. Maybe a lack of stability? A lack of diversity of thought and experience? Reduced cross-functionality? We can’t know, but it bears consideration.
+
+WAIT! Before you read on, remember that the whole point of this article is to stress that your mileage may vary! Don’t substitute the opinions or evidence of others for your own knowledge of, and experimentation with, your teams. Start with this information, then tweak to find what works best for your team.
+
+<Image decoding="async" alt="Scrum team engaging with each other." width="1416" height="840" sizes="(max-width: 1416px) 100vw, 1416px" src={colo_APR_09_Blog_Illustrations_Mar2020_ScrumTeamSize_v1_B_jpg} widths={[1416, 300, 1024, 768]} />
+
+## My Experience
+
+So, when clients and attendees of my [training](/certified-scrum-agile-training) ask me what size Scrum teams should be, I don’t have a “correct” answer. But I share the above data and my personal opinions and suggestions based on years of experience. Most of it is rooted in simple logic and common sense. For example, larger teams spend longer in forming, longer in normalizing, and therefore longer to reach high performance. Why? Because there are more relationships to be negotiated. As we saw before, on a team of 5, there are 10 relationships that need to form, a team of 7 has 21 relationships, and so on. More relationships take more time to build and establish trust, so that has to be factored into the decision of team size.
+
+Assuming everything else is equal (e.g. skills required to get the job done, diversity of thought, etc.), existing evidence supports the idea that teams of 4-6 work well for most situations. They take less time to form and are as productive as larger teams. In addition, teams of 5-6 can typically cross-skill enough to cover the loss of a team member after they win the lottery.
+
+Personally, I would only choose a team of 7 if other pressures, like a required breadth of skills, forced it to happen. I no longer recommend teams of 8, because the additional overhead overwhelms the value of the extra person.
+
+With teams of 9 or larger, I recommend splitting into 2 teams. My own experience mirrors that of other Scrum trainers and coaches – separate teams of 4 and 5 get more done than their original large team.
+
+Why not 3 or fewer? Because it would result in too little diversity of thought, and would likely be very challenging to find 3 individuals with sufficient skills to get the job done on a complex project. There also will be very little collaboration, which correlates with the reduction in quality that Figure #2 shows (data from “Impact of Agile Quantified”). And don’t forget the obvious 2-on1 power issues that may make the journey more challenging for one team member.
+
+All of the focus has been on the number of people in the team, but the more important question should be this: does the team have the capacity to get to truly “done” (i.e. shippable) at the end of every Sprint? If it doesn’t, then you will want to re-examine and reconfigure to achieve a more effective team size.
+
+What has been your experience with team size? Too small? Too big? Just right?
+
+### Check out the 5 Steps to High-Performance Teams
+
+As we’ve learned, big teams don’t mean more work gets done faster. High-Performance Teams though… that’s where the magic happens. Check out our [5 Steps to High-Performance Teams](/high-performance-teams) and get your own copy of the e-book in progress by subscribing to our newsletter, and see what changes could help your team improve.
+
+Thanks to:  
+Peter Stevens and his own digging: [https://saat-network.ch/2014/12/how-many-people-do-you-need-in-your-team/](https://saat-network.ch/2014/12/how-many-people-do-you-need-in-your-team/)  
+Larry Maccherone and access to all of his work  
+Joseph Pelrine for pointing me to original research papers  
+Brent Barton for telling me about Putnam and Myers  
+Manoj Vadakkan and Angela Johnson for other references  
+Pawel Brodzinksi [https://brodzinski.com/2014/01/ideal-team-size-fallacy.html](https://brodzinski.com/2014/01/ideal-team-size-fallacy.html) who offers an alternate view
+
+  
+\[1\] “The Impact of Lean and Agile Quantified” – Larry Maccherone demonstrated that dedicating team members to one team doubled productivity and stable teams improved productivity by 60%. [https://www.infoq.com/presentations/agile-quantify](https://www.infoq.com/presentations/agile-quantify/)  
+\[2\] Wilkinson, David. Group decision-making. What the latest research says. _The Oxford Review_, December 2019  
+\[3\] “What Google Learned From Its Quest to Build the Perfect Team”: [https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html](https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html) and Psychological Safety and Learning Behavior in Work Teams – Amy Edmondson Administrative Science Quarterly 1999 44: 350 DOI: 10.2307/2666999  
+\[4\] Anita Williams Woolley, Christopher F. Chabris, Alex Pentland, Nada Hashmi, Thomas W. Malone. Evidence for a Collective Intelligence Factor in the Performance of Human Groups. _Science_ 29 Oct 2010: Vol. 330, Issue 6004, pp. 686-688  
+\[5\] “The New Science of Building Great Teams” – Alex “Sandy” Pentland [https://hbr.org/2012/04/the-new-science-of-building-great-teams/ar/pr](https://hbr.org/2012/04/the-new-science-of-building-great-teams) and also “Evidence for a Collective Intelligence Factor in the Performance of Human Groups”  
+\[6\] [_The Wisdom of Teams: Creating the High-Performance Organization_](https://www.amazon.ca/Wisdom-Teams-Creating-High-Performance-Organization/dp/1633691063/&tag=notesfromatoo-2) by Jon Katzenbach and Douglas Smith – stated that the Skills Potential are as important as the skills people currently have in predicting effectiveness.  
+\[7\] \[8\] \[9\] \[10\] Wilkinson, David. Group decision-making. What the latest research says. _The Oxford Review_, December 2019  
+\[11\] Miller’s Number: [https://en.wikipedia.org/wiki/The\_Magical\_Number\_Seven,\_Plus\_or\_Minus\_Two](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)  
+\[12\] “The Magical Mystery Four: How Is Working Memory Capacity Limited, and Why?” by Nelson Cowan – [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2864034/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2864034/)  
+\[13\] These have been very informal observations – just sitting watching what was going on in team spaces and around the water cooler. This time didn’t include lunch breaks.  
+\[14\] This is also documented in: Mueller, J. S. Why individuals in larger teams perform worse. _Organizational Behavior and Human Decision Processes_ (2011), doi:10.1016/j.obhdp.2011.08.004  
+\[15\] Stable reference: [https://www.jstor.org/stable/2786271](https://www.jstor.org/stable/2786271)  
+\[16\] Familiar Metric Management – Small is Beautiful-Once Again – Lawrence H. Putnam and Ware Myers [https://hbswk.hbs.edu/archive/2996.html](https://hbswk.hbs.edu/archive/leading-teams-setting-the-stage-for-great-performances-the-five-keys-to-successful-teams)  
+\[17\] [https://www.qsm.com/fmm\_28.pdf](https://www.qsm.com/fmm_28.pdf)  
+\[18\] Mark’s Note: I wish the data had split the 5-9 group into separate sets of 5-7 and 7-9 so we could see if there is a noticeable difference in his data at the larger end.
+
+All images by Agile Pain Relief Consulting unless otherwise noted.
+
+_6 March 2020: Updated for 2020 from 2016_

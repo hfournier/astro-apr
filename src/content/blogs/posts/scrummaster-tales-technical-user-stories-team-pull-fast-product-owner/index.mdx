@@ -1,0 +1,82 @@
+---
+wpId: 3038
+title: 'Scrum by Example – Technical User Stories or The Team Try to Pull a Fast One on the Product Owner'
+description: 'Should a technical issue be a User Story in the Product Backlog? How Agile teams can handle system tech problems within Scrum.'
+type: post
+createdAt: 2013-03-27T01:15:46
+modifiedAt: 2023-10-17T14:59:39
+author: mark-levison
+categories:
+  - product-owner
+  - scrum-by-example
+  - user-stories
+tags:
+  - certified-scrummaster
+  - priorities
+  - product-backlog
+  - product-owner
+  - scrum-by-example
+  - technical-debt-2
+  - technical-issue
+  - user-stories
+  - user-story
+featuredMedia:
+  id: 10274
+  src: "away-1020088_640.jpg"
+  alt: "Diverging paths - image licensed from Photodune"
+  caption: ""
+---
+
+import { Image } from "astro:assets"
+
+import colo_away_1020088_640_jpg from "away-1020088_640.jpg";
+
+
+<Image decoding="async" alt="Diverging paths - image licensed from Photodune" width="640" height="640" sizes="(max-width: 640px) 100vw, 640px" src={colo_away_1020088_640_jpg} widths={[640, 300, 150]} />
+
+_[Scrum By Example](/blog/scrum-by-example.html) is a series of stories about ScrumMaster Steve who is the ScrumMaster for the WorldsSmallestOnlineBookstore._
+
+While working on the FedEx 2-day shipment story Martin discovers some very crufty code in the Foobar class. He doesn’t need to work in the class to complete the story, nor can he see it causing any bugs right now. He doesn’t want to ignore the issue so he grabs an index card and writes “Foobar class is very crufty and it will slow us down later”.
+
+Later in the day the following conversation occurs:
+
+**Martin**: “We need to rework the underpinnings of the Foobar class so that we can work faster.”  
+**Product Owner Paula**: “Martin, why is that important? Help me see that.”  
+**Martin**: “It’s slowing us down. Every time we work in Foobar we spend an extra 20 minutes just trying to understand the mess that is there. If you write a User Story and give us 5 days it will all be perfect.”  
+**Paula**: “Can I trust you? Will this be the last time I ever hear about the Foobar class? Where should I put this is in the Backlog?”
+
+## Analysis
+
+As we can see, there are several problems at play here:
+
+*   We’re expecting Paula (the Product Owner) who is the business domain expert to make technical decisions.
+*   Martin is making promises they can’t guarantee: “Give me 5 days and Foobar will be perfect.”
+*   User Stories must deliver real value to actual users.
+*   Making this problem a User Story pretends this work has real value, but we’re doing it because we weren’t really done with the original work in the first place.
+
+The Product Owner should be focusing on work that affects the actual Users or other Stakeholders, not technical issues inside the system we’re building.
+
+Instead of bamboozling the Product Owner I find it more effective just to pay an ongoing tax in the range of 15-40% (depending on the state of the code base) and then maintain a separate list of technical impediments/items.
+
+Such a list would include notes like the Foobar class that needs simplifying; tasks such as configuring a CI server or upgrading a test machine, or anything else that the team is doing to help themselves. I wouldn’t bother including small refactorings (less than an hour or two of work); I just do those and get them finished.
+
+In addition, issues like the Foobar class are best addressed when the team is already working in that part of the code or the issues are causing problems elsewhere.
+
+If for some reason you really, really, think you must have it on the main Product Backlog (for reasons I can’t see) then don’t bother writing a User Story. Not everything in the Product Backlog needs to be or wants to be a User Story.
+
+To be clear – the work must be made visible; just don’t try to bamboozle the Product Owner into prioritizing it.
+
+## Story Take Two
+
+Martin writes up an index card for the Foobar class and posts in the ‘Technical issues’ list. Since it’s close to lunchtime and everyone is already getting ready to leave, he grabs Kirby and Doug. They debate the priority compared to other issues and decide that upgrading the CI server to get faster builds is more important. They point out to Martin that “Foobar” is in a rarely-visited portion of the code.
+
+### Other sources:
+
+“[As a Developer is not a Story](https://www.industriallogic.com/blog/as-a-developer-is-not-a-user-story/)” – Bill Wake  
+“[Technical Stories: We don’t need ‘em](https://ronjeffries.com/xprog/articles/technical-stories-we-dont-need-em/)” – Ron Jeffries  
+“[Refactoring not in the Backlog](https://ronjeffries.com/xprog/articles/refactoring-not-on-the-backlog/)” – also Ron Jeffries  
+“[Technical User Stories](https://blog.arielvalentin.com/2007/09/technical-user-stories.html)” Ariel Valentin
+
+_**[Scrum by Example](/blog/category/scrum-by-example) is a narrative-style blog series designed to help people new to Scrum, especially new ScrumMasters. If you are new to the series, we recommend you [check out the introduction](/blog/scrum-by-example.html) to learn more about the series and discover other helpful articles.**_
+
+Image licensed from Photodune

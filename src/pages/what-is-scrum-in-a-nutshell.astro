@@ -1,0 +1,298 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_what_is_scrum_in_a_nutshell_life_cycle_of_the_sprint_labelled_1024x805_jpg from "@assets/images/what-is-scrum-in-a-nutshell/life-cycle-of-the-sprint-labelled-1024x805.jpg"
+
+const wpId = 11483
+const title = "What Is Scrum? – In a Nutshell"
+const description =
+	"You've probably heard the words Agile and Scrum a lot in your professional work life, often interchangeably, and sometimes in reference to things that are neither Agile nor Scrum. Confusing, right? This video is a simple introduction so you know what's what, quickly and easily. If you prefer reading over video, there is a transcript ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2021-01-13T17:21:42")
+const modifiedAt = new Date("2024-01-18T19:09:45")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		You’ve probably heard the words Agile and Scrum a lot in your professional work life, often
+		interchangeably, and sometimes in reference to things that are neither Agile nor Scrum.
+		Confusing, right?
+	</p>
+	<p>
+		This video is a simple introduction so you know what’s what, quickly and easily. If you prefer
+		reading over video, there is a <a href="/the-story-of-a-sprint" rel="noopener" target="_blank"
+			>transcript version of the video here</a
+		>, as well as more information below.
+	</p>
+	<p>
+		<iframe
+			title="Story of a Sprint"
+			width="500"
+			height="281"
+			src="https://www.youtube.com/embed/QHD4RpyWxHY?feature=oembed"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen></iframe>
+	</p>
+	<h2>What Is Agile?</h2>
+	<p>
+		<a href="/glossary/agile"><strong>Agile</strong></a> is a <em>mindset</em> for doing work in a team
+		environment that improves teamwork, professional performance, and adaptability. The Agile mindset
+		is focused on adapting to changing customer needs while still delivering a high-quality product,
+		and is defined by the values and principles in the <a
+			href="https://agilemanifesto.org/"
+			target="_blank"
+			rel="noopener noreferrer">Agile Manifesto</a
+		>.
+	</p>
+	<p>
+		There is no single way to put the Agile mindset into practice, and numerous approaches have been
+		developed. <strong>Scrum</strong> is currently the world’s most popular approach.
+	</p>
+	<h2>So, Wait, Agile Isn’t Scrum?</h2>
+	<p>
+		As you might guess from the different titles here, Agile and Scrum are <em>not</em> the same things.
+		<a href="/glossary/scrum"><strong>Scrum</strong></a> is an <em>approach</em> to applying the Agile
+		mindset. It provides a lightweight framework to build a product in a way that delivers value to the
+		customer quickly and incrementally, and can adapt if needs change or priorities shift, so you don’t
+		spend months building something only to hand it over and it’s already outdated or not what they wanted
+		any more. Scrum grew up in the world of software development, but it can be used anywhere that individuals
+		need to collaborate as a team to deliver something of value to a customer.
+	</p>
+	<h2>Why Choose the Scrum Approach?</h2>
+	<p>
+		Whole essays have been written on this. <a
+			href="/blog"
+			target="_blank"
+			rel="noopener noreferrer">Mark discusses in more detail in his blog</a
+		>, but the simplified answer is because it works. Scrum encourages the team to improve on two
+		levels at the same time. First on the product level, by gaining feedback from stakeholders on
+		what is wanted. Second, collecting feedback about the team’s process and the way they work
+		together. The first level allows us to get iteratively closer to the product the customer needs,
+		while the second helps the team grow their skills and teamwork, and focus on delivering quality.
+		Combined, these are very effective toward core Agile goals.
+	</p>
+	<p>
+		<Image
+			decoding="async"
+			alt="life cycle of the Scrum sprint - image by Agile Pain Relief Consulting"
+			width="1024"
+			height="805"
+			sizes="(max-width: 1024px) 100vw, 1024px"
+			src={assets_images_what_is_scrum_in_a_nutshell_life_cycle_of_the_sprint_labelled_1024x805_jpg}
+			widths={[1024, 300, 768, 1034]}
+		/>
+	</p>
+	<h2>Scrum Terminology</h2>
+	<p>
+		Scrum has a lot of unique terminology and concepts. Here are the main ones you’ll often hear
+		mentioned.
+	</p>
+	<h3><a href="/glossary/sprint">Sprint</a></h3>
+	<p>
+		A fixed period, ranging from one week to one month in length, during which the Scrum Team works
+		to meet specific customer needs. As one Sprint ends, the next Sprint begins. The purpose of
+		defining the work period is that it enables the Team to focus on a limited and prioritized
+		number of features, and it encourages the delivery of at least some completed work to the
+		customer each Sprint.
+	</p>
+	<h3><a href="/glossary/scrum-team">Scrum Team</a></h3>
+	<p>All of the people needed to get the product built and into the customer’s hands:</p>
+	<ul>
+		<li>
+			<a href="/glossary/scrummaster-role" title="ScrumMaster">ScrumMaster</a>, who helps the team
+			grow capacity to deliver value
+		</li>
+		<li>
+			<a href="/glossary/product-owner-role" title="Product Owner">Product Owner</a>, who manages
+			the vision for what they will be creating
+		</li>
+		<li>
+			<a href="/glossary/developers" title="Developers">Developers</a>, who are the cross-functional
+			group of people who will build the Product (e.g. in software development this group usually
+			includes programmers, business analysts, quality assurance, user experience and more).
+		</li>
+	</ul>
+	<h3><a href="/glossary/product-backlog">Product Backlog</a></h3>
+	<p>
+		An ordered list of all the things the Product Owner would like to see the Team work on in the
+		foreseeable future. These items are called Product Backlog Items (PBIs).
+	</p>
+	<h3><a href="/glossary/user-story">User Story</a>*</h3>
+	<p>
+		A tool used to provoke and summarize a conversation, between the Team and their Product Owner,
+		for a better understanding of an item on the Product Backlog. The User Story provides context
+		regarding who a Product Backlog Item is being developed for and why it is of value. <em
+			>*It’s important to note that this isn’t part of Scrum per se, but is a tool that grew up
+			beside Scrum and is often used in conjunction. User Stories can be helpful but aren’t required
+			as part of the practice of Scrum.</em>
+	</p>
+	<h3><a href="/glossary/sprint-planning">Sprint Planning</a></h3>
+	<p>
+		An event at the beginning of a Sprint where the Team plans the items they can complete in the
+		next Sprint. They also craft a goal to act as a focus for their work.
+	</p>
+	<h3><a href="/glossary/sprint-goal">Sprint Goal</a></h3>
+	<p>
+		A single objective shared by the Team that describes the purpose of the Sprint and ensures that
+		everyone moves in the same direction. A simply-stated goal makes it easier to prioritize Product
+		Backlog Items, assess whether tests and feedback are relevant to the goal, and summarize the
+		work currently being done when asked by stakeholders.
+	</p>
+	<h3><a href="/glossary/product-backlog-refinement">Product Backlog Refinement</a></h3>
+	<p>
+		A session during which the Scrum Team (Developers, Product Owner, ScrumMaster) prepare the
+		Product Backlog for the next few sprints. New Product Backlog Items (PBIs) are added for new
+		needs to be considered. PBIs that are too large to be worked on in a single Sprint are broken
+		down into smaller items. Estimates are made as to how much time each PBI will require to
+		complete. The Product Owner makes prioritization decisions about PBIs, sharing with the Team
+		their reasoning.
+	</p>
+	<h3><a href="/glossary/sprint-backlog">Sprint Backlog</a></h3>
+	<p>The list of Product Backlog Items (PBIs) the Team has committed to for the next Sprint.</p>
+	<h3><a href="/glossary/daily-scrum">Daily Scrum</a></h3>
+	<p>
+		The daily meeting where the Scrum Team get ready to collaborate for the day, and check if
+		they’re still on track to complete their goal forecast by the end of the Sprint.
+	</p>
+	<h3><a href="/glossary/definition-of-done">Definition of Done</a></h3>
+	<p>
+		The official checklist that Scrum Teams maintain of the qualities they intend their work to
+		achieve. It helps the team assess whether their work is truly completed and deliverable to the
+		client as having added value. It also helps them in Sprint Planning by reminding them of the
+		quality they have committed to achieving, ensuring they only commit to PBIs they can get to
+		truly “Done.”
+	</p>
+	<h3><a href="/glossary/sprint-review">Sprint Review</a></h3>
+	<p>
+		An event at the end of the Sprint where the Scrum Team review the completed work with
+		stakeholders. Stakeholders provide feedback on the completed work and ideas for product
+		improvements. The Product Backlog will get updated during future refinement to reflect what
+		everyone learned.
+	</p>
+	<h3><a href="/glossary/sprint-retrospective">Sprint Retrospective</a></h3>
+	<p>
+		An event at the end of the Sprint where the Scrum Team reflects on all that happened in that
+		period, with the intention to improve how they work in the next Sprint.
+	</p>
+	<div>
+		That is Agile and Scrum forced into a ridiculously small nutshell. You can spend years learning
+		and understanding the many nuances, and how to get the greatest benefits out of them. If you’d
+		like to take the first step and build a solid foundational understanding of the <em>how</em> and
+		<em>why</em> of Scrum, and not just the <em>what</em> that you can learn from reading summary pages
+		like this, join us in our training workshops. You will actually practice Scrum and learn how to make
+		it work for you in the real world, rather than just in theory.
+	</div>
+	<div>
+		<div>
+			<div>
+				<a href="/certified-scrum-agile-training"></a>
+				<div>Get Training</div>
+				<p></p>
+			</div>
+			<div>
+				<a href="/choose-the-right-scrum-training-for-your-needs"></a>
+				<div>No Idea What Training to Choose</div>
+				<p></p>
+			</div>
+		</div>
+		<hr />
+		<h2>Questions You Might Have About Scrum</h2>
+		<h3>
+			<a
+				href="/what-is-scrum-used-for"
+				title="What is Scrum Used For?"
+				rel="noopener"
+				target="_blank">What is Scrum used for?</a>
+		</h3>
+		<h3>What is considered the definition of Scrum?</h3>
+		<p>
+			The <a href="https://www.scrum.org/resources/scrum-guide" rel="noopener" target="_blank"
+				><em>Scrum Guide</em></a
+			> is considered the definition of Scrum and serves as the foundational document for understanding
+			Scrum.
+		</p>
+		<h3>How does Scrum help teams deliver value incrementally?</h3>
+		<p>
+			Scrum is iterative and incremental. As mentioned above, Scrum teams work in short repeated
+			cycles called Sprints. That’s the iterative part. The incremental part is that at the end of
+			every Sprint the team release a new version of the product they’re working on. So the work is
+			incremental, each Sprint building on the previous Sprint’s work.
+		</p>
+		<h3>What is the difference between Scrum and Professional Scrum?</h3>
+		<p>
+			Don’t let subjective titles on the internet confuse you. There is a <strong>huge</strong> difference
+			between Scrum that is practiced on a professional level, and the label on the certification offered
+			by Scrum.org, a for-profit organization.
+		</p>
+		<h4>Certification</h4>
+		<p>
+			The most recognized Scrum certification is Certified ScrumMaster® (CSM®), with the
+			Professional Scrum Master ™ (PSM ™) in second place. PSM I is an exam only and there is no
+			formal learning requirement. CSM requires that you learn and practice with a Certified Scrum
+			Trainer, who has undergone a rigorous, multi-year process to qualify. CSM certification
+			requires comprehension of Scrum principles and the demonstration of the practices, which is in
+			contrast to the PSM exam that tests your memory of theory.
+		</p>
+		<h4>Practice</h4>
+		<p>
+			Let’s ignore the Professional Scrum certification label, and acknowledge that there is a
+			difference between practicing Scrum by going through the motions as you understand them, and
+			practicing Scrum on a professional, effective level. Scrum done wrong can do a lot of harm.
+			Misconceptions about how it fosters micromanagement and excessive…
+		</p>
+		<h3>Where can I find more resources to learn about Scrum?</h3>
+		<p>
+			On this page we have forced Agile and Scrum into a ridiculously small nutshell to provide a
+			basic explanation. You can spend years learning and understanding the many nuances, and how to
+			get the greatest benefits out of them. If you’d like to build a solid foundational
+			understanding of the how and why of Scrum, and not just the what that you can learn from
+			reading summary pages like this, we offer several valuable options, no matter what level of
+			Scrum understanding or experience you currently have.
+		</p>
+		<p>
+			<a
+				href="/a-jargon-free-introduction-to-scrum"
+				title="A Jargon-Free Introduction to Scrum"
+				rel="noopener"
+				target="_blank">A Jargon-Free Introduction to Scrum</a
+			> &#8211; free e-Book<br />
+			The language and concepts of Scrum are strange. In our Jargon-Free Introduction to Scrum we use
+			simple, clear language to make Scrum simple and understandable.
+		</p>
+		<p>
+			<a href="/foundational-scrum-series" title="Foundational Scrum" rel="noopener" target="_blank"
+				>Foundational Scrum</a
+			><br />
+			A free email series that offers a deeper understanding of the basics of Scrum and the Scrum Roles,
+			as well as common mistakes people make and how to avoid them.
+		</p>
+		<p>
+			<a
+				href="/certified-scrum-agile-training"
+				title="Certified Scrum & Agile Training"
+				rel="noopener"
+				target="_blank">Certified Scrum Training</a
+			><br />
+			Join us in a Scrum training course. You will actually practice Scrum and learn how to make it work
+			for you in the real world, rather than just in theory. And if you’re not sure what Scrum training
+			is right for you, we explain the differences between Certified Scrum Product Owner (CSPO) training
+			and Certified ScrumMaster (CSM) training to help you decide.
+		</p>
+		<p>
+			<a href="/glossary" rel="noopener" target="_blank"
+				>World’s Largest Opinionated Agile Reference Library</a
+			><br />
+			It’s a cheeky title, but there’s no disputing the fact that it is a huge and valuable resource
+			for reliable information about what is proven and effective in the practice of Scrum and Agile.
+		</p>
+		<p><em>(Updated January 2024)</em></p>
+	</div>
+</MainLayout>

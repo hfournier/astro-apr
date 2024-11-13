@@ -1,0 +1,43 @@
+---
+wpId: 879
+title: 'Misuse of Velocity in Agile Projects'
+description: 'Why story points should not be used to ''compare velocity between teams'' or ''benchmark data on velocity.'' Agile/Scrum teams use relative estimation.'
+type: post
+createdAt: 2010-02-18T03:24:53
+modifiedAt: 2020-01-31T05:57:41
+author: mark-levison
+categories:
+  - agile
+tags:
+  - project-management
+  - release-planning
+  - story-points
+  - velocity
+featuredMedia:
+  id: 10304
+  src: "architects-xs.jpg"
+  alt: "An image of two architects' hands doing work - image licensed from Photodune"
+  caption: ""
+---
+
+import { Image } from "astro:assets"
+
+import colo_architects_xs_jpg from "architects-xs.jpg";
+
+
+<Image decoding="async" alt="An image of two architects' hands doing work - image licensed from Photodune" width="547" height="365" sizes="(max-width: 547px) 100vw, 547px" src={colo_architects_xs_jpg} widths={[547, 300]} />  
+Like clockwork every month, someone on one of the Agile Mailing lists asks a question about “comparing velocity between teams” or “benchmarking data on velocity.” Before we examine the problem, let’s recheck what velocity is—the amount of work completed by the team/time taken to complete it. The amount of work is usually measured in Story Points (a relative measure of size). So velocity is just the number of points the team completes in the average iteration/sprint.
+
+The underlying point is that Agile/Scrum teams use relative estimation (e.g. is this story/feature bigger or smaller than our standard story?) vs. the traditional approach of absolute estimation. The problem with comparisons, benchmarking, or any other attempts to compare velocity is that my story points ≠ your story points, because different projects use different standard stories. They work in different problem domains, and they have different people.
+
+If we could compare velocities across a team, what would happen? Estimation of inflation. Team **Better** hears that Team **Good** has just finished their release planning meeting and estimated that they will achieve 200 points before the next release in 6 iterations/sprints. Immediately, Team **Better** knows it needs to produce more points and so estimates 300 points. Now along comes Team **Best**. . . .
+
+To my mind, the real value of Velocity and Release planning is giving the Product Owner a good idea of what can be achieved before the next release. For one client, our release planning told us that the list of required features was roughly double the amount of time in the project budget. For first three iterations, the Product Owner denied reality but eventually the team’s actual velocity made it clear that trade-offs were required.
+
+What matters far more than comparing velocity is whether each of the teams arrived at a common understanding of their work. After each iteration, has the team delivered value? Does the Product Owner always have a good idea of how much value has already been delivered and how much they can expect to be delivered?
+
+Anytime you’re about to spend time and money on something, ask if the customer would be prepared to pay for that.
+
+BTW I smell an Agile FAQ coming out of this and other questions.
+
+Image via: [https://photodune.net/](https://photodune.net/)

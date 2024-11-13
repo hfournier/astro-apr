@@ -1,0 +1,102 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_global_community_Ukraine_jpg from "@assets/images/global-community/Ukraine.jpg"
+
+const wpId = 13668
+const title = "Global Community"
+const description =
+	"Our vision is to help others with challenges that they face in Scrum and Agile, but our hearts right now are consumed with grief for colleagues, friends, and the citizens of Ukraine as they face challenges most of us can't begin to imagine. We know that many people will die, many more will suffer, and ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2022-03-03T15:24:35")
+const modifiedAt = new Date("2023-05-24T17:11:09")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<p>
+		<Image
+			decoding="async"
+			alt="You help We help together for peace in Ukraine"
+			width="512"
+			height="344"
+			sizes="(max-width: 512px) 100vw, 512px"
+			src={assets_images_global_community_Ukraine_jpg}
+			widths={[512, 300]}
+		/>
+	</p>
+	<p>
+		Our vision is to help others with challenges that they face in Scrum and Agile, but our hearts
+		right now are consumed with grief for colleagues, friends, and the citizens of Ukraine as they
+		face challenges most of us can’t begin to imagine. We know that many people will die, many more
+		will suffer, and there is little we can do, so we&#8217;re asking for your help to do more.
+	</p>
+	<p>
+		We have placed our own donations for aid to the people of Ukraine and we ask that you consider
+		doing the same if you’re able. <strong>If you make a donation of $100</strong> CAD or more, please
+		send us some kind of &#8216;soft&#8217; proof of it (using a simple honour system, e.g. screenshot
+		of &#8216;thank you for your donation&#8217; confirmation page) so <strong
+			>we can amplify the goodwill and give you a $100 discount</strong
+		> code off any upcoming training workshop, no exceptions, no expiry. Here are some of the charities
+		that were suggested by <em>The Globe and Mail</em>:
+	</p>
+	<ul>
+		<li>
+			<a
+				href="https://donate.redcross.ca/page/100227/donate/1?_ga=2.125878541.1041674209.1645872049-1232769696.1645872049&_gl=1*1ro22jf*_ga*MTIzMjc2OTY5Ni4xNjQ1ODcyMDQ5*_ga_376D8LHM0R*MTY0NTg3MjA0OC4xLjAuMTY0NTg3MjA0OC4w"
+				target="_blank"
+				rel="noopener">Canadian Red Cross:</a
+			> the local wing of an international emergency-relief organization. The federal government says
+			it will match individual donations by Canadians.
+		</li>
+		<li>
+			<a href="https://www.doctorswithoutborders.ca/" target="_blank" rel="noopener"
+				>Médecins sans frontières (Doctors Without Borders):</a
+			> a humanitarian group that’s been supporting Ukraine’s COVID-19 response.
+		</li>
+		<li>
+			<a href="https://www.cufoundation.ca/" target="_blank" rel="noopener"
+				>Canada-Ukraine Foundation:</a
+			> a Toronto-based group that co-ordinates Canadian charitable aid to Ukraine.
+		</li>
+		<li>
+			<a href="https://www.savethechildren.ca/" target="_blank" rel="noopener">Save the Children:</a
+			> an international NGO delivering emergency aid to Ukrainian families.
+		</li>
+		<li>
+			<a href="https://voices.org.ua/en/" target="_blank" rel="noopener">Voices of Children:</a> offers
+			psychological support to children affected by the conflict in Eastern Ukraine.
+		</li>
+		<li>
+			<a href="https://savelife.in.ua/en/donate-en/" target="_blank" rel="noopener"
+				>Come Back Alive Foundation:</a
+			> a Ukrainian NGO that supports veterans and co-organizes the Invictus Games in Ukraine.
+		</li>
+		<li>
+			<a href="http://wings-phoenix.org.ua/en/about-fund/" target="_blank" rel="noopener"
+				>Phoenix Wings:</a
+			> a charitable foundation that supplies the Ukrainian army with medical treatment and defensive
+			equipment such as vests and helmets.
+		</li>
+		<li>
+			<a href="https://www.rsukraine.org/" target="_blank" rel="noopener"
+				>Revived Soldiers Ukraine:</a
+			> a non-profit that funds medical rehabilitation for Ukrainian soldiers.
+		</li>
+		<li>
+			<a href="https://www.razomforukraine.org//" target="_blank" rel="noopener"
+				>Razom for Ukraine:</a
+			> a pro-democracy group that’s fundraising for medical supplies in Ukraine.
+		</li>
+		<li>
+			<a href="https://kyivindependent.com/" target="_blank" rel="noopener">Kyiv Independent:</a> a Ukraine-based,
+			English-language independent news media outlet.
+		</li>
+	</ul>
+	<p>Thank you, and keep well, friends.</p>
+</MainLayout>

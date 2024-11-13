@@ -1,0 +1,276 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_certified_scrum_agile_training_sa_csm_600_png from "@assets/images/certified-scrum-agile-training/sa-csm-600.png"
+import assets_images_certified_scrum_agile_training_sa_cspo_600_png from "@assets/images/certified-scrum-agile-training/sa-cspo-600.png"
+import assets_images_certified_scrum_agile_training_sa_csd_600_png from "@assets/images/certified-scrum-agile-training/sa-csd-600.png"
+import assets_images_certified_scrum_agile_training_sa_adv_csm_600_png from "@assets/images/certified-scrum-agile-training/sa-adv_csm-600.png"
+import assets_images_certified_scrum_agile_training_choice_png from "@assets/images/certified-scrum-agile-training/choice.png"
+import assets_images_certified_scrum_agile_training_business_training_png from "@assets/images/certified-scrum-agile-training/business-training.png"
+
+const wpId = 28
+const title = "Certified Scrum & Agile Training"
+const description =
+	"Explore what Scrum is and how to make it work for you in our Scrum Certification training Hands on learning for how to guide teams, projects, and organizations, using Agile and Scrum techniques to improve teamwork, deliver quick feedback, and achieve better products and results. Click to register for your preference of training dates, or ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2019-09-13T05:15:48")
+const modifiedAt = new Date("2024-08-21T19:06:59")
+const author = "mark-levison"
+---
+
+<MainLayout>
+	<Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+	<h4>Explore what Scrum is and how to make it work for you in our Scrum Certification training</h4>
+	<p>
+		Hands on learning for how to guide teams, projects, and organizations, using Agile and Scrum
+		techniques to improve teamwork, deliver quick feedback, and achieve better products and results.
+	</p>
+	<p>
+		Click to register for your preference of training dates, or on the course headings for more
+		details about what each workshop offers.
+	</p>
+	<div id="CSM-Training">
+		<div>
+			<Image
+				decoding="async"
+				alt="Certified ScrumMaster Scrum Alliance seal"
+				src={assets_images_certified_scrum_agile_training_sa_csm_600_png}
+			/>
+		</div>
+		<div>
+			<h3><a href="/certified-scrummaster-csm-training">Certified ScrumMaster (CSM)</a></h3>
+			<p>
+				Often the best fit for anyone new to Scrum. Focuses on the role of the team and the
+				ScrumMaster. Get the skills and practical experience necessary to improve teamwork, take the
+				exam, and advance your career with a certification that is in high demand today!
+			</p>
+		</div>
+		<div>
+			<section id="custom-ee-upcoming-events-widget-14">
+				<div>
+					<h3>CSM Buttons</h3>
+					<div>
+						<div>
+							<a href="/courses/virtual-20241118csm"
+								><div>
+									<div>Nov 18 - Nov 19</div><div>Live Online</div><div>Discounts Available</div>
+								</div></a>
+						</div><div>
+							<a href="/courses/virtual-20241128csm"
+								><div>
+									<div>Nov 28 - Nov 29</div><div>Live Online</div><div>Discounts Available</div>
+								</div></a>
+						</div><div>
+							<a href="/courses/virtual-20241212csm"
+								><div>
+									<div>Dec 12 - Dec 13</div><div>Live Online</div><div>Discounts Available</div>
+								</div></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div id="CSPO-Training">
+		<div>
+			<Image
+				decoding="async"
+				alt="Certified Scrum Product Owner Scrum Alliance seal"
+				src={assets_images_certified_scrum_agile_training_sa_cspo_600_png}
+			/>
+		</div>
+		<div>
+			<h3>
+				<a href="/certified-scrum-product-owner-cspo-training"
+					>Certified Scrum Product Owner (CSPO)</a>
+			</h3>
+			<p>
+				The course for those who work regularly with stakeholders. Take your skills and career to
+				the next level by learning how to how to make Product Ownership a collaborative effort with
+				your development team.
+			</p>
+		</div>
+		<div>
+			<section id="custom-ee-upcoming-events-widget-15">
+				<div>
+					<h3>CSPO Buttons</h3>
+					<div>
+						<div>
+							<a href="/courses/virtual-20241202cspo"
+								><div>
+									<div>Dec 2 - Dec 3</div><div>Live Online</div><div>Discounts Available</div>
+								</div></a>
+						</div><div>
+							<a href="/courses/virtual-20241219cspo"
+								><div>
+									<div>Dec 19 - Dec 20</div><div>Live Online</div><div>Discounts Available</div>
+								</div></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div id="CSD-Training">
+		<div>
+			<Image
+				decoding="async"
+				alt="Certified Scrum Developer Scrum Alliance seal"
+				src={assets_images_certified_scrum_agile_training_sa_csd_600_png}
+			/>
+		</div>
+		<div>
+			<h3><a href="/certified-scrum-developer-csd-training">Certified Scrum Developer (CSD)</a></h3>
+			<p>
+				The course for developers to do their work more efficiently and with higher levels of
+				quality and predictability. Also for Business Analysts, QA, User eXperience, etc who work as
+				a part of a bigger team and will benefit from enhanced skills and practice in collaboration.
+			</p>
+		</div>
+		<div>
+			<a href="/courses/virtual-20241015csd"></a>
+			<div>
+				<div>October 15-18</div>
+				<div>Technical</div>
+				<div>Discounts Available</div>
+			</div>
+		</div>
+		<p></p>
+	</div>
+</MainLayout>
+<div A-CSM-Training">
+	<div>
+		<Image
+			decoding="async"
+			alt="Advanced Certified ScrumMaster Scrum Alliance seal"
+			src={assets_images_certified_scrum_agile_training_sa_adv_csm_600_png}
+		/>
+	</div>
+	<div>
+		<h3>
+			<a href="/advanced-certified-scrummaster-acsm-training"
+				>Advanced Certified ScrumMaster (A-CSM)</a>
+		</h3>
+		<p>
+			The course for those wanting to expand ScrumMaster skills, spark organizational change, and
+			advance their career in Agile coaching. Distinguish yourself by learning how to navigate
+			changing markets and conditions (Covid, anyone?), and take the next step toward Certified
+			Scrum Professional.
+		</p>
+	</div>
+	<div>
+		<section id="custom-ee-upcoming-events-widget-16">
+			<div>
+				<h3>A-CSM Buttons</h3>
+				<div>
+					<div>
+						<a href="/courses/virtual-202415acsm"
+							><div>
+								<div>Nov 15 - May 15</div><div>Live Online</div><div>Discounts Available</div>
+							</div></a>
+					</div><div>
+						<a href="/courses/virtual-202401acsm"
+							><div>
+								<div>Dec 1 - Jun 1</div><div>Live Online</div><div>Discounts Available</div>
+							</div></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<br />
+		<!-- START REMOVE FORM BUTTON
+        
+
+<div >
+            <a href="/advanced-certified-scrummaster-acsm-training#acsmform">
+                
+
+<div >
+                    
+
+<div >FIND A</div>
+
+
+                    
+
+<div >COURSE</div>
+
+
+                    
+
+
+
+
+                </div>
+
+
+            </a>
+        </div>
+
+
+END REMOVE -->
+	</div>
+</div>
+<div id="A-CSM-Training">
+	<div>
+		<Image
+			decoding="async"
+			alt="Choose the right Scrum training for your needs"
+			src={assets_images_certified_scrum_agile_training_choice_png}
+		/>
+	</div>
+	<div>
+		<h3>
+			<a href="/choose-the-right-scrum-training-for-your-needs">No Idea What Training to Choose?</a>
+		</h3>
+		<p>
+			If you’re unsure which course is best for you, this page will help guide you through some of
+			the differences in our most popular workshops.
+		</p>
+	</div>
+	<div>
+		<a href="/choose-the-right-scrum-training-for-your-needs"></a>
+		<div>To Help You Decide</div>
+		<p></p>
+	</div>
+</div>
+<div id="A-CSM-Training">
+	<div>
+		<Image
+			decoding="async"
+			alt="Group and Private Training"
+			src={assets_images_certified_scrum_agile_training_business_training_png}
+		/>
+	</div>
+	<div>
+		<h3><a href="/private-scrum-agile-training">Groups and Private Training</a></h3>
+		<p>
+			If you have a group of roughly 15 team members or more, we would be happy to work with you to
+			build a workshop that focuses on your team’s unique needs.
+		</p>
+	</div>
+	<div>
+		<a href="/private-scrum-agile-training"></a>
+		<div>Private Training</div>
+		<p></p>
+	</div>
+</div>
+<div>
+	<h3>Agile Pain Relief Advantage</h3>
+	<ul>
+		<li>
+			Small class size to ensure a high-quality learning environment with plenty of opportunity to
+			address questions and concerns.
+		</li>
+		<li>Guaranteed course dates.</li>
+		<li>
+			Live instruction and practical examples to learn how to adapt and practice Agile methods for
+			your own projects.
+		</li>
+		<li>Post-course resources, community support, and follow-up training included.</li>
+	</ul>
+</div>

@@ -1,0 +1,64 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import { Image } from "astro:assets"
+import { SITE_TITLE } from "src/consts"
+import Seo from "@components/seo/Seo.astro"
+
+import assets_images_lean_coffee_lean_coffee_png from "@assets/images/lean-coffee/lean-coffee.png";
+
+const wpId = 11226
+const title = "Lean Coffee"
+const description = "Grab a Virtual Coffee With Mark Many times I've been invited to have coffee with attendees after a training workshop, but I usually have to rush off to catch a plane or prepare for the next training. Since I'm not flying back and forth across the country right now like I had been, I have ..."
+const status = "publish"
+const type = "page"
+const createdAt = new Date("2020-09-24T16:50:43")
+const modifiedAt = new Date("2023-10-17T19:19:33")
+const author = "mark-levison"
+const featuredMedia = {"id":14259,"src":"@assets/images/lean-coffee/lean-coffee.png","alt":"Lean Coffee with Mark Levison"}
+---
+
+<MainLayout>
+    <Seo slot="head" seo={{ title, description }} options={{ brand: SITE_TITLE }} />
+
+<h1>Grab a Virtual Coffee With Mark</h1>
+<p><Image decoding="async" alt="Lean Coffee with Mark Levison" width="940" height="788" sizes="(max-width: 940px) 100vw, 940px" src={assets_images_lean_coffee_lean_coffee_png} widths={[940, 300, 768]} /></p>
+<p>Many times I’ve been invited to have coffee with attendees after a training workshop, but I usually have to rush off to catch a plane or prepare for the next training. Since I’m not flying back and forth across the country right now like I had been, I have more time to actually do what I love – help people.</p>
+<p>So we’re experimenting (hint: important thing in Scrum) with a kind of office hours-slash virtual coffee chat, where you can join in a Zoom conference and talk about whatever confuses and confounds you in Scrum. Bonus: if you haven’t done a workshop with me yet, this is your chance to try before you buy.</p>
+<p>It is free and open to our newsletter subscribers (if you&#8217;re not yet a subscriber, the form below will fix that for you).</p>
+<p>This is a great opportunity to:</p>
+<p>— earn a free Scrum Education Unit (SEU) for your Scrum Alliance renewal requirements<br />
+— get help with a Scrum challenge that you’re facing (there are no dumb questions)<br />
+— clarify, or dig deeper, into some of the more advanced Agile practices (learn something new every day)<br />
+— find out what others have struggled with and the solutions they found (forewarned is forearmed)<br />
+— gain a sense of my training style and experience, without registering for a full workshop (try before you buy)</p>
+<p>Our Lean Coffee virtual meet-up is a chance for anyone — regardless of your level of Scrum experience — to talk with, and learn from, others. Only ground rule: it&#8217;s for discussion and listening, not for presenting material to an audience.</p>
+<div >
+<p>Are you a beginner trying to figure out if Scrum is for you? Welcome!</p>
+<p >Are you a seasoned Scrum professional looking for new ideas to add to your Agile tool belt? Welcome!</p>
+<p >And everyone in between is welcome, too!</p>
+</div>
+<p>How it works: together we build our agenda for what to discuss, using your suggestions and votes for what you want to talk about the most. With timeboxes in place to keep things moving along efficiently, you’ll be surprised by how much can be discussed and learned in only an hour.</p>
+<p>To be alerted when we&#8217;ve scheduled our next Lean Coffee Event, simply subscribe below and you&#8217;ll be the first to know when we schedule a new coffee date. We&#8217;ll send you out a quick email invitation with the Zoom details about a week in advance, and then another short email reminder the day before. If you choose to attend, bring your challenges and questions.</p>
+<p>We hope you can join us!</p>
+<p>~ Mark</p>
+
+<pre><code>
+<style>
+  #drip-ef-678630255 > div { margin-bottom: .75rem; }<br />  #drip-ef-678630255 fieldset { border: none; margin: 0; padding: 0; }<br />  #drip-ef-678630255 legend { margin: 0; padding: 0; }<br />  #drip-ef-678630255 input[type="email"], #drip-ef-678630255 input[type="number"],<br />  #drip-ef-678630255 input[type="tel"], #drip-ef-678630255 input[type="text"] { margin: 0; padding: .75rem .75rem; max-width: 500px; }<br />  #drip-ef-678630255 input[type="checkbox"], #drip-ef-678630255 input[type="radio"] { margin: .1875rem .1875rem 0 0; padding: 0; }<br />  #drip-ef-678630255 input[type="submit"] { margin: 0; padding: .375rem .5625rem; }<br /></style>
+<form id="drip-ef-678630255" action="https://www.getdrip.com/forms/678630255/submissions" method="post" data-drip-embedded-form="678630255">
+<h3 data-drip-attribute="headline">Subscribe to receive Lean Coffee Event Notifications</h3>
+
+<div><label for="drip-email">Email Address (required)</label><br />
+<input id="drip-email" name="fields[email]" type="email" value="" /></div>
+<div><label for="drip-first-name">First Name (required)</label><br />
+<input id="drip-first-name" name="fields[first_name]" type="text" value="" /></div>
+<div><label for="drip-last-name">Last Name</label><br />
+<input id="drip-last-name" name="fields[last_name]" type="text" value="" /></div>
+<div  aria-hidden="true"><label for="website">Website</label><br />
+<input id="website" tabindex="-1" autocomplete="false" name="website" type="text" value="" /></div>
+<p><input id="tags_" tabindex="-1" name="tags[]" type="hidden" value="Clicked - Form - Notify Me - Lean Coffee" /></p>
+<div><input type="submit" value="Subscribe" data-drip-attribute="sign-up-button" /></div>
+</form>
+</code></pre>
+
+</MainLayout>
