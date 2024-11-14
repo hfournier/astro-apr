@@ -609,51 +609,49 @@ const author = "brian"
 		you choose?
 	</p>
 
-	<pre><code>
-&lt;style&gt;
-	#moreAnswers li:before &lbrace;
-		content: "\00BB";
-		font-size: 35px;
-		color: green;
-		vertical-align: sub;
-		line-height: 30px;
-		margin-right: 10px;
-	&rbrace;
-	#blueprint li &lbrace;
-		list-style: none;
-	&rbrace;
-	#blueprint li:before &lbrace;
-		content: "•";
-		color: red;
-		font-size: 22px;
-		vertical-align: sub;
-		line-height: 20px;
-		margin-right: 10px;
-	&rbrace;
-	#moreAnswers li &lbrace;
-		margin-bottom: 10px;
-		list-style-type: none !important;
-	&rbrace;
-	.testimonialBlock &lbrace;
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-		margin: 20px 0;
-	&rbrace;
-	.speechBubble &lbrace;
-		display: table-cell;
-		height: 60px;
-		width: 60px;
-		background: url("/wp-content/uploads/2024/01/speech-bubble-clipart.png") no-repeat left top;
-	&rbrace;
-	.testimonialText &lbrace;
-		display: table-cell;
-		width: 100%;
-		vertical-align: middle;
-		padding-left: 20px;
-	&rbrace;
-&lt;/style&gt;
-</code></pre>
+	<style>
+		#moreAnswers li:before {
+			content: "\00BB";
+			font-size: 35px;
+			color: green;
+			vertical-align: sub;
+			line-height: 30px;
+			margin-right: 10px;
+		}
+		#blueprint li {
+			list-style: none;
+		}
+		#blueprint li:before {
+			content: "•";
+			color: red;
+			font-size: 22px;
+			vertical-align: sub;
+			line-height: 20px;
+			margin-right: 10px;
+		}
+		#moreAnswers li {
+			margin-bottom: 10px;
+			list-style-type: none !important;
+		}
+		.testimonialBlock {
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+			margin: 20px 0;
+		}
+		.speechBubble {
+			display: table-cell;
+			height: 60px;
+			width: 60px;
+			/* background: url("/wp-content/uploads/2024/01/speech-bubble-clipart.png") no-repeat left top; */
+		}
+		.testimonialText {
+			display: table-cell;
+			width: 100%;
+			vertical-align: middle;
+			padding-left: 20px;
+		}
+	</style>
 	<div>
 		<div>
 			<div>
@@ -721,19 +719,17 @@ const author = "brian"
 			<div>
 				<h3>Blog</h3>
 				<div>
-					<pre><code>
-				&lt;style&gt;
-					.srpw-ul li &lbrace;
-						list-style-type: none !important;
-						margin-left: 0 !important;
-						padding: 0 12px 20px 12px !important;
-					&rbrace;
-					.srpw-thumbnail &lbrace;
-						width: 100%;
-						height: auto;
-					&rbrace;
-				&lt;/style&gt;
-				</code></pre>
+					<style>
+						.srpw-ul li {
+							list-style-type: none !important;
+							margin-left: 0 !important;
+							padding: 0 12px 20px 12px !important;
+						}
+						.srpw-thumbnail {
+							width: 100%;
+							height: auto;
+						}
+					</style>
 					<ul>
 						<li>
 							<a
